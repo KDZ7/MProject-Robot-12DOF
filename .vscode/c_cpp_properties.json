@@ -6,13 +6,12 @@
                 "limitSymbolsToIncludedHeaders": false
             },
             "includePath": [
+                "/home/ubuntu/dev_ws/install/space_interfaces/include/**",
                 "/opt/ros/jazzy/include/**",
-                "/home/ubuntu/dev_ws/src/pkg_cpp/include/**",
+                "/home/ubuntu/dev_ws/src/frame_broadcaster/include/**",
+                "/home/ubuntu/dev_ws/src/space_interfaces/include/**",
                 "/usr/include/**",
-                "/opt/ros/jazzy/include/rclcpp",
-                "/opt/ros/jazzy/include/tf2_ros",
-                "/opt/ros/jazzy/include/geometry_msgs",
-                "/opt/ros/jazzy/include/tf2"
+                "/opt/ros/jazzy/include/geometry_msgs"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",
