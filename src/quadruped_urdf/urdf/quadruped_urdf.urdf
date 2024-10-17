@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="quadruped_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="8.6736E-19 3.4694E-18 0.042418"
+        rpy="0 0 0" />
+      <mass
+        value="0.86519" />
+      <inertia
+        ixx="0.0083703"
+        ixy="7.9001E-19"
+        ixz="-3.6575E-19"
+        iyy="0.0020442"
+        iyz="-3.6823E-18"
+        izz="0.0086656" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="FLA">
+    <inertial>
+      <origin
+        xyz="-0.026925 -1.7347E-18 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.010945" />
+      <inertia
+        ixx="5.032E-07"
+        ixy="-2.2417E-22"
+        ixz="2.1072E-22"
+        iyy="2.8775E-06"
+        iyz="2.918E-23"
+        izz="3.0936E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FLA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FLA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FLA"
+    type="revolute">
+    <origin
+      xyz="0.03 -0.055 0.005"
+      rpy="-1.5708 0.0092604 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="FLA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FLB">
+    <inertial>
+      <origin
+        xyz="-2.0817E-17 -0.05 0.0061405"
+        rpy="0 0 0" />
+      <mass
+        value="0.027251" />
+      <inertia
+        ixx="2.2869E-05"
+        ixy="-3.8116E-21"
+        ixz="-4.4999E-22"
+        iyy="2.4912E-06"
+        iyz="-1.2214E-20"
+        izz="2.4906E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FLB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FLB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FLB"
+    type="revolute">
+    <origin
+      xyz="-0.038859 0 0.01"
+      rpy="-1.5708 0.94955 1.5708" />
+    <parent
+      link="FLA" />
+    <child
+      link="FLB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FLC">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 -0.0549087751989375 0.00618126895462276"
+        rpy="0 0 0" />
+      <mass
+        value="0.0285799693145388" />
+      <inertia
+        ixx="2.88211030062495E-05"
+        ixy="1.31004729513086E-20"
+        ixz="1.00192251695485E-22"
+        iyy="2.08850288359585E-06"
+        iyz="-3.65613830748438E-21"
+        izz="3.04332730679364E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FLC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FLC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FLC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 0.0099593"
+      rpy="0 0 0.61893" />
+    <parent
+      link="FLB" />
+    <child
+      link="FLC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FRA">
+    <inertial>
+      <origin
+        xyz="-0.0269253957823772 0 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0109452431127404" />
+      <inertia
+        ixx="5.03196139245203E-07"
+        ixy="-3.88774887899923E-23"
+        ixz="9.86921140643361E-23"
+        iyy="2.87751254725242E-06"
+        iyz="1.66376389752808E-23"
+        izz="3.09356821283229E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FRA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FRA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FRA"
+    type="revolute">
+    <origin
+      xyz="-0.03 -0.055 0.005"
+      rpy="1.5708 0.022451 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FRA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FRB">
+    <inertial>
+      <origin
+        xyz="1.3878E-17 -0.05 -0.004995"
+        rpy="0 0 0" />
+      <mass
+        value="0.027251" />
+      <inertia
+        ixx="2.2869E-05"
+        ixy="4.7646E-21"
+        ixz="2.1176E-22"
+        iyy="2.4912E-06"
+        iyz="1.1157E-20"
+        izz="2.4906E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FRB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FRB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FRB"
+    type="revolute">
+    <origin
+      xyz="-0.040005 0 0.01"
+      rpy="-1.5708 0.9223 -1.5708" />
+    <parent
+      link="FRA" />
+    <child
+      link="FRB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FRC">
+    <inertial>
+      <origin
+        xyz="0 -0.0549087751989375 -0.00499496037090973"
+        rpy="0 0 0" />
+      <mass
+        value="0.0285799693145388" />
+      <inertia
+        ixx="2.88211030062496E-05"
+        ixy="-1.35525271560688E-20"
+        ixz="-7.55215899260914E-22"
+        iyy="2.08850288359585E-06"
+        iyz="-1.02206436487052E-20"
+        izz="3.04332730679364E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FRC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/FRC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FRC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 -0.01"
+      rpy="0 0 0.63392" />
+    <parent
+      link="FRB" />
+    <child
+      link="FRC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BLA">
+    <inertial>
+      <origin
+        xyz="-0.0269253957823772 8.67361737988404E-19 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0109452431127404" />
+      <inertia
+        ixx="5.03196139245203E-07"
+        ixy="1.81979734761666E-22"
+        ixz="-1.24782483443128E-21"
+        iyy="2.87751254725242E-06"
+        iyz="-1.69924567701513E-23"
+        izz="3.09356821283229E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BLA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BLA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BLA"
+    type="revolute">
+    <origin
+      xyz="0.03 0.055 0.005"
+      rpy="1.5708 -0.0079223 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="BLA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BLB">
+    <inertial>
+      <origin
+        xyz="0 -0.05 0.00499937237932946"
+        rpy="0 0 0" />
+      <mass
+        value="0.0272511064281089" />
+      <inertia
+        ixx="2.28689712470884E-05"
+        ixy="1.37642853928824E-21"
+        ixz="-9.26442286059391E-22"
+        iyy="2.49120517681613E-06"
+        iyz="6.14264322881878E-21"
+        izz="2.49059913167694E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BLB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BLB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BLB"
+    type="revolute">
+    <origin
+      xyz="-0.040001 0 0.01"
+      rpy="-1.5708 -0.9058 1.5708" />
+    <parent
+      link="BLA" />
+    <child
+      link="BLB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BLC">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 -0.054908775198938 0.00499937237932949"
+        rpy="0 0 0" />
+      <mass
+        value="0.0285799693145388" />
+      <inertia
+        ixx="2.88211030062496E-05"
+        ixy="-2.08747299383882E-20"
+        ixz="4.58051264201239E-22"
+        iyy="2.08850288359585E-06"
+        iyz="-3.22765875018191E-21"
+        izz="3.04332730679365E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BLC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BLC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BLC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 0.01"
+      rpy="0 0 -0.65676" />
+    <parent
+      link="BLB" />
+    <child
+      link="BLC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BRA">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BRA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BRA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BRA"
+    type="revolute">
+    <origin
+      xyz="-0.03 0.055 0.005"
+      rpy="-1.5708 0.0046431 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="BRA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BRB">
+    <inertial>
+      <origin
+        xyz="1.3878E-17 -0.05 -0.0049998"
+        rpy="0 0 0" />
+      <mass
+        value="0.027251" />
+      <inertia
+        ixx="2.2869E-05"
+        ixy="3.494E-21"
+        ixz="0"
+        iyy="2.4912E-06"
+        iyz="-1.0163E-20"
+        izz="2.4906E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BRB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BRB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BRB"
+    type="revolute">
+    <origin
+      xyz="-0.04 0 0.01"
+      rpy="-1.5708 -0.89897 -1.5708" />
+    <parent
+      link="BRA" />
+    <child
+      link="BRB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BRC">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 -0.054909 -0.0049998"
+        rpy="0 0 0" />
+      <mass
+        value="0.02858" />
+      <inertia
+        ixx="2.8821E-05"
+        ixy="-3.7875E-20"
+        ixz="-3.0626E-22"
+        iyy="2.0885E-06"
+        iyz="-1.4964E-20"
+        izz="3.0433E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BRC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadruped_urdf/meshes/BRC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BRC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 -0.01"
+      rpy="0 0 -0.68889" />
+    <parent
+      link="BRB" />
+    <child
+      link="BRC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+</robot>

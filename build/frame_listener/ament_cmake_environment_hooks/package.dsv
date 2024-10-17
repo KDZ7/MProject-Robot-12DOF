@@ -1,0 +1,4 @@
+source;share/frame_listener/local_setup.bash
+source;share/frame_listener/local_setup.dsv
+source;share/frame_listener/local_setup.sh
+source;share/frame_listener/local_setup.zsh

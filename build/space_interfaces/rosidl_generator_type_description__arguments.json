@@ -1,0 +1,7 @@
+{
+  "package_name": "space_interfaces",
+  "output_dir": "/home/ubuntu/dev_ws/build/space_interfaces/rosidl_generator_type_description/space_interfaces",
+  "idl_tuples": [
+    "/home/ubuntu/dev_ws/build/space_interfaces/rosidl_adapter/space_interfaces:msg/Position.idl"
+  ]
+}

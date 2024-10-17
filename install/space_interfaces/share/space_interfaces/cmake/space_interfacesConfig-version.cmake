@@ -1,0 +1,1 @@
+/home/ubuntu/dev_ws/build/space_interfaces/ament_cmake_core/space_interfacesConfig-version.cmake

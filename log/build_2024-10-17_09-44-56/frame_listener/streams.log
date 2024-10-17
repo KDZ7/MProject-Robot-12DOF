@@ -1,0 +1,67 @@
+[0.111s] Invoking command in '/home/ubuntu/dev_ws/build/frame_listener': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/dev_ws/src/frame_listener -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/frame_listener
+[0.218s] -- The C compiler identification is GNU 13.2.0
+[0.890s] -- The CXX compiler identification is GNU 13.2.0
+[1.498s] -- Detecting C compiler ABI info
+[1.757s] -- Detecting C compiler ABI info - done
+[1.766s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.767s] -- Detecting C compile features
+[1.767s] -- Detecting C compile features - done
+[1.872s] -- Detecting CXX compiler ABI info
+[2.073s] -- Detecting CXX compiler ABI info - done
+[2.082s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.082s] -- Detecting CXX compile features
+[2.083s] -- Detecting CXX compile features - done
+[2.085s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.215s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.278s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.303s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[2.441s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.453s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.466s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.482s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.599s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.605s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.700s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.851s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.937s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.149s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[3.207s] -- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)
+[3.215s] -- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[3.410s] -- Found space_interfaces: 0.0.0 (/home/ubuntu/dev_ws/install/space_interfaces/share/space_interfaces/cmake)
+[3.422s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.515s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.516s] -- Configured cppcheck include dirs: 
+[3.516s] -- Configured cppcheck exclude dirs and/or files: 
+[3.517s] -- Added test 'lint_cmake' to check CMake code style
+[3.518s] -- Added test 'uncrustify' to check C / C++ code style
+[3.518s] -- Configured uncrustify additional arguments: 
+[3.518s] -- Added test 'xmllint' to check XML markup files
+[3.519s] -- Configuring done (3.4s)
+[3.530s] -- Generating done (0.0s)
+[3.532s] -- Build files have been written to: /home/ubuntu/dev_ws/build/frame_listener
+[3.541s] Invoked command in '/home/ubuntu/dev_ws/build/frame_listener' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/dev_ws/src/frame_listener -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/frame_listener
+[3.541s] Invoking command in '/home/ubuntu/dev_ws/build/frame_listener': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/dev_ws/build/frame_listener -- -j16 -l16
+[3.574s] [ 50%] [32mBuilding CXX object CMakeFiles/listener_transform.dir/src/listener_transform.cpp.o[0m
+[12.411s] [100%] [32m[1mLinking CXX executable listener_transform[0m
+[12.784s] [100%] Built target listener_transform
+[12.790s] Invoked command in '/home/ubuntu/dev_ws/build/frame_listener' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/dev_ws/build/frame_listener -- -j16 -l16
+[12.805s] Invoking command in '/home/ubuntu/dev_ws/build/frame_listener': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/dev_ws/build/frame_listener
+[12.811s] -- Install configuration: ""
+[12.812s] -- Execute custom install script
+[12.812s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/lib/frame_listener/listener_transform
+[12.818s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/ament_index/resource_index/package_run_dependencies/frame_listener
+[12.823s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/ament_index/resource_index/parent_prefix_path/frame_listener
+[12.828s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/environment/ament_prefix_path.sh
+[12.834s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/environment/ament_prefix_path.dsv
+[12.838s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/environment/path.sh
+[12.843s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/environment/path.dsv
+[12.848s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/local_setup.bash
+[12.853s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/local_setup.sh
+[12.858s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/local_setup.zsh
+[12.864s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/local_setup.dsv
+[12.869s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/package.dsv
+[12.874s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/ament_index/resource_index/packages/frame_listener
+[12.879s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/cmake/frame_listenerConfig.cmake
+[12.884s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/cmake/frame_listenerConfig-version.cmake
+[12.889s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_listener/share/frame_listener/package.xml
+[12.896s] Invoked command in '/home/ubuntu/dev_ws/build/frame_listener' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/dev_ws/build/frame_listener

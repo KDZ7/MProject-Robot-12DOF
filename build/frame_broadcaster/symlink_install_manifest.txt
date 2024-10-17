@@ -1,0 +1,16 @@
+/home/ubuntu/dev_ws/install/frame_broadcaster/lib/frame_broadcaster/broadcaster_transform
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/ament_index/resource_index/package_run_dependencies/frame_broadcaster
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/ament_index/resource_index/parent_prefix_path/frame_broadcaster
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/environment/ament_prefix_path.sh
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/environment/ament_prefix_path.dsv
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/environment/path.sh
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/environment/path.dsv
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/local_setup.bash
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/local_setup.sh
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/local_setup.zsh
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/local_setup.dsv
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/package.dsv
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/ament_index/resource_index/packages/frame_broadcaster
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/cmake/frame_broadcasterConfig.cmake
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/cmake/frame_broadcasterConfig-version.cmake
+/home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/package.xml
