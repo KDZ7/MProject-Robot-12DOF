@@ -1,0 +1,67 @@
+[0.380s] Invoking command in '/home/ubuntu/dev_ws/build/frame_broadcaster': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/dev_ws/src/frame_broadcaster -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/frame_broadcaster
+[0.673s] -- The C compiler identification is GNU 13.2.0
+[2.730s] -- The CXX compiler identification is GNU 13.2.0
+[4.144s] -- Detecting C compiler ABI info
+[4.670s] -- Detecting C compiler ABI info - done
+[4.696s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.698s] -- Detecting C compile features
+[4.699s] -- Detecting C compile features - done
+[4.903s] -- Detecting CXX compiler ABI info
+[5.442s] -- Detecting CXX compiler ABI info - done
+[5.455s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.456s] -- Detecting CXX compile features
+[5.456s] -- Detecting CXX compile features - done
+[5.460s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[5.670s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.824s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.911s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[6.709s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[6.734s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[6.759s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.789s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.199s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[7.223s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[7.607s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[8.536s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[9.072s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.192s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[10.379s] -- Found tf2: 0.36.4 (/opt/ros/jazzy/share/tf2/cmake)
+[10.403s] -- Found tf2_ros: 0.36.4 (/opt/ros/jazzy/share/tf2_ros/cmake)
+[10.842s] -- Found space_interfaces: 0.0.0 (/home/ubuntu/dev_ws/install/space_interfaces/share/space_interfaces/cmake)
+[10.869s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[11.070s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.070s] -- Configured cppcheck include dirs: 
+[11.070s] -- Configured cppcheck exclude dirs and/or files: 
+[11.072s] -- Added test 'lint_cmake' to check CMake code style
+[11.075s] -- Added test 'uncrustify' to check C / C++ code style
+[11.075s] -- Configured uncrustify additional arguments: 
+[11.077s] -- Added test 'xmllint' to check XML markup files
+[11.081s] -- Configuring done (10.7s)
+[11.109s] -- Generating done (0.0s)
+[11.113s] -- Build files have been written to: /home/ubuntu/dev_ws/build/frame_broadcaster
+[11.134s] Invoked command in '/home/ubuntu/dev_ws/build/frame_broadcaster' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ubuntu/dev_ws/src/frame_broadcaster -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/frame_broadcaster
+[11.136s] Invoking command in '/home/ubuntu/dev_ws/build/frame_broadcaster': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/dev_ws/build/frame_broadcaster -- -j16 -l16
+[11.220s] [ 50%] [32mBuilding CXX object CMakeFiles/broadcaster_transform.dir/src/broadcaster_transform.cpp.o[0m
+[24.582s] [100%] [32m[1mLinking CXX executable broadcaster_transform[0m
+[25.622s] [100%] Built target broadcaster_transform
+[25.638s] Invoked command in '/home/ubuntu/dev_ws/build/frame_broadcaster' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ubuntu/dev_ws/build/frame_broadcaster -- -j16 -l16
+[25.669s] Invoking command in '/home/ubuntu/dev_ws/build/frame_broadcaster': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/dev_ws/build/frame_broadcaster
+[25.679s] -- Install configuration: ""
+[25.680s] -- Execute custom install script
+[25.681s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/lib/frame_broadcaster/broadcaster_transform
+[25.693s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/ament_index/resource_index/package_run_dependencies/frame_broadcaster
+[25.704s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/ament_index/resource_index/parent_prefix_path/frame_broadcaster
+[25.715s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/environment/ament_prefix_path.sh
+[25.726s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/environment/ament_prefix_path.dsv
+[25.739s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/environment/path.sh
+[25.752s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/environment/path.dsv
+[25.767s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/local_setup.bash
+[25.780s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/local_setup.sh
+[25.793s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/local_setup.zsh
+[25.806s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/local_setup.dsv
+[25.819s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/package.dsv
+[25.832s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/ament_index/resource_index/packages/frame_broadcaster
+[25.846s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/cmake/frame_broadcasterConfig.cmake
+[25.858s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/cmake/frame_broadcasterConfig-version.cmake
+[25.869s] -- Symlinking: /home/ubuntu/dev_ws/install/frame_broadcaster/share/frame_broadcaster/package.xml
+[25.889s] Invoked command in '/home/ubuntu/dev_ws/build/frame_broadcaster' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/dev_ws/install/space_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/dev_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ubuntu/dev_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ubuntu/dev_ws/build/frame_broadcaster

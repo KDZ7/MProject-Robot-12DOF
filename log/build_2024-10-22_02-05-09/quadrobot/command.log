@@ -1,0 +1,6 @@
+Invoking command in '/home/ubuntu/dev_ws/build/quadrobot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/dev_ws/src/quadrobot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/quadrobot
+Invoked command in '/home/ubuntu/dev_ws/build/quadrobot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/dev_ws/src/quadrobot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/quadrobot
+Invoking command in '/home/ubuntu/dev_ws/build/quadrobot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/dev_ws/build/quadrobot -- -j16 -l16
+Invoked command in '/home/ubuntu/dev_ws/build/quadrobot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/dev_ws/build/quadrobot -- -j16 -l16
+Invoking command in '/home/ubuntu/dev_ws/build/quadrobot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/dev_ws/build/quadrobot
+Invoked command in '/home/ubuntu/dev_ws/build/quadrobot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/dev_ws/build/quadrobot

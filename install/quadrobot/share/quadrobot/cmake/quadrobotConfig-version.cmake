@@ -1,0 +1,1 @@
+/home/ubuntu/dev_ws/build/quadrobot/ament_cmake_core/quadrobotConfig-version.cmake

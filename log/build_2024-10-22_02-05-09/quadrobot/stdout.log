@@ -1,0 +1,61 @@
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (10.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/dev_ws/build/quadrobot
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//config/joint_names_quadrobot.yaml
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//config/rviz.yaml
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//launch/display.launch.py
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BLA.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BLB.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BLC.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BRA.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BRB.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BRC.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/CAMERA.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FLA.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FLB.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FLC.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FRA.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FRB.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FRC.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/LIDAR.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/base_link.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//urdf/quadrobot.csv
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//urdf/quadrobot.urdf
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/ament_index/resource_index/package_run_dependencies/quadrobot
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/ament_index/resource_index/parent_prefix_path/quadrobot
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/environment/path.sh
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/environment/path.dsv
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/local_setup.bash
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/local_setup.sh
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/local_setup.zsh
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/local_setup.dsv
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/package.dsv
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/ament_index/resource_index/packages/quadrobot
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/cmake/quadrobotConfig.cmake
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/cmake/quadrobotConfig-version.cmake
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/package.xml

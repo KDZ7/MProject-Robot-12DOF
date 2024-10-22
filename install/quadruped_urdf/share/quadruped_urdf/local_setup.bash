@@ -1,1 +1,0 @@
-/home/ubuntu/dev_ws/build/quadruped_urdf/ament_cmake_environment_hooks/local_setup.bash

@@ -1,0 +1,4 @@
+source;share/quadrobot/local_setup.bash
+source;share/quadrobot/local_setup.dsv
+source;share/quadrobot/local_setup.sh
+source;share/quadrobot/local_setup.zsh

@@ -1,0 +1,8 @@
+source;share/quadrobot/hook/cmake_prefix_path.ps1
+source;share/quadrobot/hook/cmake_prefix_path.dsv
+source;share/quadrobot/hook/cmake_prefix_path.sh
+source;share/quadrobot/local_setup.bash
+source;share/quadrobot/local_setup.dsv
+source;share/quadrobot/local_setup.ps1
+source;share/quadrobot/local_setup.sh
+source;share/quadrobot/local_setup.zsh

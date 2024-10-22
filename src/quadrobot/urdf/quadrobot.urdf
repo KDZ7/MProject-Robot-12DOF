@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="quadrobot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="2.6021E-18 0 0.042427"
+        rpy="0 0 0" />
+      <mass
+        value="2.3354" />
+      <inertia
+        ixx="0.0226"
+        ixy="1.9475E-18"
+        ixz="-9.812E-19"
+        iyy="0.0055193"
+        iyz="-9.7804E-18"
+        izz="0.023397" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="FLA">
+    <inertial>
+      <origin
+        xyz="-0.026925 -1.7347E-18 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.010945" />
+      <inertia
+        ixx="5.032E-07"
+        ixy="-2.2747E-22"
+        ixz="2.1072E-22"
+        iyy="2.8775E-06"
+        iyz="2.9129E-23"
+        izz="3.0936E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FLA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FLA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FLA"
+    type="revolute">
+    <origin
+      xyz="0.03 -0.055 0.005"
+      rpy="-1.5708 0.0092604 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="FLA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FLB">
+    <inertial>
+      <origin
+        xyz="3.4694E-18 -0.05 0.0056809"
+        rpy="0 0 0" />
+      <mass
+        value="0.073578" />
+      <inertia
+        ixx="6.1746E-05"
+        ixy="-3.5999E-21"
+        ixz="-7.4115E-22"
+        iyy="6.7263E-06"
+        iyz="2.29E-20"
+        izz="6.7246E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FLB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FLB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FLB"
+    type="revolute">
+    <origin
+      xyz="-0.039319 0 0.01"
+      rpy="-1.5708 0.35696 1.5708" />
+    <parent
+      link="FLA" />
+    <child
+      link="FLB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FLC">
+    <inertial>
+      <origin
+        xyz="-5.5511E-17 -0.054909 0.0061924"
+        rpy="0 0 0" />
+      <mass
+        value="0.077166" />
+      <inertia
+        ixx="7.7817E-05"
+        ixy="-7.9383E-20"
+        ixz="4.566E-22"
+        iyy="5.639E-06"
+        iyz="-7.5273E-21"
+        izz="8.217E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FLC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FLC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FLC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 0.0094885"
+      rpy="0 0 1.1668" />
+    <parent
+      link="FLB" />
+    <child
+      link="FLC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FRA">
+    <inertial>
+      <origin
+        xyz="-0.0269253957823772 0 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0109452431127404" />
+      <inertia
+        ixx="5.03196139245203E-07"
+        ixy="-3.14328632770151E-23"
+        ixz="9.86921140643361E-23"
+        iyy="2.87751254725242E-06"
+        iyz="1.66376389752816E-23"
+        izz="3.09356821283229E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FRA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FRA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FRA"
+    type="revolute">
+    <origin
+      xyz="-0.03 -0.055 0.005"
+      rpy="1.5708 0.022451 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FRA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FRB">
+    <inertial>
+      <origin
+        xyz="2.7756E-17 -0.05 -0.004995"
+        rpy="0 0 0" />
+      <mass
+        value="0.073578" />
+      <inertia
+        ixx="6.1746E-05"
+        ixy="3.007E-20"
+        ixz="8.4703E-22"
+        iyy="6.7263E-06"
+        iyz="5.0756E-21"
+        izz="6.7246E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FRB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FRB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FRB"
+    type="revolute">
+    <origin
+      xyz="-0.040005 0 0.01"
+      rpy="-1.5708 0.33034 -1.5708" />
+    <parent
+      link="FRA" />
+    <child
+      link="FRB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FRC">
+    <inertial>
+      <origin
+        xyz="-8.3267E-17 -0.054909 -0.004995"
+        rpy="0 0 0" />
+      <mass
+        value="0.077166" />
+      <inertia
+        ixx="7.7817E-05"
+        ixy="2.3042E-20"
+        ixz="-1.9257E-21"
+        iyy="5.639E-06"
+        iyz="3.2703E-20"
+        izz="8.217E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FRC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/FRC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FRC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 -0.01"
+      rpy="0 0 1.2033" />
+    <parent
+      link="FRB" />
+    <child
+      link="FRC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BLA">
+    <inertial>
+      <origin
+        xyz="-0.0269253957823772 8.67361737988404E-19 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0109452431127404" />
+      <inertia
+        ixx="5.03196139245203E-07"
+        ixy="1.7908460261773E-22"
+        ixz="-1.25428718015424E-21"
+        iyy="2.87751254725242E-06"
+        iyz="-1.69665031772835E-23"
+        izz="3.09356821283229E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BLA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BLA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BLA"
+    type="revolute">
+    <origin
+      xyz="0.03 0.055 0.005"
+      rpy="1.5708 -0.0079223 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="BLA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BLB">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 -0.05 0.0049994"
+        rpy="0 0 0" />
+      <mass
+        value="0.073578" />
+      <inertia
+        ixx="6.1746E-05"
+        ixy="-3.4517E-20"
+        ixz="3.1234E-21"
+        iyy="6.7263E-06"
+        iyz="2.5262E-21"
+        izz="6.7246E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BLB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BLB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BLB"
+    type="revolute">
+    <origin
+      xyz="-0.040001 0 0.01"
+      rpy="-1.5708 -0.28877 1.5708" />
+    <parent
+      link="BLA" />
+    <child
+      link="BLB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BLC">
+    <inertial>
+      <origin
+        xyz="5.5511E-17 -0.054909 0.0049994"
+        rpy="0 0 0" />
+      <mass
+        value="0.077166" />
+      <inertia
+        ixx="7.7817E-05"
+        ixy="7.8185E-20"
+        ixz="-1.2079E-21"
+        iyy="5.639E-06"
+        iyz="-2.4154E-22"
+        izz="8.217E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BLC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BLC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BLC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 0.01"
+      rpy="0 0 -1.2863" />
+    <parent
+      link="BLB" />
+    <child
+      link="BLC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BRA">
+    <inertial>
+      <origin
+        xyz="-0.0269253957823772 3.90312782094782E-18 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0109452431127404" />
+      <inertia
+        ixx="5.03196139245204E-07"
+        ixy="3.93737971575241E-22"
+        ixz="1.23424088551717E-21"
+        iyy="2.87751254725243E-06"
+        iyz="2.79143250895578E-23"
+        izz="3.0935682128323E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BRA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BRA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BRA"
+    type="revolute">
+    <origin
+      xyz="-0.03 0.055 0.005"
+      rpy="-1.5708 0.040291 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="BRA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BRB">
+    <inertial>
+      <origin
+        xyz="2.0817E-17 -0.05 -0.0049838"
+        rpy="0 0 0" />
+      <mass
+        value="0.073578" />
+      <inertia
+        ixx="6.1746E-05"
+        ixy="2.2235E-20"
+        ixz="3.3881E-21"
+        iyy="6.7263E-06"
+        iyz="-4.0572E-20"
+        izz="6.7246E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BRB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BRB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BRB"
+    type="revolute">
+    <origin
+      xyz="-0.040016 0 0.01"
+      rpy="-1.5708 -0.33726 -1.5708" />
+    <parent
+      link="BRA" />
+    <child
+      link="BRB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="BRC">
+    <inertial>
+      <origin
+        xyz="8.3267E-17 -0.054909 -0.0049838"
+        rpy="0 0 0" />
+      <mass
+        value="0.077166" />
+      <inertia
+        ixx="7.7817E-05"
+        ixy="-7.2256E-20"
+        ixz="1.2805E-21"
+        iyy="5.639E-06"
+        iyz="-1.7338E-21"
+        izz="8.217E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BRC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/BRC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_BRC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 -0.01"
+      rpy="0 0 -1.2397" />
+    <parent
+      link="BRB" />
+    <child
+      link="BRC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="CAMERA">
+    <inertial>
+      <origin
+        xyz="1.0628E-06 0.010196 -0.014491"
+        rpy="0 0 0" />
+      <mass
+        value="0.084781" />
+      <inertia
+        ixx="9.7234E-06"
+        ixy="-4.6578E-09"
+        ixz="3.4245E-12"
+        iyy="0.00010402"
+        iyz="8.994E-09"
+        izz="0.00010256" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/CAMERA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/CAMERA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_CAMERA"
+    type="fixed">
+    <origin
+      xyz="-0.0005 0.1265 0.129"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="CAMERA" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="LIDAR">
+    <inertial>
+      <origin
+        xyz="-0.00041097 -0.00010894 0.015274"
+        rpy="0 0 0" />
+      <mass
+        value="0.04029" />
+      <inertia
+        ixx="7.6172E-06"
+        ixy="-9.7865E-08"
+        ixz="-2.3074E-08"
+        iyy="7.6883E-06"
+        iyz="-5.5191E-08"
+        izz="8.2838E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/LIDAR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot/meshes/LIDAR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_LIDAR"
+    type="fixed">
+    <origin
+      xyz="0 0 0.129"
+      rpy="0 0.02618 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="LIDAR" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
