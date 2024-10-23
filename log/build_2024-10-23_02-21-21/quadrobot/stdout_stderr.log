@@ -19,7 +19,7 @@
 -- Added test 'lint_cmake' to check CMake code style
 -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
 -- Added test 'xmllint' to check XML markup files
--- Configuring done (10.8s)
+-- Configuring done (10.4s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/ubuntu/dev_ws/build/quadrobot
 -- Install configuration: ""
@@ -42,6 +42,7 @@
 -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FRC.STL
 -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/LIDAR.STL
 -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/base_link.STL
+-- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//models/empty.world.sdf
 -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//urdf/quadrobot.csv
 -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//urdf/quadrobot.urdf
 -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/ament_index/resource_index/package_run_dependencies/quadrobot

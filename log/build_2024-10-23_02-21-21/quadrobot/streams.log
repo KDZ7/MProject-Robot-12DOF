@@ -1,0 +1,68 @@
+[0.018s] Invoking command in '/home/ubuntu/dev_ws/build/quadrobot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/dev_ws/src/quadrobot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/quadrobot
+[0.585s] -- The C compiler identification is GNU 13.2.0
+[3.613s] -- The CXX compiler identification is GNU 13.2.0
+[6.706s] -- Detecting C compiler ABI info
+[7.866s] -- Detecting C compiler ABI info - done
+[7.904s] -- Check for working C compiler: /usr/bin/cc - skipped
+[7.905s] -- Detecting C compile features
+[7.906s] -- Detecting C compile features - done
+[8.342s] -- Detecting CXX compiler ABI info
+[9.176s] -- Detecting CXX compiler ABI info - done
+[9.198s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[9.199s] -- Detecting CXX compile features
+[9.199s] -- Detecting CXX compile features - done
+[9.291s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[9.694s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[9.871s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[10.092s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[10.374s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.374s] -- Configured 'flake8' exclude dirs and/or files: 
+[10.378s] -- Added test 'lint_cmake' to check CMake code style
+[10.381s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[10.387s] -- Added test 'xmllint' to check XML markup files
+[10.395s] -- Configuring done (10.4s)
+[10.409s] -- Generating done (0.0s)
+[10.411s] -- Build files have been written to: /home/ubuntu/dev_ws/build/quadrobot
+[10.421s] Invoked command in '/home/ubuntu/dev_ws/build/quadrobot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/dev_ws/src/quadrobot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/quadrobot
+[10.424s] Invoking command in '/home/ubuntu/dev_ws/build/quadrobot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/dev_ws/build/quadrobot -- -j16 -l16
+[10.498s] Invoked command in '/home/ubuntu/dev_ws/build/quadrobot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/dev_ws/build/quadrobot -- -j16 -l16
+[10.555s] Invoking command in '/home/ubuntu/dev_ws/build/quadrobot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/dev_ws/build/quadrobot
+[10.569s] -- Install configuration: ""
+[10.570s] -- Execute custom install script
+[10.572s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//config/joint_names_quadrobot.yaml
+[10.590s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//config/rviz.yaml
+[10.607s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//launch/display.launch.py
+[10.626s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BLA.STL
+[10.642s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BLB.STL
+[10.657s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BLC.STL
+[10.673s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BRA.STL
+[10.689s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BRB.STL
+[10.704s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/BRC.STL
+[10.720s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/CAMERA.STL
+[10.735s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FLA.STL
+[10.751s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FLB.STL
+[10.766s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FLC.STL
+[10.781s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FRA.STL
+[10.797s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FRB.STL
+[10.812s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FRC.STL
+[10.828s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/LIDAR.STL
+[10.843s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/base_link.STL
+[10.859s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//models/empty.world.sdf
+[10.877s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//urdf/quadrobot.csv
+[10.894s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//urdf/quadrobot.urdf
+[10.914s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/ament_index/resource_index/package_run_dependencies/quadrobot
+[10.933s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/ament_index/resource_index/parent_prefix_path/quadrobot
+[10.951s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/environment/ament_prefix_path.sh
+[10.968s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/environment/ament_prefix_path.dsv
+[10.986s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/environment/path.sh
+[11.005s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/environment/path.dsv
+[11.021s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/local_setup.bash
+[11.037s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/local_setup.sh
+[11.053s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/local_setup.zsh
+[11.069s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/local_setup.dsv
+[11.080s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/package.dsv
+[11.090s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/ament_index/resource_index/packages/quadrobot
+[11.100s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/cmake/quadrobotConfig.cmake
+[11.110s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/cmake/quadrobotConfig-version.cmake
+[11.119s] -- Symlinking: /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot/package.xml
+[11.130s] Invoked command in '/home/ubuntu/dev_ws/build/quadrobot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/dev_ws/build/quadrobot

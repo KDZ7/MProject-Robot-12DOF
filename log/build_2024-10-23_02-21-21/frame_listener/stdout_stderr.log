@@ -35,7 +35,7 @@
 -- Added test 'uncrustify' to check C / C++ code style
 -- Configured uncrustify additional arguments: 
 -- Added test 'xmllint' to check XML markup files
--- Configuring done (10.7s)
+-- Configuring done (9.7s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/ubuntu/dev_ws/build/frame_listener
 [ 50%] [32mBuilding CXX object CMakeFiles/listener_transform.dir/src/listener_transform.cpp.o[0m

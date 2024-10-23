@@ -1,5 +1,5 @@
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, SetEnvironmentVariable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
 from launch.conditions import IfCondition, UnlessCondition
@@ -35,7 +35,7 @@ def generate_launch_description():
   )
   world_declare = DeclareLaunchArgument(
     "world",
-    default_value="empty.sdf",
+    default_value="empty.world.sdf",
     description="World file to load in Gazebo",
   )
 
@@ -49,7 +49,7 @@ def generate_launch_description():
   urdf_path = PathJoinSubstitution([FindPackageShare(pkg), "urdf", urdf])
   rviz_cfg_path = PathJoinSubstitution([FindPackageShare(pkg), "config", rviz_cfg])
   urdf_content = ParameterValue(Command(["xacro ", urdf_path]), value_type=str)
-  world_path = PathJoinSubstitution([FindPackageShare(pkg), "worlds", world])
+  world_path = PathJoinSubstitution([FindPackageShare(pkg), "models", world])
 
   robot_state_publisher_node = Node(
     package="robot_state_publisher",
@@ -85,6 +85,13 @@ def generate_launch_description():
     condition=UnlessCondition(use_gz),
   )
 
+  env = {
+    "LIBGL_ALWAYS_SOFTWARE": "1",
+    "GZ_SIM_RESOURCE_PATH": PathJoinSubstitution([FindPackageShare(pkg), ""]),
+  }
+
+  set_envs = [SetEnvironmentVariable(key, value) for key, value in env.items()]
+
   gzserver = IncludeLaunchDescription(
     PythonLaunchDescriptionSource([PathJoinSubstitution([FindPackageShare("ros_gz_sim"), "launch", "gz_sim.launch.py"])]),
     launch_arguments={"gz_args": ["-r -s -v4 ", world_path], "on_exit_shutdown": "true"}.items(),
@@ -117,6 +124,7 @@ def generate_launch_description():
       joint_state_publisher_node,
       joint_state_publisher_gui_node,
       rviz_node,
+      *set_envs,
       gzserver,
       create_node,
       gzclient,

@@ -16,6 +16,7 @@
 /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/FRC.STL
 /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/LIDAR.STL
 /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//meshes/base_link.STL
+/home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//models/empty.world.sdf
 /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//urdf/quadrobot.csv
 /home/ubuntu/dev_ws/install/quadrobot/share/quadrobot//urdf/quadrobot.urdf
 /home/ubuntu/dev_ws/install/quadrobot/share/ament_index/resource_index/package_run_dependencies/quadrobot
