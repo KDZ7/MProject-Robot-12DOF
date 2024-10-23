@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by
+Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
@@ -30,8 +31,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.89804 0.91765 0.92941 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -70,8 +70,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.79216 0.81961 0.93333 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -128,8 +127,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.89804 0.91765 0.92941 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -186,8 +184,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.89804 0.91765 0.92941 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -244,8 +241,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -302,8 +298,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.89804 0.91765 0.92941 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -360,8 +355,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.89804 0.91765 0.92941 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -418,8 +412,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -476,8 +469,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.89804 0.91765 0.92941 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -534,8 +526,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.89804 0.91765 0.92941 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -592,8 +583,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -650,8 +640,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.89804 0.91765 0.92941 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -708,8 +697,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.89804 0.91765 0.92941 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -766,8 +754,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.79216 0.81961 0.93333 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>
@@ -819,8 +806,7 @@
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.79216 0.81961 0.93333 1" />
+        <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
     <collision>

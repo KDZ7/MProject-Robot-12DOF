@@ -1,4 +1,3 @@
-import os
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, SetEnvironmentVariable, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
@@ -51,7 +50,6 @@ def generate_launch_description():
   ros_gz_sim_path = get_package_share_directory("ros_gz_sim")
 
   urdf_path = PathJoinSubstitution([pkg_path, "urdf", urdf])
-  urdf_path = PathJoinSubstitution([pkg_path, "urdf", urdf])
   rviz_cfg_path = PathJoinSubstitution([pkg_path, "config", rviz_cfg])
   urdf_content = ParameterValue(Command(["xacro ", urdf_path]), value_type=str)
   world_path = PathJoinSubstitution([pkg_path, "models", world])
@@ -80,7 +78,7 @@ def generate_launch_description():
     name="joint_state_publisher_gui",
     output="screen",
   )
-
+  
   rviz_node = Node(
     package="rviz2",
     executable="rviz2",
@@ -97,12 +95,6 @@ def generate_launch_description():
 
   set_envs = [SetEnvironmentVariable(name=key, value=value) for key, value in envs.items()]
 
-  echo_path = ExecuteProcess(
-    cmd=["bash", "-c", "export | grep -E 'LIBGL_ALWAYS_SOFTWARE|GZ_SIM_RESOURCE_PATH' "],
-    output="screen",
-    condition=IfCondition(use_gz),
-  )
-
   gzserver = IncludeLaunchDescription(
     PythonLaunchDescriptionSource([PathJoinSubstitution([ros_gz_sim_path, "launch", "gz_sim.launch.py"])]),
     launch_arguments={"gz_args": ["-s -v4 ", world_path], "on_exit_shutdown": "True"}.items(),
@@ -112,7 +104,7 @@ def generate_launch_description():
   create_node = Node(
     package="ros_gz_sim",
     executable="create",
-    arguments=[ "-name", pkg, "-topic", "robot_description", "-z", "0.3"],
+    arguments=["-name", pkg, "-topic", "robot_description", "-z", "0.3"],
     output="screen",
     condition=IfCondition(use_gz),
   )
@@ -136,7 +128,6 @@ def generate_launch_description():
       joint_state_publisher_gui_node,
       rviz_node,
       *set_envs,
-      echo_path,
       gzserver,
       create_node,
       gzclient,
