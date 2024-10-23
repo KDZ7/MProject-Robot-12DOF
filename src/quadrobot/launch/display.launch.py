@@ -1,11 +1,12 @@
+import os
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, SetEnvironmentVariable
+from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, SetEnvironmentVariable, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
 from launch.conditions import IfCondition, UnlessCondition
-from launch_ros.substitutions import FindPackageShare
 from launch_ros.parameter_descriptions import ParameterValue
 from launch_ros.actions import Node
+from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
   pkg_declare = DeclareLaunchArgument(
@@ -25,13 +26,13 @@ def generate_launch_description():
   )
   use_gz_declare = DeclareLaunchArgument(
     "use_gz",
-    default_value="true",
-    description="Use Gazebo simulation if true",
+    default_value="True",
+    description="Use Gazebo simulation if True",
   )
   use_sim_time_declare = DeclareLaunchArgument(
     "use_sim_time",
-    default_value="true",
-    description="Use Gazebo simulation time if true",
+    default_value="True",
+    description="Use Gazebo simulation time if True",
   )
   world_declare = DeclareLaunchArgument(
     "world",
@@ -45,11 +46,15 @@ def generate_launch_description():
   use_gz = LaunchConfiguration("use_gz")
   use_sim_time = LaunchConfiguration("use_sim_time")
   world = LaunchConfiguration("world")
+  
+  pkg_path = get_package_share_directory("quadrobot")
+  ros_gz_sim_path = get_package_share_directory("ros_gz_sim")
 
-  urdf_path = PathJoinSubstitution([FindPackageShare(pkg), "urdf", urdf])
-  rviz_cfg_path = PathJoinSubstitution([FindPackageShare(pkg), "config", rviz_cfg])
+  urdf_path = PathJoinSubstitution([pkg_path, "urdf", urdf])
+  urdf_path = PathJoinSubstitution([pkg_path, "urdf", urdf])
+  rviz_cfg_path = PathJoinSubstitution([pkg_path, "config", rviz_cfg])
   urdf_content = ParameterValue(Command(["xacro ", urdf_path]), value_type=str)
-  world_path = PathJoinSubstitution([FindPackageShare(pkg), "models", world])
+  world_path = PathJoinSubstitution([pkg_path, "models", world])
 
   robot_state_publisher_node = Node(
     package="robot_state_publisher",
@@ -85,29 +90,35 @@ def generate_launch_description():
     condition=UnlessCondition(use_gz),
   )
 
-  env = {
+  envs = {
     "LIBGL_ALWAYS_SOFTWARE": "1",
-    "GZ_SIM_RESOURCE_PATH": PathJoinSubstitution([FindPackageShare(pkg), ""]),
+    "GZ_SIM_RESOURCE_PATH": PathJoinSubstitution([pkg_path, ".."]),
   }
 
-  set_envs = [SetEnvironmentVariable(key, value) for key, value in env.items()]
+  set_envs = [SetEnvironmentVariable(name=key, value=value) for key, value in envs.items()]
+
+  echo_path = ExecuteProcess(
+    cmd=["bash", "-c", "export | grep -E 'LIBGL_ALWAYS_SOFTWARE|GZ_SIM_RESOURCE_PATH' "],
+    output="screen",
+    condition=IfCondition(use_gz),
+  )
 
   gzserver = IncludeLaunchDescription(
-    PythonLaunchDescriptionSource([PathJoinSubstitution([FindPackageShare("ros_gz_sim"), "launch", "gz_sim.launch.py"])]),
-    launch_arguments={"gz_args": ["-r -s -v4 ", world_path], "on_exit_shutdown": "true"}.items(),
+    PythonLaunchDescriptionSource([PathJoinSubstitution([ros_gz_sim_path, "launch", "gz_sim.launch.py"])]),
+    launch_arguments={"gz_args": ["-s -v4 ", world_path], "on_exit_shutdown": "True"}.items(),
     condition=IfCondition(use_gz),
   )
 
   create_node = Node(
     package="ros_gz_sim",
     executable="create",
-    arguments=["-topic", "robot_description", "-name", pkg, "-z", "0.3"],
+    arguments=[ "-name", pkg, "-topic", "robot_description", "-z", "0.3"],
     output="screen",
     condition=IfCondition(use_gz),
   )
 
   gzclient = IncludeLaunchDescription(
-    PythonLaunchDescriptionSource([PathJoinSubstitution([FindPackageShare("ros_gz_sim"), "launch", "gz_sim.launch.py"])]),
+    PythonLaunchDescriptionSource([PathJoinSubstitution([ros_gz_sim_path, "launch", "gz_sim.launch.py"])]),
     launch_arguments={"gz_args": ["-g -v4"]}.items(),
     condition=IfCondition(use_gz),
   )
@@ -125,6 +136,7 @@ def generate_launch_description():
       joint_state_publisher_gui_node,
       rviz_node,
       *set_envs,
+      echo_path,
       gzserver,
       create_node,
       gzclient,

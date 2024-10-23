@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "rosidl_typesupport_interface/macros.h"
-#include "space_interfaces/msg/detail/position__functions.h"
-#include "space_interfaces/msg/detail/position__type_support.h"
 #include "space_interfaces/msg/detail/position__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "space_interfaces/msg/detail/position__type_support.h"
+#include "space_interfaces/msg/detail/position__functions.h"
 
 #ifdef __cplusplus
 extern "C"
