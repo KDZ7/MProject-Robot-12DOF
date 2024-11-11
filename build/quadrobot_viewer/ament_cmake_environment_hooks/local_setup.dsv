@@ -1,0 +1,2 @@
+source;share/quadrobot_viewer/environment/ament_prefix_path.sh
+source;share/quadrobot_viewer/environment/path.sh
