@@ -1,0 +1,1 @@
+/home/MKGL/quadro_ws/build/dgz/ament_cmake_core/dgzConfig-version.cmake

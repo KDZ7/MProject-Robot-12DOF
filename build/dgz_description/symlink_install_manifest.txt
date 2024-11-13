@@ -1,0 +1,16 @@
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description//launch/dgz_description.launch.py
+/home/MKGL/quadro_ws/install/dgz_description/share/ament_index/resource_index/package_run_dependencies/dgz_description
+/home/MKGL/quadro_ws/install/dgz_description/share/ament_index/resource_index/parent_prefix_path/dgz_description
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/ament_prefix_path.sh
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/ament_prefix_path.dsv
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/path.sh
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/path.dsv
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.bash
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.sh
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.zsh
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.dsv
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.dsv
+/home/MKGL/quadro_ws/install/dgz_description/share/ament_index/resource_index/packages/dgz_description
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/cmake/dgz_descriptionConfig.cmake
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/cmake/dgz_descriptionConfig-version.cmake
+/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.xml

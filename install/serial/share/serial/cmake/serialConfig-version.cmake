@@ -1,0 +1,1 @@
+/home/MKGL/quadro_ws/build/serial/ament_cmake_core/serialConfig-version.cmake

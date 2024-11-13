@@ -1,0 +1,430 @@
+[0.577s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.578s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff8d4f1af0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8d690a40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8d690a40>>, mixin_verb=('build',))
+[0.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.793s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.794s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.794s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/MKGL/quadro_ws'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.795s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.796s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.915s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.916s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.916s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.916s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.917s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.918s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.919s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.920s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.921s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.922s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.923s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.924s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.925s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.926s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.927s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz) by extensions ['ignore', 'ignore_ament_install']
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz) by extension 'ignore'
+[0.928s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz) by extension 'ignore_ament_install'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz) by extensions ['colcon_pkg']
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz) by extension 'colcon_pkg'
+[0.929s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz) by extensions ['colcon_meta']
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz) by extension 'colcon_meta'
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz) by extensions ['ros']
+[0.930s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz) by extension 'ros'
+[0.943s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dgz' with type 'ros.ament_cmake' and name 'dgz'
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz_description) by extensions ['ignore', 'ignore_ament_install']
+[0.944s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz_description) by extension 'ignore'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz_description) by extension 'ignore_ament_install'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz_description) by extensions ['colcon_pkg']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz_description) by extension 'colcon_pkg'
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz_description) by extensions ['colcon_meta']
+[0.945s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz_description) by extension 'colcon_meta'
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz_description) by extensions ['ros']
+[0.946s] Level 1:colcon.colcon_core.package_identification:_identify(src/dgz_description) by extension 'ros'
+[0.949s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dgz_description' with type 'ros.ament_cmake' and name 'dgz_description'
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/manette) by extensions ['ignore', 'ignore_ament_install']
+[0.950s] Level 1:colcon.colcon_core.package_identification:_identify(src/manette) by extension 'ignore'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/manette) by extension 'ignore_ament_install'
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/manette) by extensions ['colcon_pkg']
+[0.951s] Level 1:colcon.colcon_core.package_identification:_identify(src/manette) by extension 'colcon_pkg'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/manette) by extensions ['colcon_meta']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/manette) by extension 'colcon_meta'
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/manette) by extensions ['ros']
+[0.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/manette) by extension 'ros'
+[0.955s] DEBUG:colcon.colcon_core.package_identification:Package 'src/manette' with type 'ros.ament_cmake' and name 'manette'
+[0.956s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.957s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.961s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/space_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/space_interfaces) by extension 'ignore'
+[0.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/space_interfaces) by extension 'ignore_ament_install'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/space_interfaces) by extensions ['colcon_pkg']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/space_interfaces) by extension 'colcon_pkg'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/space_interfaces) by extensions ['colcon_meta']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/space_interfaces) by extension 'colcon_meta'
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/space_interfaces) by extensions ['ros']
+[0.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/space_interfaces) by extension 'ros'
+[0.965s] DEBUG:colcon.colcon_core.package_identification:Package 'src/space_interfaces' with type 'ros.ament_cmake' and name 'space_interfaces'
+[0.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.966s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.049s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.050s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.064s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 198 installed packages in /opt/ros/jazzy
+[1.067s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.238s] Level 5:colcon.colcon_core.verb:set package 'dgz_description' build argument 'cmake_args' from command line to 'None'
+[1.239s] Level 5:colcon.colcon_core.verb:set package 'dgz_description' build argument 'cmake_target' from command line to 'None'
+[1.239s] Level 5:colcon.colcon_core.verb:set package 'dgz_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.239s] Level 5:colcon.colcon_core.verb:set package 'dgz_description' build argument 'cmake_clean_cache' from command line to 'False'
+[1.239s] Level 5:colcon.colcon_core.verb:set package 'dgz_description' build argument 'cmake_clean_first' from command line to 'False'
+[1.239s] Level 5:colcon.colcon_core.verb:set package 'dgz_description' build argument 'cmake_force_configure' from command line to 'False'
+[1.239s] Level 5:colcon.colcon_core.verb:set package 'dgz_description' build argument 'ament_cmake_args' from command line to 'None'
+[1.239s] Level 5:colcon.colcon_core.verb:set package 'dgz_description' build argument 'catkin_cmake_args' from command line to 'None'
+[1.240s] Level 5:colcon.colcon_core.verb:set package 'dgz_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.240s] DEBUG:colcon.colcon_core.verb:Building package 'dgz_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/MKGL/quadro_ws/build/dgz_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/MKGL/quadro_ws/install/dgz_description', 'merge_install': False, 'path': '/home/MKGL/quadro_ws/src/dgz_description', 'symlink_install': True, 'test_result_base': None}
+[1.241s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[1.241s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[1.241s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.242s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[1.242s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[1.242s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[1.242s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[1.242s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[1.242s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.242s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/MKGL/quadro_ws/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/MKGL/quadro_ws/install/serial', 'merge_install': False, 'path': '/home/MKGL/quadro_ws/src/serial', 'symlink_install': True, 'test_result_base': None}
+[1.244s] Level 5:colcon.colcon_core.verb:set package 'space_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.244s] Level 5:colcon.colcon_core.verb:set package 'space_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.244s] Level 5:colcon.colcon_core.verb:set package 'space_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.244s] Level 5:colcon.colcon_core.verb:set package 'space_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'space_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'space_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'space_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'space_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.245s] Level 5:colcon.colcon_core.verb:set package 'space_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.245s] DEBUG:colcon.colcon_core.verb:Building package 'space_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/MKGL/quadro_ws/build/space_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/MKGL/quadro_ws/install/space_interfaces', 'merge_install': False, 'path': '/home/MKGL/quadro_ws/src/space_interfaces', 'symlink_install': True, 'test_result_base': None}
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'dgz' build argument 'cmake_args' from command line to 'None'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'dgz' build argument 'cmake_target' from command line to 'None'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'dgz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'dgz' build argument 'cmake_clean_cache' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'dgz' build argument 'cmake_clean_first' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'dgz' build argument 'cmake_force_configure' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'dgz' build argument 'ament_cmake_args' from command line to 'None'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'dgz' build argument 'catkin_cmake_args' from command line to 'None'
+[1.248s] Level 5:colcon.colcon_core.verb:set package 'dgz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.248s] DEBUG:colcon.colcon_core.verb:Building package 'dgz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/MKGL/quadro_ws/build/dgz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/MKGL/quadro_ws/install/dgz', 'merge_install': False, 'path': '/home/MKGL/quadro_ws/src/dgz', 'symlink_install': True, 'test_result_base': None}
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'manette' build argument 'cmake_args' from command line to 'None'
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'manette' build argument 'cmake_target' from command line to 'None'
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'manette' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.249s] Level 5:colcon.colcon_core.verb:set package 'manette' build argument 'cmake_clean_cache' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'manette' build argument 'cmake_clean_first' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'manette' build argument 'cmake_force_configure' from command line to 'False'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'manette' build argument 'ament_cmake_args' from command line to 'None'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'manette' build argument 'catkin_cmake_args' from command line to 'None'
+[1.250s] Level 5:colcon.colcon_core.verb:set package 'manette' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.250s] DEBUG:colcon.colcon_core.verb:Building package 'manette' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/MKGL/quadro_ws/build/manette', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/MKGL/quadro_ws/install/manette', 'merge_install': False, 'path': '/home/MKGL/quadro_ws/src/manette', 'symlink_install': True, 'test_result_base': None}
+[1.251s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.255s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.256s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/MKGL/quadro_ws/src/space_interfaces' with build type 'ament_cmake'
+[1.257s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/MKGL/quadro_ws/src/space_interfaces'
+[1.267s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.268s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.268s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.282s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/MKGL/quadro_ws/src/dgz_description' with build type 'ament_cmake'
+[1.283s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/MKGL/quadro_ws/src/dgz_description'
+[1.284s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.284s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.298s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/MKGL/quadro_ws/src/serial' with build type 'ament_cmake'
+[1.299s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/MKGL/quadro_ws/src/serial'
+[1.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.338s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/space_interfaces': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/MKGL/quadro_ws/src/space_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/space_interfaces
+[1.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/dgz_description': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/MKGL/quadro_ws/src/dgz_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/dgz_description
+[1.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/MKGL/quadro_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/serial
+[6.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/dgz_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/MKGL/quadro_ws/src/dgz_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/dgz_description
+[6.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/dgz_description': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz_description -- -j4 -l4
+[7.252s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/dgz_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz_description -- -j4 -l4
+[7.570s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/dgz_description': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz_description
+[8.676s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dgz_description)
+[8.680s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/dgz_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz_description
+[8.693s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description' for CMake module files
+[8.698s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description' for CMake config files
+[8.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('dgz_description', 'cmake_prefix_path')
+[8.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/hook/cmake_prefix_path.ps1'
+[8.708s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/hook/cmake_prefix_path.dsv'
+[8.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/hook/cmake_prefix_path.sh'
+[8.716s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description/bin'
+[8.717s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description/lib/pkgconfig/dgz_description.pc'
+[8.719s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description/lib/python3.12/site-packages'
+[8.720s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description/bin'
+[8.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.ps1'
+[8.726s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.dsv'
+[8.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.sh'
+[8.732s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.bash'
+[8.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.zsh'
+[8.741s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/dgz_description/share/colcon-core/packages/dgz_description)
+[8.890s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dgz_description)
+[8.891s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description' for CMake module files
+[8.895s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description' for CMake config files
+[8.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('dgz_description', 'cmake_prefix_path')
+[8.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/hook/cmake_prefix_path.ps1'
+[8.902s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/hook/cmake_prefix_path.dsv'
+[8.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/hook/cmake_prefix_path.sh'
+[8.908s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description/bin'
+[8.909s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description/lib/pkgconfig/dgz_description.pc'
+[8.910s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description/lib/python3.12/site-packages'
+[8.911s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz_description/bin'
+[8.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.ps1'
+[8.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.dsv'
+[8.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.sh'
+[8.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.bash'
+[8.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.zsh'
+[8.929s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/dgz_description/share/colcon-core/packages/dgz_description)
+[10.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/MKGL/quadro_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/serial
+[10.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/MKGL/quadro_ws/build/serial -- -j4 -l4
+[22.582s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/space_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/MKGL/quadro_ws/src/space_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/space_interfaces
+[22.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/space_interfaces': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/MKGL/quadro_ws/build/space_interfaces -- -j4 -l4
+[44.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/MKGL/quadro_ws/build/serial -- -j4 -l4
+[45.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/MKGL/quadro_ws/build/serial
+[46.321s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[46.322s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial' for CMake module files
+[46.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/MKGL/quadro_ws/build/serial
+[46.327s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial' for CMake config files
+[46.329s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[46.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[46.332s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[46.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[46.337s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/lib'
+[46.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'ld_library_path_lib')
+[46.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/serial/share/serial/hook/ld_library_path_lib.ps1'
+[46.341s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/serial/share/serial/hook/ld_library_path_lib.dsv'
+[46.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/serial/share/serial/hook/ld_library_path_lib.sh'
+[46.346s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/bin'
+[46.346s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/lib/pkgconfig/serial.pc'
+[46.347s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/lib/python3.12/site-packages'
+[46.348s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/bin'
+[46.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/serial/share/serial/package.ps1'
+[46.352s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/serial/share/serial/package.dsv'
+[46.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/serial/share/serial/package.sh'
+[46.357s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/serial/share/serial/package.bash'
+[46.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/serial/share/serial/package.zsh'
+[46.361s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/serial/share/colcon-core/packages/serial)
+[46.518s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[46.519s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial' for CMake module files
+[46.523s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial' for CMake config files
+[46.526s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[46.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[46.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[46.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[46.535s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/lib'
+[46.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'ld_library_path_lib')
+[46.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/serial/share/serial/hook/ld_library_path_lib.ps1'
+[46.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/serial/share/serial/hook/ld_library_path_lib.dsv'
+[46.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/serial/share/serial/hook/ld_library_path_lib.sh'
+[46.543s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/bin'
+[46.544s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/lib/pkgconfig/serial.pc'
+[46.545s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/lib/python3.12/site-packages'
+[46.546s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/serial/bin'
+[46.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/serial/share/serial/package.ps1'
+[46.550s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/serial/share/serial/package.dsv'
+[46.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/serial/share/serial/package.sh'
+[46.557s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/serial/share/serial/package.bash'
+[46.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/serial/share/serial/package.zsh'
+[46.562s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/serial/share/colcon-core/packages/serial)
+[46.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/space_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/MKGL/quadro_ws/build/space_interfaces -- -j4 -l4
+[47.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/space_interfaces': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/MKGL/quadro_ws/build/space_interfaces
+[50.533s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(space_interfaces)
+[50.534s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces' for CMake module files
+[50.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/space_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/MKGL/quadro_ws/build/space_interfaces
+[50.540s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces' for CMake config files
+[50.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('space_interfaces', 'cmake_prefix_path')
+[50.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/cmake_prefix_path.ps1'
+[50.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/cmake_prefix_path.dsv'
+[50.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/cmake_prefix_path.sh'
+[50.553s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/lib'
+[50.554s] Level 1:colcon.colcon_core.shell:create_environment_hook('space_interfaces', 'ld_library_path_lib')
+[50.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/ld_library_path_lib.ps1'
+[50.556s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/ld_library_path_lib.dsv'
+[50.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/ld_library_path_lib.sh'
+[50.559s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/bin'
+[50.559s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/lib/pkgconfig/space_interfaces.pc'
+[50.560s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages'
+[50.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('space_interfaces', 'pythonpath')
+[50.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/pythonpath.ps1'
+[50.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/pythonpath.dsv'
+[50.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/pythonpath.sh'
+[50.566s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/bin'
+[50.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.ps1'
+[50.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.dsv'
+[50.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.sh'
+[50.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.bash'
+[50.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.zsh'
+[50.580s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/space_interfaces/share/colcon-core/packages/space_interfaces)
+[50.958s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(space_interfaces)
+[50.959s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces' for CMake module files
+[50.964s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces' for CMake config files
+[50.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('space_interfaces', 'cmake_prefix_path')
+[50.973s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/cmake_prefix_path.ps1'
+[50.975s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/cmake_prefix_path.dsv'
+[50.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/cmake_prefix_path.sh'
+[50.981s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/lib'
+[50.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('space_interfaces', 'ld_library_path_lib')
+[50.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/ld_library_path_lib.ps1'
+[50.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/ld_library_path_lib.dsv'
+[50.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/ld_library_path_lib.sh'
+[50.988s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/bin'
+[50.988s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/lib/pkgconfig/space_interfaces.pc'
+[50.989s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages'
+[50.990s] Level 1:colcon.colcon_core.shell:create_environment_hook('space_interfaces', 'pythonpath')
+[50.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/pythonpath.ps1'
+[50.993s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/pythonpath.dsv'
+[50.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/hook/pythonpath.sh'
+[50.997s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/space_interfaces/bin'
+[50.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.ps1'
+[51.002s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.dsv'
+[51.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.sh'
+[51.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.bash'
+[51.011s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.zsh'
+[51.013s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/space_interfaces/share/colcon-core/packages/space_interfaces)
+[51.014s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/MKGL/quadro_ws/src/dgz' with build type 'ament_cmake'
+[51.015s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/MKGL/quadro_ws/src/dgz'
+[51.016s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[51.017s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[51.031s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/MKGL/quadro_ws/src/manette' with build type 'ament_cmake'
+[51.032s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/MKGL/quadro_ws/src/manette'
+[51.033s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[51.033s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[51.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/dgz': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/MKGL/quadro_ws/src/dgz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/dgz
+[51.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/manette': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/MKGL/quadro_ws/src/manette -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/manette
+[58.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/dgz' returned '0': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/MKGL/quadro_ws/src/dgz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/dgz
+[58.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/dgz': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz -- -j4 -l4
+[58.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/manette' returned '0': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/MKGL/quadro_ws/src/manette -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/manette
+[58.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/manette': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/MKGL/quadro_ws/build/manette -- -j4 -l4
+[102.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/dgz' returned '0': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz -- -j4 -l4
+[102.823s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/dgz': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz
+[103.819s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dgz)
+[103.820s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz' for CMake module files
+[103.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/dgz' returned '0': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz
+[103.825s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz' for CMake config files
+[103.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('dgz', 'cmake_prefix_path')
+[103.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/dgz/share/dgz/hook/cmake_prefix_path.ps1'
+[103.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/dgz/share/dgz/hook/cmake_prefix_path.dsv'
+[103.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/dgz/share/dgz/hook/cmake_prefix_path.sh'
+[103.842s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/lib'
+[103.843s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/bin'
+[103.843s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/lib/pkgconfig/dgz.pc'
+[103.844s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/lib/python3.12/site-packages'
+[103.845s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/bin'
+[103.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.ps1'
+[103.848s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.dsv'
+[103.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.sh'
+[103.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.bash'
+[103.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.zsh'
+[103.861s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/dgz/share/colcon-core/packages/dgz)
+[104.024s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dgz)
+[104.025s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz' for CMake module files
+[104.033s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz' for CMake config files
+[104.039s] Level 1:colcon.colcon_core.shell:create_environment_hook('dgz', 'cmake_prefix_path')
+[104.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/dgz/share/dgz/hook/cmake_prefix_path.ps1'
+[104.043s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/dgz/share/dgz/hook/cmake_prefix_path.dsv'
+[104.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/dgz/share/dgz/hook/cmake_prefix_path.sh'
+[104.052s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/lib'
+[104.052s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/bin'
+[104.053s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/lib/pkgconfig/dgz.pc'
+[104.054s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/lib/python3.12/site-packages'
+[104.056s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/dgz/bin'
+[104.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.ps1'
+[104.061s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.dsv'
+[104.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.sh'
+[104.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.bash'
+[104.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/dgz/share/dgz/package.zsh'
+[104.076s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/dgz/share/colcon-core/packages/dgz)
+[105.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/manette' returned '0': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/MKGL/quadro_ws/build/manette -- -j4 -l4
+[105.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/MKGL/quadro_ws/build/manette': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/MKGL/quadro_ws/build/manette
+[106.509s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manette)
+[106.510s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette' for CMake module files
+[106.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/MKGL/quadro_ws/build/manette' returned '0': AMENT_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/opt/ros/jazzy LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/MKGL/quadro_ws/build/manette
+[106.514s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette' for CMake config files
+[106.516s] Level 1:colcon.colcon_core.shell:create_environment_hook('manette', 'cmake_prefix_path')
+[106.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/manette/share/manette/hook/cmake_prefix_path.ps1'
+[106.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/manette/share/manette/hook/cmake_prefix_path.dsv'
+[106.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/manette/share/manette/hook/cmake_prefix_path.sh'
+[106.524s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/lib'
+[106.524s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/bin'
+[106.525s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/lib/pkgconfig/manette.pc'
+[106.526s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/lib/python3.12/site-packages'
+[106.527s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/bin'
+[106.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/manette/share/manette/package.ps1'
+[106.529s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/manette/share/manette/package.dsv'
+[106.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/manette/share/manette/package.sh'
+[106.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/manette/share/manette/package.bash'
+[106.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/manette/share/manette/package.zsh'
+[106.535s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/manette/share/colcon-core/packages/manette)
+[106.665s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(manette)
+[106.666s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette' for CMake module files
+[106.670s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette' for CMake config files
+[106.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('manette', 'cmake_prefix_path')
+[106.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/manette/share/manette/hook/cmake_prefix_path.ps1'
+[106.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/MKGL/quadro_ws/install/manette/share/manette/hook/cmake_prefix_path.dsv'
+[106.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/MKGL/quadro_ws/install/manette/share/manette/hook/cmake_prefix_path.sh'
+[106.684s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/lib'
+[106.685s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/bin'
+[106.685s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/lib/pkgconfig/manette.pc'
+[106.686s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/lib/python3.12/site-packages'
+[106.687s] Level 1:colcon.colcon_core.environment:checking '/home/MKGL/quadro_ws/install/manette/bin'
+[106.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/manette/share/manette/package.ps1'
+[106.690s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/MKGL/quadro_ws/install/manette/share/manette/package.dsv'
+[106.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/manette/share/manette/package.sh'
+[106.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/manette/share/manette/package.bash'
+[106.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/MKGL/quadro_ws/install/manette/share/manette/package.zsh'
+[106.699s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/MKGL/quadro_ws/install/manette/share/colcon-core/packages/manette)
+[106.700s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[106.701s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[106.702s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[106.702s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[106.725s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[106.725s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[106.726s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[106.726s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[106.729s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[106.729s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[106.730s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/MKGL/quadro_ws/install/local_setup.ps1'
+[106.733s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/MKGL/quadro_ws/install/_local_setup_util_ps1.py'
+[106.739s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/MKGL/quadro_ws/install/setup.ps1'
+[106.743s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/MKGL/quadro_ws/install/local_setup.sh'
+[106.745s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/MKGL/quadro_ws/install/_local_setup_util_sh.py'
+[106.747s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/MKGL/quadro_ws/install/setup.sh'
+[106.750s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/MKGL/quadro_ws/install/local_setup.bash'
+[106.753s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/MKGL/quadro_ws/install/setup.bash'
+[106.756s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/MKGL/quadro_ws/install/local_setup.zsh'
+[106.758s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/MKGL/quadro_ws/install/setup.zsh'

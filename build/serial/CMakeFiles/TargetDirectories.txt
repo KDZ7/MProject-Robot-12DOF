@@ -1,0 +1,11 @@
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/uninstall.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/serial_uninstall.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/serial_lib.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/testlib_node.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/test.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/edit_cache.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/rebuild_cache.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/list_install_components.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/install.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/install/local.dir
+/home/MKGL/quadro_ws/build/serial/CMakeFiles/install/strip.dir

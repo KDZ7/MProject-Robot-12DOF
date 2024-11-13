@@ -1,0 +1,6 @@
+Invoking command in '/home/MKGL/quadro_ws/build/dgz_description': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/MKGL/quadro_ws/src/dgz_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/dgz_description
+Invoked command in '/home/MKGL/quadro_ws/build/dgz_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake /home/MKGL/quadro_ws/src/dgz_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/dgz_description
+Invoking command in '/home/MKGL/quadro_ws/build/dgz_description': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz_description -- -j4 -l4
+Invoked command in '/home/MKGL/quadro_ws/build/dgz_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz_description -- -j4 -l4
+Invoking command in '/home/MKGL/quadro_ws/build/dgz_description': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz_description
+Invoked command in '/home/MKGL/quadro_ws/build/dgz_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/jazzy /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz_description

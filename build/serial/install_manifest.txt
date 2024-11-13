@@ -1,0 +1,3 @@
+/home/MKGL/quadro_ws/install/serial/lib/libserial_lib.so
+/home/MKGL/quadro_ws/install/serial/share/serial/cmake/serial_libExport.cmake
+/home/MKGL/quadro_ws/install/serial/share/serial/cmake/serial_libExport-noconfig.cmake
