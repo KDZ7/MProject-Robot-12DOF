@@ -5,6 +5,9 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+# Define macros for conditional compilation
+add_compile_definitions(__DEBUG_DGZ=1)
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
@@ -14,17 +17,44 @@ find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(space_interfaces REQUIRED)
 
+# Includes the headers of dgz package
+include_directories(include)
+
+# Create dynamic library (SHARED) for dgz.cpp
+add_library(dgz_frame_lib SHARED
+  src/dgz_frame.cpp
+)
+
+# Export the library to make it available to other packages
+ament_export_targets(dgz_frame_lib HAS_LIBRARY_TARGET)
+
+install( DIRECTORY include/${PROJECT_NAME}
+  DESTINATION include)
+
+install(
+  TARGETS dgz_frame_lib
+  EXPORT dgz_frame_lib
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+)
+
 add_executable(move_ctrl_node src/move_ctrl_node.cpp)
 ament_target_dependencies(move_ctrl_node rclcpp space_interfaces)
 
+add_executable(dgz_ctrl_node src/dgz_ctrl_node.cpp)
+ament_target_dependencies(dgz_ctrl_node rclcpp space_interfaces)
+# Link the libraries to the executables
+target_link_libraries(move_ctrl_node dgz_frame_lib serial_lib)
+
 install(
-  TARGETS move_ctrl_node
-  DESTINATION lib/${PROJECT_NAME}/)
+  TARGETS move_ctrl_node dgz_ctrl_node
+  DESTINATION lib/${PROJECT_NAME})
 
 install(
   DIRECTORY config launch
   DESTINATION share/${PROJECT_NAME}/)
-  
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

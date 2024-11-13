@@ -13,6 +13,7 @@
   <depend>space_interfaces</depend>
   <depend>launch</depend>
   <depend>launch_ros</depend>
+  <depend>serial</depend>
   
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

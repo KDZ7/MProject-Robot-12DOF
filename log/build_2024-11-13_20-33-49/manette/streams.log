@@ -1,0 +1,42 @@
+[0.052s] Invoking command in '/home/MKGL/quadro_ws/build/manette': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/dgz/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake /home/MKGL/quadro_ws/src/manette -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/manette
+[0.373s] -- The C compiler identification is GNU 13.2.0
+[0.712s] -- The CXX compiler identification is GNU 13.2.0
+[0.803s] -- Detecting C compiler ABI info
+[1.349s] -- Detecting C compiler ABI info - done
+[1.389s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.390s] -- Detecting C compile features
+[1.392s] -- Detecting C compile features - done
+[1.441s] -- Detecting CXX compiler ABI info
+[2.059s] -- Detecting CXX compiler ABI info - done
+[2.102s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.102s] -- Detecting CXX compile features
+[2.104s] -- Detecting CXX compile features - done
+[2.127s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.017s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.437s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.693s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[3.957s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.041s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.135s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.238s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.632s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.653s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.085s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[5.158s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[5.253s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.600s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[5.877s] -- Found space_interfaces: 0.0.0 (/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake)
+[5.943s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[6.502s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.502s] -- Configured cppcheck include dirs: 
+[6.502s] -- Configured cppcheck exclude dirs and/or files: 
+[6.506s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.506s] -- Configured 'flake8' exclude dirs and/or files: 
+[6.509s] -- Added test 'lint_cmake' to check CMake code style
+[6.513s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.520s] -- Added test 'uncrustify' to check C / C++ code style
+[6.520s] -- Configured uncrustify additional arguments: 
+[6.523s] -- Added test 'xmllint' to check XML markup files
+[6.533s] -- Configuring done (6.4s)
+[6.628s] -- Generating done (0.1s)
+[6.636s] -- Build files have been written to: /home/MKGL/quadro_ws/build/manette

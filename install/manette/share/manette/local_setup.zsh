@@ -1,1 +1,0 @@
-/home/MKGL/quadro_ws/build/manette/ament_cmake_environment_hooks/local_setup.zsh

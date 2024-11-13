@@ -1,1 +1,0 @@
-/home/MKGL/quadro_ws/src/dgz/launch/dgz.launch.py

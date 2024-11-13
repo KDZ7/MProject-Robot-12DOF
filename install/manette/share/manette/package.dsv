@@ -1,8 +1,0 @@
-source;share/manette/hook/cmake_prefix_path.ps1
-source;share/manette/hook/cmake_prefix_path.dsv
-source;share/manette/hook/cmake_prefix_path.sh
-source;share/manette/local_setup.bash
-source;share/manette/local_setup.dsv
-source;share/manette/local_setup.ps1
-source;share/manette/local_setup.sh
-source;share/manette/local_setup.zsh

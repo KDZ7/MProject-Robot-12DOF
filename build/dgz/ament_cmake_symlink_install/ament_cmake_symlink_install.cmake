@@ -310,50 +310,11 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "move_ctrl_node" "DESTINATION" "lib/dgz/")
-include("/home/MKGL/quadro_ws/build/dgz/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+# install(FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/dgz/environment")
+ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/dgz/environment")
 
-# install(DIRECTORY "config" "launch" "DESTINATION" "share/dgz/")
-ament_cmake_symlink_install_directory("/home/MKGL/quadro_ws/src/dgz" DIRECTORY "config" "launch" "DESTINATION" "share/dgz/")
+# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/dgz/environment")
+ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/dgz/environment")
 
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dgz" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dgz" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dgz" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/dgz" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-
-# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/dgz/environment")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/dgz/environment")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/dgz/environment")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/dgz/environment")
-
-# install(FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/dgz/environment")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/dgz/environment")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/dgz/environment")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/dgz/environment")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/dgz")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/dgz")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/dgz")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/dgz")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/dgz")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/dgz")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/dgz")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/dgz")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/dgz")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/dgz")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/packages/dgz" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/packages/dgz" "DESTINATION" "share/ament_index/resource_index/packages")
-
-# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_core/dgzConfig.cmake" "/home/MKGL/quadro_ws/build/dgz/ament_cmake_core/dgzConfig-version.cmake" "DESTINATION" "share/dgz/cmake")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_core/dgzConfig.cmake" "/home/MKGL/quadro_ws/build/dgz/ament_cmake_core/dgzConfig-version.cmake" "DESTINATION" "share/dgz/cmake")
-
-# install(FILES "/home/MKGL/quadro_ws/src/dgz/package.xml" "DESTINATION" "share/dgz")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/src/dgz/package.xml" "DESTINATION" "share/dgz")
+# install(DIRECTORY "include/dgz" "DESTINATION" "include")
+ament_cmake_symlink_install_directory("/home/MKGL/quadro_ws/src/dgz" DIRECTORY "include/dgz" "DESTINATION" "include")

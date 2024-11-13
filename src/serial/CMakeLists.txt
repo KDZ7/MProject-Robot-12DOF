@@ -41,8 +41,7 @@ ament_export_targets(serial_lib HAS_LIBRARY_TARGET)
 target_link_libraries(testlib_node serial_lib)
 ament_target_dependencies(testlib_node rclcpp)
 
-install(DIRECTORY
-  include/${PROJECT_NAME}
+install(DIRECTORY include/${PROJECT_NAME}
   DESTINATION include)
 
 install(
