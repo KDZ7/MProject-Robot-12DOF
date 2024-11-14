@@ -1,0 +1,2 @@
+Invoking command in '/home/MKGL/quadro_ws/build/dgz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz -- -j4 -l4
+Invoked command in '/home/MKGL/quadro_ws/build/dgz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz -- -j4 -l4

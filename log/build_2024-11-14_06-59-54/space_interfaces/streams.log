@@ -1,0 +1,32 @@
+[0.078s] Invoking command in '/home/MKGL/quadro_ws/build/space_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/MKGL/quadro_ws/src/space_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/space_interfaces
+[0.464s] -- The C compiler identification is GNU 13.2.0
+[0.956s] -- The CXX compiler identification is GNU 13.2.0
+[1.048s] -- Detecting C compiler ABI info
+[1.652s] -- Detecting C compiler ABI info - done
+[1.692s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.693s] -- Detecting C compile features
+[1.694s] -- Detecting C compile features - done
+[1.747s] -- Detecting CXX compiler ABI info
+[2.414s] -- Detecting CXX compiler ABI info - done
+[2.458s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.459s] -- Detecting CXX compile features
+[2.461s] -- Detecting CXX compile features - done
+[2.483s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.660s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.143s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.372s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.413s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.757s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.031s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[8.462s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[10.730s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[13.654s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.672s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[14.400s] -- Found PythonExtra: /usr/bin/python3  
+[16.552s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[16.739s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[16.898s] -- Added test 'lint_cmake' to check CMake code style
+[16.905s] -- Added test 'xmllint' to check XML markup files
+[16.928s] -- Configuring done (16.8s)
+[17.121s] -- Generating done (0.2s)
+[17.137s] -- Build files have been written to: /home/MKGL/quadro_ws/build/space_interfaces

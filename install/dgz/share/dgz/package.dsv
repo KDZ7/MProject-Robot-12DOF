@@ -1,0 +1,5 @@
+source;share/dgz/local_setup.bash
+source;share/dgz/local_setup.dsv
+source;share/dgz/local_setup.ps1
+source;share/dgz/local_setup.sh
+source;share/dgz/local_setup.zsh

@@ -1,0 +1,22 @@
+[0.087s] Invoking command in '/home/MKGL/quadro_ws/build/dgz_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz_description -- -j4 -l4
+[0.316s] Invoked command in '/home/MKGL/quadro_ws/build/dgz_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz_description -- -j4 -l4
+[0.648s] Invoking command in '/home/MKGL/quadro_ws/build/dgz_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz_description
+[0.774s] -- Install configuration: ""
+[0.776s] -- Execute custom install script
+[0.782s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/launch/dgz_description.launch.py
+[0.784s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/ament_index/resource_index/package_run_dependencies/dgz_description
+[0.789s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/ament_index/resource_index/parent_prefix_path/dgz_description
+[0.790s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/ament_prefix_path.sh
+[0.793s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/ament_prefix_path.dsv
+[0.798s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/path.sh
+[0.799s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/path.dsv
+[0.804s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.bash
+[0.807s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.sh
+[0.811s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.zsh
+[0.812s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.dsv
+[0.817s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.dsv
+[0.885s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/ament_index/resource_index/packages/dgz_description
+[0.890s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/cmake/dgz_descriptionConfig.cmake
+[0.891s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/cmake/dgz_descriptionConfig-version.cmake
+[0.899s] -- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.xml
+[0.916s] Invoked command in '/home/MKGL/quadro_ws/build/dgz_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz_description

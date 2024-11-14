@@ -1,0 +1,7 @@
+[01m[K/home/MKGL/quadro_ws/src/dgz/src/dgz_ctrl_node.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kserial/serial.hpp: No such file or directory
+    3 | #include [01;31m[K"serial/serial.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/dgz_ctrl_node.dir/build.make:76: CMakeFiles/dgz_ctrl_node.dir/src/dgz_ctrl_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/dgz_ctrl_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

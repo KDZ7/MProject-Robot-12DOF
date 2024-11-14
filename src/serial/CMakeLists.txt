@@ -5,54 +5,77 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+# Define macros for conditional compilation
 add_compile_definitions(__DEBUG_SERIAL=1)
 
-# Trouver les dépendances
+# find dependencies
 find_package(ament_cmake REQUIRED)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
 find_package(rclcpp REQUIRED)
 
-# Inclure les en-têtes du package
+# Includes the headers of the serial package
 include_directories(include)
 
-# Créer une bibliothèque dynamique (SHARED) pour serial.cpp
+# Create dynamic library (SHARED) for serial.cpp
 add_library(serial_lib SHARED
   src/serial.cpp
 )
 
-# Cible de l'exécutable de test
-add_executable(testlib_node src/testlib_node.cpp)
-target_link_libraries(testlib_node serial_lib)
-ament_target_dependencies(testlib_node rclcpp)
-
-# Définir les répertoires d'inclusion pour la bibliothèque
-target_include_directories(serial_lib PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
+# Create executable for testlib_node.cpp
+add_executable(testlib_node
+  src/testlib_node.cpp
 )
 
-# Exporter la bibliothèque pour d'autres packages
+# Create static library (STATIC) for serial.cpp
+# add_library(serial_lib STATIC
+#   src/serial_com.cpp
+# )
+
+# Export the headers of the serial library
+target_include_directories(serial_lib PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+
+# Export the library to make it available to other packages
 ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
-ament_export_dependencies(rclcpp) # non ajouté par KIM
 ament_export_include_directories(include)
 ament_export_libraries(serial_lib)
 
-# Installer les fichiers d'en-tête
-install(DIRECTORY include/
-  DESTINATION include/${PROJECT_NAME}
-)
+# Link the serial_lib library to the testlib_node executable
+target_link_libraries(testlib_node serial_lib)
+ament_target_dependencies(testlib_node rclcpp)
 
-# Installer les cibles
+install(
+  DIRECTORY include
+  DESTINATION include/${PROJECT_NAME}
+  )
+
 install(
   TARGETS serial_lib
   EXPORT export_${PROJECT_NAME}
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
+  INCLUDES DESTINATION include
 )
 
 install(
   TARGETS testlib_node
   DESTINATION lib/${PROJECT_NAME}
 )
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
 ament_package()

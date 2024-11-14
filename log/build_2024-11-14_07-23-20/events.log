@@ -1,0 +1,949 @@
+[0.000000] (-) TimerEvent: {}
+[0.000937] (dgz_description) JobQueued: {'identifier': 'dgz_description', 'dependencies': OrderedDict()}
+[0.001845] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.002321] (space_interfaces) JobQueued: {'identifier': 'space_interfaces', 'dependencies': OrderedDict()}
+[0.002398] (dgz) JobQueued: {'identifier': 'dgz', 'dependencies': OrderedDict({'serial': '/home/MKGL/quadro_ws/install/serial', 'space_interfaces': '/home/MKGL/quadro_ws/install/space_interfaces'})}
+[0.002485] (manette) JobQueued: {'identifier': 'manette', 'dependencies': OrderedDict({'space_interfaces': '/home/MKGL/quadro_ws/install/space_interfaces'})}
+[0.002563] (space_interfaces) JobStarted: {'identifier': 'space_interfaces'}
+[0.027892] (serial) JobStarted: {'identifier': 'serial'}
+[0.048162] (dgz_description) JobStarted: {'identifier': 'dgz_description'}
+[0.072974] (space_interfaces) JobProgress: {'identifier': 'space_interfaces', 'progress': 'cmake'}
+[0.075990] (space_interfaces) JobProgress: {'identifier': 'space_interfaces', 'progress': 'build'}
+[0.078442] (space_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/MKGL/quadro_ws/build/space_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/MKGL/quadro_ws/build/space_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/space_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[0.093871] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.097268] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[0.101685] (-) TimerEvent: {}
+[0.102346] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/MKGL/quadro_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/MKGL/quadro_ws/build/serial', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/serial', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[0.119522] (dgz_description) JobProgress: {'identifier': 'dgz_description', 'progress': 'cmake'}
+[0.123276] (dgz_description) JobProgress: {'identifier': 'dgz_description', 'progress': 'build'}
+[0.128950] (dgz_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/MKGL/quadro_ws/build/dgz_description', '--', '-j4', '-l4'], 'cwd': '/home/MKGL/quadro_ws/build/dgz_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/dgz_description', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[0.201939] (-) TimerEvent: {}
+[0.250701] (serial) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.303641] (-) TimerEvent: {}
+[0.384165] (dgz_description) CommandEnded: {'returncode': 0}
+[0.403935] (-) TimerEvent: {}
+[0.413552] (space_interfaces) StdoutLine: {'line': b'[  2%] Built target space_interfaces__rosidl_generator_type_description\n'}
+[0.506333] (-) TimerEvent: {}
+[0.533079] (space_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_space_interfaces\n'}
+[0.588886] (dgz_description) JobProgress: {'identifier': 'dgz_description', 'progress': 'install'}
+[0.606539] (-) TimerEvent: {}
+[0.616917] (space_interfaces) StdoutLine: {'line': b'[ 17%] Built target space_interfaces__rosidl_generator_c\n'}
+[0.625444] (space_interfaces) StdoutLine: {'line': b'[ 20%] Built target space_interfaces__cpp\n'}
+[0.690482] (dgz_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/MKGL/quadro_ws/build/dgz_description'], 'cwd': '/home/MKGL/quadro_ws/build/dgz_description', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/dgz_description', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[0.707080] (-) TimerEvent: {}
+[0.761149] (dgz_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.766977] (dgz_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.780855] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/launch/dgz_description.launch.py\n'}
+[0.785244] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/ament_index/resource_index/package_run_dependencies/dgz_description\n'}
+[0.793876] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/ament_index/resource_index/parent_prefix_path/dgz_description\n'}
+[0.803320] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/ament_prefix_path.sh\n'}
+[0.810373] (-) TimerEvent: {}
+[0.812562] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/ament_prefix_path.dsv\n'}
+[0.820391] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/path.sh\n'}
+[0.826043] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/environment/path.dsv\n'}
+[0.831762] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.bash\n'}
+[0.835675] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.sh\n'}
+[0.836551] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.zsh\n'}
+[0.845460] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/local_setup.dsv\n'}
+[0.846338] (dgz_description) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.dsv\n'}
+[0.849958] (space_interfaces) StdoutLine: {'line': b'[ 29%] Built target space_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.879355] (space_interfaces) StdoutLine: {'line': b'[ 38%] Built target space_interfaces__rosidl_typesupport_c\n'}
+[0.900098] (space_interfaces) StdoutLine: {'line': b'[ 47%] Built target space_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.910578] (-) TimerEvent: {}
+[0.940784] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/ament_index/resource_index/packages/dgz_description\n'}
+[0.951325] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/cmake/dgz_descriptionConfig.cmake\n'}
+[0.960183] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/cmake/dgz_descriptionConfig-version.cmake\n'}
+[0.970440] (dgz_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/dgz_description/share/dgz_description/package.xml\n'}
+[1.002907] (dgz_description) CommandEnded: {'returncode': 0}
+[1.011919] (-) TimerEvent: {}
+[1.109453] (space_interfaces) StdoutLine: {'line': b'[ 55%] Built target space_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.113465] (-) TimerEvent: {}
+[1.133918] (space_interfaces) StdoutLine: {'line': b'[ 64%] Built target space_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.172949] (space_interfaces) StdoutLine: {'line': b'[ 73%] Built target space_interfaces__rosidl_typesupport_cpp\n'}
+[1.215626] (-) TimerEvent: {}
+[1.311243] (space_interfaces) StdoutLine: {'line': b'[ 73%] Built target space_interfaces\n'}
+[1.317839] (-) TimerEvent: {}
+[1.358805] (dgz_description) JobEnded: {'identifier': 'dgz_description', 'rc': 0}
+[1.418845] (-) TimerEvent: {}
+[1.466446] (space_interfaces) StdoutLine: {'line': b'[ 76%] Built target space_interfaces__py\n'}
+[1.520312] (-) TimerEvent: {}
+[1.605147] (space_interfaces) StdoutLine: {'line': b'[ 82%] Built target space_interfaces__rosidl_generator_py\n'}
+[1.622083] (-) TimerEvent: {}
+[1.728894] (-) TimerEvent: {}
+[1.807200] (space_interfaces) StdoutLine: {'line': b'[ 88%] Built target space_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[1.816412] (space_interfaces) StdoutLine: {'line': b'[ 97%] Built target space_interfaces_s__rosidl_typesupport_c\n'}
+[1.820959] (space_interfaces) StdoutLine: {'line': b'[100%] Built target space_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[1.829061] (-) TimerEvent: {}
+[1.930235] (-) TimerEvent: {}
+[2.021296] (serial) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.030402] (-) TimerEvent: {}
+[2.064230] (serial) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[2.098186] (space_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.130564] (-) TimerEvent: {}
+[2.186405] (space_interfaces) StdoutLine: {'line': b'writing space_interfaces.egg-info/PKG-INFO\n'}
+[2.187607] (space_interfaces) StdoutLine: {'line': b'writing dependency_links to space_interfaces.egg-info/dependency_links.txt\n'}
+[2.189208] (space_interfaces) StdoutLine: {'line': b'writing top-level names to space_interfaces.egg-info/top_level.txt\n'}
+[2.209066] (serial) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.230797] (-) TimerEvent: {}
+[2.255405] (serial) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.312358] (serial) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.332906] (-) TimerEvent: {}
+[2.389231] (serial) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.433092] (-) TimerEvent: {}
+[2.516713] (space_interfaces) StdoutLine: {'line': b"reading manifest file 'space_interfaces.egg-info/SOURCES.txt'\n"}
+[2.521962] (space_interfaces) StdoutLine: {'line': b"writing manifest file 'space_interfaces.egg-info/SOURCES.txt'\n"}
+[2.533416] (-) TimerEvent: {}
+[2.634654] (-) TimerEvent: {}
+[2.693026] (space_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_space_interfaces_egg\n'}
+[2.711771] (serial) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.719688] (serial) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.736965] (-) TimerEvent: {}
+[2.747149] (space_interfaces) CommandEnded: {'returncode': 0}
+[2.837149] (-) TimerEvent: {}
+[2.937950] (-) TimerEvent: {}
+[2.996798] (serial) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.039880] (-) TimerEvent: {}
+[3.112024] (space_interfaces) JobProgress: {'identifier': 'space_interfaces', 'progress': 'install'}
+[3.113159] (space_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/MKGL/quadro_ws/build/space_interfaces'], 'cwd': '/home/MKGL/quadro_ws/build/space_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/space_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[3.140205] (-) TimerEvent: {}
+[3.153227] (space_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.155430] (space_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.156952] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/ament_index/resource_index/rosidl_interfaces/space_interfaces\n'}
+[3.158287] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/msg/Position.json\n'}
+[3.161161] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__functions.h\n'}
+[3.162312] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__struct.h\n'}
+[3.163410] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__type_support.h\n'}
+[3.164476] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/position.h\n'}
+[3.165565] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.166754] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/environment/library_path.sh\n'}
+[3.168040] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/environment/library_path.dsv\n'}
+[3.171185] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_c.h\n'}
+[3.172217] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.174586] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h\n'}
+[3.175641] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.178072] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__builder.hpp\n'}
+[3.179083] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__struct.hpp\n'}
+[3.180127] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__traits.hpp\n'}
+[3.181194] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__type_support.hpp\n'}
+[3.185063] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/position.hpp\n'}
+[3.185883] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.187271] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.188260] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.190565] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.191805] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/environment/pythonpath.sh\n'}
+[3.192968] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/environment/pythonpath.dsv\n'}
+[3.194916] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[3.196486] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[3.198003] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[3.198688] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[3.202342] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/__init__.py\n'}
+[3.203448] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/_space_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[3.204460] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/_space_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.205860] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/_space_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.207215] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/msg/__init__.py\n'}
+[3.207890] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/msg/_position.py\n'}
+[3.209107] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/msg/_position_s.c\n'}
+[3.209679] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_c.so\n'}
+[3.210955] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.211721] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[3.212547] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.214142] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[3.215889] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_c.so\n'}
+[3.219703] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/msg/Position.idl\n'}
+[3.220347] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/msg/Position.msg\n'}
+[3.222072] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/ament_index/resource_index/package_run_dependencies/space_interfaces\n'}
+[3.222689] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/ament_index/resource_index/parent_prefix_path/space_interfaces\n'}
+[3.223264] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/environment/ament_prefix_path.sh\n'}
+[3.224014] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/environment/ament_prefix_path.dsv\n'}
+[3.224950] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/environment/path.sh\n'}
+[3.225782] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/environment/path.dsv\n'}
+[3.226506] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/local_setup.bash\n'}
+[3.227360] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/local_setup.sh\n'}
+[3.228404] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/local_setup.zsh\n'}
+[3.229476] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/local_setup.dsv\n'}
+[3.230416] (space_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.dsv\n'}
+[3.240379] (-) TimerEvent: {}
+[3.276484] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/ament_index/resource_index/packages/space_interfaces\n'}
+[3.277610] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[3.278507] (serial) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[3.279521] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.280466] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.281415] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.283095] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.284151] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.285045] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.286128] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfacesConfig.cmake\n'}
+[3.288808] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfacesConfig-version.cmake\n'}
+[3.289792] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/package.xml\n'}
+[3.290345] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_generator_c.so\n'}
+[3.291943] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[3.294125] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[3.296237] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_c.so\n'}
+[3.298613] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.301155] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[3.303459] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_cpp.so\n'}
+[3.340557] (-) TimerEvent: {}
+[3.441479] (-) TimerEvent: {}
+[3.481276] (space_interfaces) StdoutLine: {'line': b"Listing '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces'...\n"}
+[3.482230] (space_interfaces) StdoutLine: {'line': b"Listing '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/msg'...\n"}
+[3.524283] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_generator_py.so\n'}
+[3.527116] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_cExport.cmake\n'}
+[3.528524] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.529670] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.530523] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.531591] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.532621] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.534574] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[3.536336] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.538671] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_cppExport.cmake\n'}
+[3.540191] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.540897] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.541453] (-) TimerEvent: {}
+[3.541988] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.545248] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.546148] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[3.546941] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.547859] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_pyExport.cmake\n'}
+[3.549954] (space_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.553703] (space_interfaces) CommandEnded: {'returncode': 0}
+[3.641666] (-) TimerEvent: {}
+[3.742639] (-) TimerEvent: {}
+[3.814492] (serial) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.815785] (serial) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/MKGL/quadro_ws/src/serial/include;$<BUILD_INTERFACE:/home/MKGL/quadro_ws/src/serial/include>\n'}
+[3.816462] (serial) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.818994] (serial) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.825723] (serial) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.826496] (serial) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.828473] (serial) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.840081] (serial) StdoutLine: {'line': b'-- Configuring done (3.6s)\n'}
+[3.842899] (-) TimerEvent: {}
+[3.915347] (serial) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.929091] (serial) StdoutLine: {'line': b'-- Build files have been written to: /home/MKGL/quadro_ws/build/serial\n'}
+[3.943282] (-) TimerEvent: {}
+[4.045393] (-) TimerEvent: {}
+[4.064154] (space_interfaces) JobEnded: {'identifier': 'space_interfaces', 'rc': 0}
+[4.068201] (manette) JobStarted: {'identifier': 'manette'}
+[4.114575] (serial) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/serial_lib.dir/src/serial.cpp.o\x1b[0m\n'}
+[4.120108] (manette) JobProgress: {'identifier': 'manette', 'progress': 'cmake'}
+[4.125889] (manette) JobProgress: {'identifier': 'manette', 'progress': 'build'}
+[4.130094] (manette) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/MKGL/quadro_ws/build/manette', '--', '-j4', '-l4'], 'cwd': '/home/MKGL/quadro_ws/build/manette', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/manette', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[4.145624] (-) TimerEvent: {}
+[4.246836] (-) TimerEvent: {}
+[4.348032] (-) TimerEvent: {}
+[4.448866] (-) TimerEvent: {}
+[4.456103] (manette) StdoutLine: {'line': b'[100%] Built target manette_node\n'}
+[4.508845] (manette) CommandEnded: {'returncode': 0}
+[4.549063] (-) TimerEvent: {}
+[4.646409] (manette) JobProgress: {'identifier': 'manette', 'progress': 'install'}
+[4.647602] (manette) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/MKGL/quadro_ws/build/manette'], 'cwd': '/home/MKGL/quadro_ws/build/manette', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/manette', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[4.652162] (-) TimerEvent: {}
+[4.688695] (manette) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.690620] (manette) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.695924] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/lib/manette/manette_node\n'}
+[4.741702] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette//config/manette_params.yaml\n'}
+[4.752361] (-) TimerEvent: {}
+[4.790646] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette//launch/manette.launch.py\n'}
+[4.838539] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/ament_index/resource_index/package_run_dependencies/manette\n'}
+[4.852556] (-) TimerEvent: {}
+[4.885939] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/ament_index/resource_index/parent_prefix_path/manette\n'}
+[4.931201] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/environment/ament_prefix_path.sh\n'}
+[4.952811] (-) TimerEvent: {}
+[4.987916] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/environment/ament_prefix_path.dsv\n'}
+[5.041130] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/environment/path.sh\n'}
+[5.054000] (-) TimerEvent: {}
+[5.086397] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/environment/path.dsv\n'}
+[5.137912] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/local_setup.bash\n'}
+[5.154228] (-) TimerEvent: {}
+[5.189790] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/local_setup.sh\n'}
+[5.237027] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/local_setup.zsh\n'}
+[5.254515] (-) TimerEvent: {}
+[5.284517] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/local_setup.dsv\n'}
+[5.334963] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/package.dsv\n'}
+[5.354713] (-) TimerEvent: {}
+[5.384100] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/ament_index/resource_index/packages/manette\n'}
+[5.431720] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/cmake/manetteConfig.cmake\n'}
+[5.454917] (-) TimerEvent: {}
+[5.476950] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/cmake/manetteConfig-version.cmake\n'}
+[5.525389] (manette) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/package.xml\n'}
+[5.555223] (-) TimerEvent: {}
+[5.580164] (manette) CommandEnded: {'returncode': 0}
+[5.655451] (-) TimerEvent: {}
+[5.757168] (-) TimerEvent: {}
+[5.787849] (manette) JobEnded: {'identifier': 'manette', 'rc': 0}
+[5.857363] (-) TimerEvent: {}
+[5.953563] (serial) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libserial_lib.so\x1b[0m\n'}
+[5.957556] (-) TimerEvent: {}
+[6.058345] (-) TimerEvent: {}
+[6.159477] (-) TimerEvent: {}
+[6.260777] (-) TimerEvent: {}
+[6.324100] (serial) StdoutLine: {'line': b'[ 50%] Built target serial_lib\n'}
+[6.360923] (-) TimerEvent: {}
+[6.428679] (serial) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/testlib_node.dir/src/testlib_node.cpp.o\x1b[0m\n'}
+[6.461150] (-) TimerEvent: {}
+[6.561926] (-) TimerEvent: {}
+[6.662608] (-) TimerEvent: {}
+[6.763322] (-) TimerEvent: {}
+[6.864053] (-) TimerEvent: {}
+[6.964685] (-) TimerEvent: {}
+[7.065356] (-) TimerEvent: {}
+[7.166033] (-) TimerEvent: {}
+[7.266697] (-) TimerEvent: {}
+[7.367345] (-) TimerEvent: {}
+[7.468081] (-) TimerEvent: {}
+[7.568823] (-) TimerEvent: {}
+[7.669658] (-) TimerEvent: {}
+[7.770370] (-) TimerEvent: {}
+[7.871045] (-) TimerEvent: {}
+[7.971821] (-) TimerEvent: {}
+[8.072532] (-) TimerEvent: {}
+[8.173339] (-) TimerEvent: {}
+[8.274131] (-) TimerEvent: {}
+[8.374886] (-) TimerEvent: {}
+[8.475583] (-) TimerEvent: {}
+[8.576355] (-) TimerEvent: {}
+[8.677143] (-) TimerEvent: {}
+[8.777903] (-) TimerEvent: {}
+[8.878585] (-) TimerEvent: {}
+[8.979331] (-) TimerEvent: {}
+[9.080078] (-) TimerEvent: {}
+[9.180826] (-) TimerEvent: {}
+[9.281606] (-) TimerEvent: {}
+[9.382504] (-) TimerEvent: {}
+[9.483381] (-) TimerEvent: {}
+[9.584193] (-) TimerEvent: {}
+[9.685023] (-) TimerEvent: {}
+[9.785862] (-) TimerEvent: {}
+[9.886586] (-) TimerEvent: {}
+[9.987386] (-) TimerEvent: {}
+[10.088178] (-) TimerEvent: {}
+[10.188886] (-) TimerEvent: {}
+[10.289581] (-) TimerEvent: {}
+[10.390426] (-) TimerEvent: {}
+[10.491176] (-) TimerEvent: {}
+[10.591909] (-) TimerEvent: {}
+[10.692614] (-) TimerEvent: {}
+[10.793375] (-) TimerEvent: {}
+[10.894215] (-) TimerEvent: {}
+[10.994905] (-) TimerEvent: {}
+[11.095647] (-) TimerEvent: {}
+[11.196403] (-) TimerEvent: {}
+[11.297162] (-) TimerEvent: {}
+[11.398006] (-) TimerEvent: {}
+[11.498853] (-) TimerEvent: {}
+[11.599562] (-) TimerEvent: {}
+[11.700378] (-) TimerEvent: {}
+[11.801173] (-) TimerEvent: {}
+[11.901960] (-) TimerEvent: {}
+[12.002806] (-) TimerEvent: {}
+[12.103492] (-) TimerEvent: {}
+[12.204244] (-) TimerEvent: {}
+[12.304944] (-) TimerEvent: {}
+[12.405695] (-) TimerEvent: {}
+[12.506456] (-) TimerEvent: {}
+[12.607226] (-) TimerEvent: {}
+[12.707939] (-) TimerEvent: {}
+[12.808673] (-) TimerEvent: {}
+[12.909436] (-) TimerEvent: {}
+[13.010238] (-) TimerEvent: {}
+[13.111009] (-) TimerEvent: {}
+[13.211720] (-) TimerEvent: {}
+[13.312472] (-) TimerEvent: {}
+[13.413226] (-) TimerEvent: {}
+[13.514086] (-) TimerEvent: {}
+[13.614817] (-) TimerEvent: {}
+[13.715569] (-) TimerEvent: {}
+[13.816332] (-) TimerEvent: {}
+[13.917069] (-) TimerEvent: {}
+[14.017868] (-) TimerEvent: {}
+[14.118592] (-) TimerEvent: {}
+[14.219329] (-) TimerEvent: {}
+[14.320081] (-) TimerEvent: {}
+[14.420825] (-) TimerEvent: {}
+[14.521553] (-) TimerEvent: {}
+[14.622356] (-) TimerEvent: {}
+[14.723112] (-) TimerEvent: {}
+[14.823881] (-) TimerEvent: {}
+[14.924603] (-) TimerEvent: {}
+[15.025424] (-) TimerEvent: {}
+[15.126268] (-) TimerEvent: {}
+[15.227024] (-) TimerEvent: {}
+[15.327860] (-) TimerEvent: {}
+[15.428574] (-) TimerEvent: {}
+[15.529440] (-) TimerEvent: {}
+[15.630183] (-) TimerEvent: {}
+[15.730920] (-) TimerEvent: {}
+[15.831664] (-) TimerEvent: {}
+[15.932426] (-) TimerEvent: {}
+[16.033181] (-) TimerEvent: {}
+[16.133923] (-) TimerEvent: {}
+[16.234641] (-) TimerEvent: {}
+[16.335487] (-) TimerEvent: {}
+[16.436244] (-) TimerEvent: {}
+[16.537057] (-) TimerEvent: {}
+[16.637867] (-) TimerEvent: {}
+[16.738574] (-) TimerEvent: {}
+[16.839339] (-) TimerEvent: {}
+[16.940150] (-) TimerEvent: {}
+[17.040880] (-) TimerEvent: {}
+[17.141596] (-) TimerEvent: {}
+[17.242352] (-) TimerEvent: {}
+[17.343125] (-) TimerEvent: {}
+[17.443885] (-) TimerEvent: {}
+[17.544581] (-) TimerEvent: {}
+[17.645322] (-) TimerEvent: {}
+[17.746069] (-) TimerEvent: {}
+[17.846822] (-) TimerEvent: {}
+[17.947509] (-) TimerEvent: {}
+[18.048275] (-) TimerEvent: {}
+[18.149036] (-) TimerEvent: {}
+[18.249796] (-) TimerEvent: {}
+[18.350473] (-) TimerEvent: {}
+[18.451270] (-) TimerEvent: {}
+[18.551998] (-) TimerEvent: {}
+[18.652701] (-) TimerEvent: {}
+[18.753458] (-) TimerEvent: {}
+[18.854255] (-) TimerEvent: {}
+[18.954982] (-) TimerEvent: {}
+[19.055678] (-) TimerEvent: {}
+[19.156415] (-) TimerEvent: {}
+[19.257220] (-) TimerEvent: {}
+[19.357917] (-) TimerEvent: {}
+[19.458600] (-) TimerEvent: {}
+[19.559359] (-) TimerEvent: {}
+[19.660117] (-) TimerEvent: {}
+[19.760857] (-) TimerEvent: {}
+[19.861560] (-) TimerEvent: {}
+[19.962286] (-) TimerEvent: {}
+[20.063072] (-) TimerEvent: {}
+[20.163867] (-) TimerEvent: {}
+[20.264779] (-) TimerEvent: {}
+[20.365506] (-) TimerEvent: {}
+[20.466363] (-) TimerEvent: {}
+[20.567168] (-) TimerEvent: {}
+[20.667889] (-) TimerEvent: {}
+[20.768704] (-) TimerEvent: {}
+[20.869403] (-) TimerEvent: {}
+[20.970153] (-) TimerEvent: {}
+[21.070881] (-) TimerEvent: {}
+[21.171668] (-) TimerEvent: {}
+[21.272681] (-) TimerEvent: {}
+[21.334574] (serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable testlib_node\x1b[0m\n'}
+[21.372886] (-) TimerEvent: {}
+[21.473654] (-) TimerEvent: {}
+[21.574626] (-) TimerEvent: {}
+[21.675947] (-) TimerEvent: {}
+[21.777235] (-) TimerEvent: {}
+[21.877993] (-) TimerEvent: {}
+[21.970333] (serial) StdoutLine: {'line': b'[100%] Built target testlib_node\n'}
+[21.978184] (-) TimerEvent: {}
+[22.020869] (serial) CommandEnded: {'returncode': 0}
+[22.078390] (-) TimerEvent: {}
+[22.179209] (-) TimerEvent: {}
+[22.183611] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[22.184600] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/MKGL/quadro_ws/build/serial'], 'cwd': '/home/MKGL/quadro_ws/build/serial', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/serial', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[22.222936] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.224858] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[22.226090] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[22.269305] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[22.279387] (-) TimerEvent: {}
+[22.313053] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/include/serial/include/serial/serial.hpp\n'}
+[22.357888] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/lib/serial/testlib_node\n'}
+[22.379576] (-) TimerEvent: {}
+[22.405451] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[22.450649] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[22.479823] (-) TimerEvent: {}
+[22.494482] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[22.538270] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[22.580036] (-) TimerEvent: {}
+[22.582863] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/environment/path.sh\n'}
+[22.624629] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/environment/path.dsv\n'}
+[22.668150] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/local_setup.bash\n'}
+[22.680216] (-) TimerEvent: {}
+[22.711792] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/local_setup.sh\n'}
+[22.754846] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/local_setup.zsh\n'}
+[22.780447] (-) TimerEvent: {}
+[22.802043] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/local_setup.dsv\n'}
+[22.845875] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/package.dsv\n'}
+[22.880625] (-) TimerEvent: {}
+[22.889974] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[22.934856] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[22.979133] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.980752] (-) TimerEvent: {}
+[23.024245] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[23.067603] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[23.080942] (-) TimerEvent: {}
+[23.110490] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[23.155126] (serial) StdoutLine: {'line': b'-- Symlinking: /home/MKGL/quadro_ws/install/serial/share/serial/package.xml\n'}
+[23.181120] (-) TimerEvent: {}
+[23.199536] (serial) StdoutLine: {'line': b'-- Installing: /home/MKGL/quadro_ws/install/serial/lib/libserial_lib.so\n'}
+[23.202013] (serial) StdoutLine: {'line': b'-- Installing: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/export_serialExport.cmake\n'}
+[23.203347] (serial) StdoutLine: {'line': b'-- Installing: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/export_serialExport-noconfig.cmake\n'}
+[23.211345] (serial) CommandEnded: {'returncode': 0}
+[23.281330] (-) TimerEvent: {}
+[23.382044] (-) TimerEvent: {}
+[23.440580] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[23.444147] (dgz) JobStarted: {'identifier': 'dgz'}
+[23.482312] (-) TimerEvent: {}
+[23.498961] (dgz) JobProgress: {'identifier': 'dgz', 'progress': 'cmake'}
+[23.501962] (dgz) Command: {'cmd': ['/usr/bin/cmake', '/home/MKGL/quadro_ws/src/dgz', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/dgz'], 'cwd': '/home/MKGL/quadro_ws/build/dgz', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/dgz', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[23.567794] (dgz) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[23.582510] (-) TimerEvent: {}
+[23.683301] (-) TimerEvent: {}
+[23.784420] (-) TimerEvent: {}
+[23.885078] (-) TimerEvent: {}
+[23.985716] (-) TimerEvent: {}
+[24.086395] (-) TimerEvent: {}
+[24.187149] (-) TimerEvent: {}
+[24.288028] (-) TimerEvent: {}
+[24.388782] (-) TimerEvent: {}
+[24.489528] (-) TimerEvent: {}
+[24.590281] (-) TimerEvent: {}
+[24.623520] (dgz) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[24.661802] (dgz) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[24.690438] (-) TimerEvent: {}
+[24.791184] (-) TimerEvent: {}
+[24.794244] (dgz) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[24.842012] (dgz) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[24.891415] (-) TimerEvent: {}
+[24.898394] (dgz) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[24.956480] (dgz) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[24.991591] (-) TimerEvent: {}
+[25.092274] (-) TimerEvent: {}
+[25.193013] (-) TimerEvent: {}
+[25.200234] (dgz) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[25.206629] (dgz) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[25.293196] (-) TimerEvent: {}
+[25.394023] (-) TimerEvent: {}
+[25.455812] (dgz) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[25.494230] (-) TimerEvent: {}
+[25.594992] (-) TimerEvent: {}
+[25.681829] (dgz) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[25.695152] (-) TimerEvent: {}
+[25.732627] (dgz) StdoutLine: {'line': b'-- Found space_interfaces: 0.0.0 (/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake)\n'}
+[25.775591] (dgz) StdoutLine: {'line': b'-- Found serial: 0.0.0 (/home/MKGL/quadro_ws/install/serial/share/serial/cmake)\n'}
+[25.795310] (-) TimerEvent: {}
+[25.809844] (dgz) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[25.895481] (-) TimerEvent: {}
+[25.996216] (-) TimerEvent: {}
+[26.096848] (-) TimerEvent: {}
+[26.197543] (-) TimerEvent: {}
+[26.298388] (-) TimerEvent: {}
+[26.361204] (dgz) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[26.370872] (dgz) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[26.371969] (dgz) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/MKGL/quadro_ws/src/dgz/include\n'}
+[26.372573] (dgz) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[26.375350] (dgz) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[26.375962] (dgz) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[26.379322] (dgz) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[26.382566] (dgz) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[26.391116] (dgz) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[26.391755] (dgz) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[26.394529] (dgz) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[26.398537] (-) TimerEvent: {}
+[26.403251] (dgz) StdoutLine: {'line': b'-- Configuring done (2.9s)\n'}
+[26.498768] (-) TimerEvent: {}
+[26.502823] (dgz) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[26.510641] (dgz) StdoutLine: {'line': b'-- Build files have been written to: /home/MKGL/quadro_ws/build/dgz\n'}
+[26.545648] (dgz) CommandEnded: {'returncode': 0}
+[26.547646] (dgz) JobProgress: {'identifier': 'dgz', 'progress': 'build'}
+[26.551201] (dgz) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/MKGL/quadro_ws/build/dgz', '--', '-j4', '-l4'], 'cwd': '/home/MKGL/quadro_ws/build/dgz', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONWARNINGS': 'ignore:easy_install command is deprecated.', 'USER': 'MKGL', 'SSH_CLIENT': '172.20.10.7 35662 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/home/MKGL', 'OLDPWD': '/home/MKGL', 'SSH_TTY': '/dev/pts/7', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/MKGL/quadro_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'MKGL', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '22', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/MKGL/quadro_ws/build/dgz', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.7 35662 172.20.10.5 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/MKGL/quadro_ws/install/space_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy'}), 'shell': False}
+[26.598940] (-) TimerEvent: {}
+[26.699627] (-) TimerEvent: {}
+[26.800637] (-) TimerEvent: {}
+[26.809721] (dgz) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/dgz_frame_lib.dir/src/dgz_frame.cpp.o\x1b[0m\n'}
+[26.812642] (dgz) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/move_ctrl_node.dir/src/move_ctrl_node.cpp.o\x1b[0m\n'}
+[26.900868] (-) TimerEvent: {}
+[27.001605] (-) TimerEvent: {}
+[27.102328] (-) TimerEvent: {}
+[27.203056] (-) TimerEvent: {}
+[27.303689] (-) TimerEvent: {}
+[27.404376] (-) TimerEvent: {}
+[27.505109] (-) TimerEvent: {}
+[27.605864] (-) TimerEvent: {}
+[27.706829] (-) TimerEvent: {}
+[27.807613] (-) TimerEvent: {}
+[27.908405] (-) TimerEvent: {}
+[28.009389] (-) TimerEvent: {}
+[28.110163] (-) TimerEvent: {}
+[28.211013] (-) TimerEvent: {}
+[28.311703] (-) TimerEvent: {}
+[28.412511] (-) TimerEvent: {}
+[28.513324] (-) TimerEvent: {}
+[28.614562] (-) TimerEvent: {}
+[28.710622] (dgz) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libdgz_frame_lib.so\x1b[0m\n'}
+[28.714822] (-) TimerEvent: {}
+[28.815639] (-) TimerEvent: {}
+[28.916885] (-) TimerEvent: {}
+[29.020016] (-) TimerEvent: {}
+[29.121212] (-) TimerEvent: {}
+[29.221891] (-) TimerEvent: {}
+[29.323475] (-) TimerEvent: {}
+[29.425404] (-) TimerEvent: {}
+[29.526992] (-) TimerEvent: {}
+[29.628236] (-) TimerEvent: {}
+[29.730222] (-) TimerEvent: {}
+[29.803995] (dgz) StdoutLine: {'line': b'[ 50%] Built target dgz_frame_lib\n'}
+[29.830437] (-) TimerEvent: {}
+[29.919907] (dgz) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/dgz_ctrl_node.dir/src/dgz_ctrl_node.cpp.o\x1b[0m\n'}
+[29.930667] (-) TimerEvent: {}
+[30.031928] (-) TimerEvent: {}
+[30.133255] (-) TimerEvent: {}
+[30.235207] (-) TimerEvent: {}
+[30.336195] (-) TimerEvent: {}
+[30.438256] (-) TimerEvent: {}
+[30.539419] (-) TimerEvent: {}
+[30.642874] (-) TimerEvent: {}
+[30.743820] (-) TimerEvent: {}
+[30.844519] (-) TimerEvent: {}
+[30.945797] (-) TimerEvent: {}
+[31.048970] (-) TimerEvent: {}
+[31.149649] (-) TimerEvent: {}
+[31.250360] (-) TimerEvent: {}
+[31.351089] (-) TimerEvent: {}
+[31.451846] (-) TimerEvent: {}
+[31.554935] (-) TimerEvent: {}
+[31.624252] (dgz) StderrLine: {'line': b'\x1b[01m\x1b[K/home/MKGL/quadro_ws/src/dgz/src/dgz_ctrl_node.cpp:3:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kserial/serial.hpp: No such file or directory\n'}
+[31.626373] (dgz) StderrLine: {'line': b'    3 | #include \x1b[01;31m\x1b[K"serial/serial.hpp"\x1b[m\x1b[K\n'}
+[31.629842] (dgz) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.632446] (dgz) StderrLine: {'line': b'compilation terminated.\n'}
+[31.635359] (dgz) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/dgz_ctrl_node.dir/build.make:76: CMakeFiles/dgz_ctrl_node.dir/src/dgz_ctrl_node.cpp.o] Error 1\n'}
+[31.636974] (dgz) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/dgz_ctrl_node.dir/all] Error 2\n'}
+[31.637621] (dgz) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[31.655114] (-) TimerEvent: {}
+[31.755835] (-) TimerEvent: {}
+[31.856561] (-) TimerEvent: {}
+[31.957290] (-) TimerEvent: {}
+[32.058052] (-) TimerEvent: {}
+[32.158859] (-) TimerEvent: {}
+[32.259568] (-) TimerEvent: {}
+[32.360306] (-) TimerEvent: {}
+[32.461244] (-) TimerEvent: {}
+[32.562056] (-) TimerEvent: {}
+[32.662832] (-) TimerEvent: {}
+[32.763603] (-) TimerEvent: {}
+[32.864432] (-) TimerEvent: {}
+[32.965183] (-) TimerEvent: {}
+[33.066012] (-) TimerEvent: {}
+[33.166841] (-) TimerEvent: {}
+[33.267551] (-) TimerEvent: {}
+[33.368293] (-) TimerEvent: {}
+[33.469028] (-) TimerEvent: {}
+[33.569810] (-) TimerEvent: {}
+[33.670505] (-) TimerEvent: {}
+[33.771361] (-) TimerEvent: {}
+[33.872157] (-) TimerEvent: {}
+[33.972886] (-) TimerEvent: {}
+[34.073570] (-) TimerEvent: {}
+[34.174394] (-) TimerEvent: {}
+[34.275176] (-) TimerEvent: {}
+[34.375890] (-) TimerEvent: {}
+[34.476593] (-) TimerEvent: {}
+[34.577344] (-) TimerEvent: {}
+[34.678077] (-) TimerEvent: {}
+[34.778821] (-) TimerEvent: {}
+[34.879508] (-) TimerEvent: {}
+[34.980253] (-) TimerEvent: {}
+[35.080986] (-) TimerEvent: {}
+[35.181816] (-) TimerEvent: {}
+[35.282525] (-) TimerEvent: {}
+[35.383293] (-) TimerEvent: {}
+[35.484015] (-) TimerEvent: {}
+[35.584826] (-) TimerEvent: {}
+[35.685548] (-) TimerEvent: {}
+[35.786369] (-) TimerEvent: {}
+[35.887187] (-) TimerEvent: {}
+[35.988018] (-) TimerEvent: {}
+[36.088702] (-) TimerEvent: {}
+[36.189530] (-) TimerEvent: {}
+[36.290274] (-) TimerEvent: {}
+[36.391016] (-) TimerEvent: {}
+[36.491786] (-) TimerEvent: {}
+[36.592489] (-) TimerEvent: {}
+[36.693303] (-) TimerEvent: {}
+[36.794048] (-) TimerEvent: {}
+[36.894800] (-) TimerEvent: {}
+[36.995541] (-) TimerEvent: {}
+[37.096327] (-) TimerEvent: {}
+[37.197119] (-) TimerEvent: {}
+[37.297881] (-) TimerEvent: {}
+[37.398607] (-) TimerEvent: {}
+[37.499383] (-) TimerEvent: {}
+[37.600219] (-) TimerEvent: {}
+[37.701010] (-) TimerEvent: {}
+[37.801789] (-) TimerEvent: {}
+[37.902496] (-) TimerEvent: {}
+[38.003252] (-) TimerEvent: {}
+[38.104045] (-) TimerEvent: {}
+[38.204810] (-) TimerEvent: {}
+[38.305579] (-) TimerEvent: {}
+[38.406345] (-) TimerEvent: {}
+[38.507163] (-) TimerEvent: {}
+[38.607890] (-) TimerEvent: {}
+[38.708622] (-) TimerEvent: {}
+[38.809415] (-) TimerEvent: {}
+[38.910307] (-) TimerEvent: {}
+[39.011094] (-) TimerEvent: {}
+[39.111845] (-) TimerEvent: {}
+[39.212551] (-) TimerEvent: {}
+[39.313298] (-) TimerEvent: {}
+[39.414072] (-) TimerEvent: {}
+[39.514828] (-) TimerEvent: {}
+[39.615516] (-) TimerEvent: {}
+[39.716247] (-) TimerEvent: {}
+[39.816989] (-) TimerEvent: {}
+[39.917672] (-) TimerEvent: {}
+[40.018420] (-) TimerEvent: {}
+[40.119195] (-) TimerEvent: {}
+[40.219895] (-) TimerEvent: {}
+[40.320595] (-) TimerEvent: {}
+[40.421368] (-) TimerEvent: {}
+[40.522090] (-) TimerEvent: {}
+[40.622799] (-) TimerEvent: {}
+[40.723491] (-) TimerEvent: {}
+[40.824302] (-) TimerEvent: {}
+[40.925049] (-) TimerEvent: {}
+[41.025848] (-) TimerEvent: {}
+[41.126548] (-) TimerEvent: {}
+[41.227434] (-) TimerEvent: {}
+[41.328185] (-) TimerEvent: {}
+[41.429044] (-) TimerEvent: {}
+[41.529822] (-) TimerEvent: {}
+[41.630576] (-) TimerEvent: {}
+[41.731315] (-) TimerEvent: {}
+[41.832041] (-) TimerEvent: {}
+[41.932781] (-) TimerEvent: {}
+[42.033494] (-) TimerEvent: {}
+[42.134343] (-) TimerEvent: {}
+[42.235129] (-) TimerEvent: {}
+[42.335857] (-) TimerEvent: {}
+[42.436556] (-) TimerEvent: {}
+[42.537307] (-) TimerEvent: {}
+[42.638055] (-) TimerEvent: {}
+[42.738849] (-) TimerEvent: {}
+[42.839551] (-) TimerEvent: {}
+[42.940279] (-) TimerEvent: {}
+[43.041017] (-) TimerEvent: {}
+[43.141767] (-) TimerEvent: {}
+[43.242471] (-) TimerEvent: {}
+[43.343332] (-) TimerEvent: {}
+[43.444085] (-) TimerEvent: {}
+[43.544892] (-) TimerEvent: {}
+[43.645642] (-) TimerEvent: {}
+[43.746549] (-) TimerEvent: {}
+[43.847321] (-) TimerEvent: {}
+[43.948057] (-) TimerEvent: {}
+[44.048789] (-) TimerEvent: {}
+[44.149478] (-) TimerEvent: {}
+[44.250226] (-) TimerEvent: {}
+[44.350908] (-) TimerEvent: {}
+[44.451604] (-) TimerEvent: {}
+[44.552381] (-) TimerEvent: {}
+[44.653208] (-) TimerEvent: {}
+[44.753921] (-) TimerEvent: {}
+[44.854641] (-) TimerEvent: {}
+[44.955410] (-) TimerEvent: {}
+[45.056237] (-) TimerEvent: {}
+[45.157049] (-) TimerEvent: {}
+[45.257857] (-) TimerEvent: {}
+[45.358588] (-) TimerEvent: {}
+[45.459412] (-) TimerEvent: {}
+[45.560139] (-) TimerEvent: {}
+[45.660856] (-) TimerEvent: {}
+[45.761556] (-) TimerEvent: {}
+[45.862292] (-) TimerEvent: {}
+[45.963062] (-) TimerEvent: {}
+[46.063826] (-) TimerEvent: {}
+[46.164533] (-) TimerEvent: {}
+[46.265275] (-) TimerEvent: {}
+[46.366032] (-) TimerEvent: {}
+[46.466784] (-) TimerEvent: {}
+[46.567476] (-) TimerEvent: {}
+[46.668228] (-) TimerEvent: {}
+[46.768970] (-) TimerEvent: {}
+[46.869711] (-) TimerEvent: {}
+[46.970460] (-) TimerEvent: {}
+[47.071188] (-) TimerEvent: {}
+[47.171905] (-) TimerEvent: {}
+[47.272799] (-) TimerEvent: {}
+[47.373443] (-) TimerEvent: {}
+[47.474136] (-) TimerEvent: {}
+[47.574863] (-) TimerEvent: {}
+[47.675554] (-) TimerEvent: {}
+[47.776322] (-) TimerEvent: {}
+[47.877143] (-) TimerEvent: {}
+[47.977889] (-) TimerEvent: {}
+[48.078566] (-) TimerEvent: {}
+[48.179311] (-) TimerEvent: {}
+[48.280062] (-) TimerEvent: {}
+[48.380788] (-) TimerEvent: {}
+[48.481546] (-) TimerEvent: {}
+[48.582463] (-) TimerEvent: {}
+[48.683377] (-) TimerEvent: {}
+[48.784158] (-) TimerEvent: {}
+[48.884874] (-) TimerEvent: {}
+[48.985569] (-) TimerEvent: {}
+[49.086310] (-) TimerEvent: {}
+[49.187052] (-) TimerEvent: {}
+[49.287804] (-) TimerEvent: {}
+[49.388482] (-) TimerEvent: {}
+[49.489308] (-) TimerEvent: {}
+[49.590059] (-) TimerEvent: {}
+[49.690812] (-) TimerEvent: {}
+[49.791526] (-) TimerEvent: {}
+[49.892424] (-) TimerEvent: {}
+[49.993606] (-) TimerEvent: {}
+[50.094548] (-) TimerEvent: {}
+[50.195569] (-) TimerEvent: {}
+[50.296325] (-) TimerEvent: {}
+[50.397122] (-) TimerEvent: {}
+[50.497889] (-) TimerEvent: {}
+[50.598647] (-) TimerEvent: {}
+[50.699386] (-) TimerEvent: {}
+[50.800163] (-) TimerEvent: {}
+[50.900908] (-) TimerEvent: {}
+[51.001668] (-) TimerEvent: {}
+[51.102436] (-) TimerEvent: {}
+[51.203183] (-) TimerEvent: {}
+[51.303887] (-) TimerEvent: {}
+[51.404565] (-) TimerEvent: {}
+[51.505303] (-) TimerEvent: {}
+[51.606039] (-) TimerEvent: {}
+[51.706783] (-) TimerEvent: {}
+[51.807468] (-) TimerEvent: {}
+[51.908226] (-) TimerEvent: {}
+[52.008959] (-) TimerEvent: {}
+[52.109646] (-) TimerEvent: {}
+[52.210376] (-) TimerEvent: {}
+[52.311186] (-) TimerEvent: {}
+[52.411849] (-) TimerEvent: {}
+[52.512557] (-) TimerEvent: {}
+[52.613271] (-) TimerEvent: {}
+[52.714030] (-) TimerEvent: {}
+[52.814826] (-) TimerEvent: {}
+[52.915523] (-) TimerEvent: {}
+[53.016285] (-) TimerEvent: {}
+[53.117029] (-) TimerEvent: {}
+[53.217806] (-) TimerEvent: {}
+[53.318492] (-) TimerEvent: {}
+[53.419232] (-) TimerEvent: {}
+[53.519936] (-) TimerEvent: {}
+[53.620625] (-) TimerEvent: {}
+[53.721373] (-) TimerEvent: {}
+[53.822135] (-) TimerEvent: {}
+[53.922858] (-) TimerEvent: {}
+[54.023558] (-) TimerEvent: {}
+[54.124275] (-) TimerEvent: {}
+[54.224944] (-) TimerEvent: {}
+[54.325662] (-) TimerEvent: {}
+[54.426419] (-) TimerEvent: {}
+[54.527320] (-) TimerEvent: {}
+[54.628050] (-) TimerEvent: {}
+[54.728781] (-) TimerEvent: {}
+[54.829464] (-) TimerEvent: {}
+[54.930248] (-) TimerEvent: {}
+[55.030980] (-) TimerEvent: {}
+[55.131678] (-) TimerEvent: {}
+[55.232452] (-) TimerEvent: {}
+[55.333215] (-) TimerEvent: {}
+[55.433918] (-) TimerEvent: {}
+[55.534635] (-) TimerEvent: {}
+[55.635391] (-) TimerEvent: {}
+[55.736128] (-) TimerEvent: {}
+[55.836874] (-) TimerEvent: {}
+[55.937560] (-) TimerEvent: {}
+[56.038354] (-) TimerEvent: {}
+[56.139188] (-) TimerEvent: {}
+[56.239895] (-) TimerEvent: {}
+[56.340606] (-) TimerEvent: {}
+[56.441347] (-) TimerEvent: {}
+[56.542160] (-) TimerEvent: {}
+[56.642893] (-) TimerEvent: {}
+[56.743617] (-) TimerEvent: {}
+[56.844369] (-) TimerEvent: {}
+[56.945166] (-) TimerEvent: {}
+[57.045885] (-) TimerEvent: {}
+[57.146597] (-) TimerEvent: {}
+[57.247370] (-) TimerEvent: {}
+[57.348096] (-) TimerEvent: {}
+[57.448813] (-) TimerEvent: {}
+[57.549539] (-) TimerEvent: {}
+[57.650314] (-) TimerEvent: {}
+[57.751066] (-) TimerEvent: {}
+[57.851765] (-) TimerEvent: {}
+[57.952447] (-) TimerEvent: {}
+[58.053255] (-) TimerEvent: {}
+[58.153991] (-) TimerEvent: {}
+[58.254779] (-) TimerEvent: {}
+[58.355467] (-) TimerEvent: {}
+[58.456213] (-) TimerEvent: {}
+[58.556913] (-) TimerEvent: {}
+[58.657701] (-) TimerEvent: {}
+[58.758485] (-) TimerEvent: {}
+[58.859396] (-) TimerEvent: {}
+[58.960191] (-) TimerEvent: {}
+[59.061692] (-) TimerEvent: {}
+[59.162455] (-) TimerEvent: {}
+[59.263259] (-) TimerEvent: {}
+[59.363974] (-) TimerEvent: {}
+[59.464666] (-) TimerEvent: {}
+[59.565422] (-) TimerEvent: {}
+[59.666195] (-) TimerEvent: {}
+[59.766885] (-) TimerEvent: {}
+[59.867631] (-) TimerEvent: {}
+[59.968351] (-) TimerEvent: {}
+[60.069075] (-) TimerEvent: {}
+[60.169825] (-) TimerEvent: {}
+[60.270516] (-) TimerEvent: {}
+[60.371265] (-) TimerEvent: {}
+[60.471978] (-) TimerEvent: {}
+[60.572675] (-) TimerEvent: {}
+[60.673417] (-) TimerEvent: {}
+[60.774161] (-) TimerEvent: {}
+[60.874915] (-) TimerEvent: {}
+[60.976034] (-) TimerEvent: {}
+[61.077404] (-) TimerEvent: {}
+[61.178325] (-) TimerEvent: {}
+[61.279334] (-) TimerEvent: {}
+[61.380160] (-) TimerEvent: {}
+[61.480888] (-) TimerEvent: {}
+[61.581583] (-) TimerEvent: {}
+[61.682351] (-) TimerEvent: {}
+[61.783187] (-) TimerEvent: {}
+[61.883924] (-) TimerEvent: {}
+[61.984662] (-) TimerEvent: {}
+[62.085425] (-) TimerEvent: {}
+[62.186181] (-) TimerEvent: {}
+[62.286902] (-) TimerEvent: {}
+[62.387584] (-) TimerEvent: {}
+[62.488323] (-) TimerEvent: {}
+[62.589058] (-) TimerEvent: {}
+[62.689859] (-) TimerEvent: {}
+[62.790813] (-) TimerEvent: {}
+[62.891784] (-) TimerEvent: {}
+[62.992590] (-) TimerEvent: {}
+[63.093589] (-) TimerEvent: {}
+[63.194966] (-) TimerEvent: {}
+[63.296503] (-) TimerEvent: {}
+[63.354645] (dgz) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable move_ctrl_node\x1b[0m\n'}
+[63.396673] (-) TimerEvent: {}
+[63.497410] (-) TimerEvent: {}
+[63.598350] (-) TimerEvent: {}
+[63.699359] (-) TimerEvent: {}
+[63.800904] (-) TimerEvent: {}
+[63.902338] (-) TimerEvent: {}
+[64.003470] (-) TimerEvent: {}
+[64.104438] (-) TimerEvent: {}
+[64.205526] (-) TimerEvent: {}
+[64.306433] (-) TimerEvent: {}
+[64.407223] (-) TimerEvent: {}
+[64.508229] (-) TimerEvent: {}
+[64.609574] (-) TimerEvent: {}
+[64.710244] (-) TimerEvent: {}
+[64.810911] (-) TimerEvent: {}
+[64.816040] (dgz) StdoutLine: {'line': b'[ 83%] Built target move_ctrl_node\n'}
+[64.821807] (dgz) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[64.829298] (dgz) CommandEnded: {'returncode': 2}
+[64.911129] (-) TimerEvent: {}
+[65.010236] (dgz) JobEnded: {'identifier': 'dgz', 'rc': 2}
+[65.011952] (-) TimerEvent: {}
+[65.022396] (-) EventReactorShutdown: {}
