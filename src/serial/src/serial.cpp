@@ -1,8 +1,9 @@
-#include <termios.h>
-#include <iostream>
-#include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <cstring>
+#include <unistd.h>
+#include <iostream>
+#include <termios.h>
 #include "serial/serial.hpp"
 
 #if __DEBUG_SERIAL
@@ -19,47 +20,44 @@ serial::serial(const char *device,
                uint8_t stopbits,
                uint8_t parity,
                uint8_t min_buf_read,
-               uint8_t max_timeout_read_ds,
-               uint32_t attempts_read)
-    : device(device),
-      baudrate(baudrate),
-      databits(databits),
-      stopbits(stopbits),
-      parity(parity),
-      min_buf_read(min_buf_read),
-      max_timeout_read_ds(max_timeout_read_ds),
-      attempts_read(attempts_read),
-      fd(-1) {}
+               uint8_t max_timeout_read_ds) : device_(device),
+                                              baudrate_(baudrate),
+                                              databits_(databits),
+                                              stopbits_(stopbits),
+                                              parity_(parity),
+                                              min_buf_read_(min_buf_read),
+                                              max_timeout_read_ds_(max_timeout_read_ds),
+                                              fd_(-1) {}
 
 serial::~serial()
 {
-    if (this->fd != -1)
-    {
-        ::close(this->fd);
-        this->fd = -1;
-    }
+    if (fd_ != -1)
+        ::close(fd_);
 }
 
 bool serial::init()
 {
-    this->fd = ::open(this->device, O_RDWR | O_NOCTTY | O_NDELAY);
-    if (this->fd == -1)
+    fd_ = ::open(device_, O_RDWR | O_NOCTTY | O_NDELAY);
+    if (fd_ == -1)
     {
-        __debug_print_error("Failed to open serial device: " << this->device);
+        __debug_print_error("Failed to open serial device: " << device_);
         return false;
     }
 
     struct termios tios;
-    if (tcgetattr(this->fd, &tios) != 0)
+    if (tcgetattr(fd_, &tios) != 0)
     {
         __debug_print_error("Failed to get serial device attributes");
-        ::close(this->fd);
+        ::close(fd_);
         return false;
     }
-    tios.c_ispeed = this->baudrate;
-    tios.c_ospeed = this->baudrate;
+
+    tios.c_ispeed = baudrate_;
+    tios.c_ospeed = baudrate_;
+
     tios.c_cflag &= ~CSIZE;
-    switch (this->databits)
+
+    switch (databits_)
     {
     case 5:
         tios.c_cflag |= CS5;
@@ -74,11 +72,12 @@ bool serial::init()
         tios.c_cflag |= CS8;
         break;
     default:
-        __debug_print_error("Invalid databits: " << this->databits);
-        ::close(this->fd);
+        __debug_print_error("Invalid databits: " << databits_);
+        ::close(fd_);
         return false;
     }
-    switch (this->stopbits)
+
+    switch (stopbits_)
     {
     case 1:
         tios.c_cflag &= ~CSTOPB;
@@ -87,11 +86,12 @@ bool serial::init()
         tios.c_cflag |= CSTOPB;
         break;
     default:
-        __debug_print_error("Invalid stopbits: " << this->stopbits);
-        ::close(this->fd);
+        __debug_print_error("Invalid stopbits: " << stopbits_);
+        ::close(fd_);
         return false;
     }
-    switch (this->parity)
+
+    switch (parity_)
     {
     case 0: // Disable parity
         tios.c_cflag &= ~PARENB;
@@ -105,8 +105,8 @@ bool serial::init()
         tios.c_cflag &= ~PARODD;
         break;
     default:
-        __debug_print_error("Invalid parity: " << this->parity);
-        ::close(this->fd);
+        __debug_print_error("Invalid parity: " << parity_);
+        ::close(fd_);
         return false;
     }
 
@@ -114,13 +114,13 @@ bool serial::init()
     tios.c_oflag &= ~(OPOST | ONLCR);
     tios.c_cflag |= (CLOCAL | CREAD);
     tios.c_lflag &= ~(ICANON | ECHO | ECHOE | ECHONL | ISIG);
-    tios.c_cc[VMIN] = min_buf_read;
-    tios.c_cc[VTIME] = max_timeout_read_ds;
+    tios.c_cc[VMIN] = min_buf_read_;
+    tios.c_cc[VTIME] = max_timeout_read_ds_;
 
-    if (tcsetattr(this->fd, TCSANOW, &tios) != 0)
+    if (tcsetattr(fd_, TCSANOW, &tios) != 0)
     {
         __debug_print_error("Failed to set serial device attributes");
-        ::close(this->fd);
+        ::close(fd_);
         return false;
     }
 
@@ -129,15 +129,15 @@ bool serial::init()
 
 bool serial::write(const uint8_t *data, uint32_t size)
 {
-    if (this->fd == -1)
+    if (fd_ == -1)
     {
         __debug_print_error("Serial device not initialized");
         return false;
     }
 
-    if (::write(this->fd, data, size) != size)
+    if (::write(fd_, data, size) != size)
     {
-        __debug_print_error("Failed to write data to the serial device: " << this->device);
+        __debug_print_error("Failed to write data to the serial device: " << device_);
         return false;
     }
 
@@ -146,37 +146,21 @@ bool serial::write(const uint8_t *data, uint32_t size)
 
 bool serial::read(uint8_t *data, uint32_t size)
 {
-    if (this->fd == -1)
+    if (fd_ == -1)
     {
-        __debug_print_error("Serial device not initialized");
+        __debug_print_error("serial device not initialized");
         return false;
     }
-    ssize_t tot_bufs_read = 0;
-    uint32_t attempts = 0;
-    while (tot_bufs_read < size && attempts < this->attempts_read)
+
+    ssize_t bytes_read = ::read(fd_, data, size);
+    if (bytes_read < 0)
     {
-        ssize_t bufs_read = ::read(this->fd, data + tot_bufs_read, size - tot_bufs_read);
-        if (bufs_read == -1)
-        {
-            if (errno == EAGAIN || errno == EWOULDBLOCK)
-            {
-                attempts++;
-                __debug_print("Device: " << this->device << " is busy, retrying... (" << attempts << ")");
-                continue;
-            }
-            __debug_print_error("Failed to read data to the serial device: " << this->device);
+        if (errno == EAGAIN || errno == EWOULDBLOCK)
             return false;
-        }
-        else if (bufs_read == 0)
-        {
-            attempts++;
-            __debug_print("No incoming data to the serial device: " << this->device << ", retrying... (" << attempts << ")");
-            continue;
-        }
-        else
-            tot_bufs_read += bufs_read;
+
+        __debug_print_error("Failed to read from serial device");
+        return false;
     }
-    if (tot_bufs_read == 0)
-        __debug_print("No data received to the serial device: " << this->device);
+
     return true;
 }

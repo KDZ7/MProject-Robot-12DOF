@@ -14,8 +14,8 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
 find_package(space_interfaces REQUIRED)
+find_package(serial REQUIRED)
 
 # Includes the headers of dgz package
 include_directories(include)
@@ -25,27 +25,36 @@ add_library(dgz_frame_lib SHARED
   src/dgz_frame.cpp
 )
 
-# Export the library to make it available to other packages
-ament_export_targets(dgz_frame_lib HAS_LIBRARY_TARGET)
-
-install( DIRECTORY include/${PROJECT_NAME}
-  DESTINATION include)
-
-install(
-  TARGETS dgz_frame_lib
-  EXPORT dgz_frame_lib
-  ARCHIVE DESTINATION lib
-  LIBRARY DESTINATION lib
-  RUNTIME DESTINATION bin
-)
-
 add_executable(move_ctrl_node src/move_ctrl_node.cpp)
 ament_target_dependencies(move_ctrl_node rclcpp space_interfaces)
 
 add_executable(dgz_ctrl_node src/dgz_ctrl_node.cpp)
-ament_target_dependencies(dgz_ctrl_node rclcpp space_interfaces)
+ament_target_dependencies(dgz_ctrl_node rclcpp serial space_interfaces)
+
 # Link the libraries to the executables
-target_link_libraries(move_ctrl_node dgz_frame_lib serial_lib)
+# target_link_libraries(dgz_ctrl_node dgz_frame_lib serial_lib)
+target_link_libraries(dgz_ctrl_node dgz_frame_lib)
+
+# install(
+#   DIRECTORY include
+#   DESTINATION include/${PROJECT_NAME})
+
+install(
+  DIRECTORY include/${PROJECT_NAME}
+  DESTINATION include)
+
+# install(TARGETS dgz_frame_lib
+#   EXPORT dgz_frame_lib
+#   ARCHIVE DESTINATION lib
+#   LIBRARY DESTINATION lib
+#   RUNTIME DESTINATION bin
+# )
+
+install(
+  TARGETS dgz_frame_lib move_ctrl_node dgz_ctrl_node
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+)
 
 install(
   TARGETS move_ctrl_node dgz_ctrl_node

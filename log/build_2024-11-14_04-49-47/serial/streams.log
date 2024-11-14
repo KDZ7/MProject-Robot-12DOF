@@ -1,0 +1,38 @@
+[0.056s] Invoking command in '/home/MKGL/quadro_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/MKGL/quadro_ws/build/serial -- -j4 -l4
+[0.329s] [ 50%] Built target serial_lib
+[0.457s] [ 75%] [32mBuilding CXX object CMakeFiles/testlib_node.dir/src/testlib_node.cpp.o[0m
+[15.979s] [100%] [32m[1mLinking CXX executable testlib_node[0m
+[16.608s] [100%] Built target testlib_node
+[16.658s] Invoked command in '/home/MKGL/quadro_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/MKGL/quadro_ws/build/serial -- -j4 -l4
+[16.863s] Invoking command in '/home/MKGL/quadro_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/MKGL/quadro_ws/build/serial
+[16.902s] -- Install configuration: ""
+[16.903s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/environment/library_path.sh
+[16.905s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/environment/library_path.dsv
+[16.906s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/include/serial
+[16.908s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/include/serial/serial
+[16.909s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/include/serial/serial/serial.hpp
+[16.909s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/lib/libserial_lib.so
+[16.910s] -- Installing: /home/MKGL/quadro_ws/install/serial/lib/serial/testlib_node
+[16.914s] -- Set non-toolchain portion of runtime path of "/home/MKGL/quadro_ws/install/serial/lib/serial/testlib_node" to ""
+[16.915s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[16.915s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[16.916s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[16.917s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[16.917s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/environment/path.sh
+[16.918s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/environment/path.dsv
+[16.918s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/local_setup.bash
+[16.919s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/local_setup.sh
+[16.919s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/local_setup.zsh
+[16.920s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/local_setup.dsv
+[16.921s] -- Installing: /home/MKGL/quadro_ws/install/serial/share/serial/package.dsv
+[16.921s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/ament_index/resource_index/packages/serial
+[16.922s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/export_serialExport.cmake
+[16.922s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/export_serialExport-noconfig.cmake
+[16.923s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/ament_cmake_export_targets-extras.cmake
+[16.924s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.924s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.925s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[16.925s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[16.926s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[16.927s] -- Up-to-date: /home/MKGL/quadro_ws/install/serial/share/serial/package.xml
+[16.930s] Invoked command in '/home/MKGL/quadro_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/MKGL/quadro_ws/build/serial

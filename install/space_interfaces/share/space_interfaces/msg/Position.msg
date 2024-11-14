@@ -1,1 +1,0 @@
-/home/MKGL/quadro_ws/src/space_interfaces/msg/Position.msg

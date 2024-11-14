@@ -5,6 +5,7 @@ from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
+
 def generate_launch_description():
     file_declare = DeclareLaunchArgument(
         "file",
@@ -14,17 +15,17 @@ def generate_launch_description():
     file_arg = LaunchConfiguration("file")
     dgz_pkg_path = get_package_share_directory("dgz")
     manette_pkg_path = get_package_share_directory("manette")
-    
+
     manette = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([manette_pkg_path, "launch", "manette.launch.py"])
         ),
         launch_arguments={
             "file_path": PathJoinSubstitution([dgz_pkg_path, "config", file_arg]),
-            "is_file_path": "true"
-        }.items()
+            "is_file_path": "true",
+        }.items(),
     )
-    
+
     move_ctrl_node = Node(
         package="dgz",
         executable="move_ctrl_node",
@@ -32,18 +33,19 @@ def generate_launch_description():
         output="screen",
         parameters=[PathJoinSubstitution([dgz_pkg_path, "config", file_arg])],
     )
-    
-    serial_comm_node = Node(
+
+    dgz_ctrl_node = Node(
         package="dgz",
-        executable="serial_comm_node",
-        name="serial_comm_node",
+        executable="dgz_ctrl_node",
+        name="dgz_ctrl_node",
         output="screen",
         parameters=[PathJoinSubstitution([dgz_pkg_path, "config", file_arg])],
     )
-    
-    return LaunchDescription([
-        file_declare,
-        manette,
-        move_ctrl_node,
-        # serial_comm_node
-    ])
+    return LaunchDescription(
+        [
+            file_declare,
+            manette,
+            move_ctrl_node,
+            dgz_ctrl_node,
+        ]
+    )
