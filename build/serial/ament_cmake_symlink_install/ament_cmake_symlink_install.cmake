@@ -316,8 +316,8 @@ ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/serial" FILES "/opt/
 # install(FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/serial/environment")
 ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/serial" FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/serial/environment")
 
-# install(DIRECTORY "include" "DESTINATION" "include/serial")
-ament_cmake_symlink_install_directory("/home/MKGL/quadro_ws/src/serial" DIRECTORY "include" "DESTINATION" "include/serial")
+# install(DIRECTORY "include/serial/" "DESTINATION" "include/serial")
+ament_cmake_symlink_install_directory("/home/MKGL/quadro_ws/src/serial" DIRECTORY "include/serial/" "DESTINATION" "include/serial")
 
 # install("TARGETS" "testlib_node" "DESTINATION" "lib/serial")
 include("/home/MKGL/quadro_ws/build/serial/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
@@ -360,12 +360,6 @@ ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/serial" FILES "/home
 
 # install(FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/serial/cmake")
 ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/serial" FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/serial/cmake")
-
-# install(FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/serial/cmake")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/serial" FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/serial/cmake")
-
-# install(FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/serial/cmake")
-ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/serial" FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/serial/cmake")
 
 # install(FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_core/serialConfig.cmake" "/home/MKGL/quadro_ws/build/serial/ament_cmake_core/serialConfig-version.cmake" "DESTINATION" "share/serial/cmake")
 ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/serial" FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_core/serialConfig.cmake" "/home/MKGL/quadro_ws/build/serial/ament_cmake_core/serialConfig-version.cmake" "DESTINATION" "share/serial/cmake")

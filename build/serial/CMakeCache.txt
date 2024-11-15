@@ -268,15 +268,6 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
-//Value Computed by CMake
-Project_BINARY_DIR:STATIC=/home/MKGL/quadro_ws/build/serial
-
-//Value Computed by CMake
-Project_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/MKGL/quadro_ws/src/serial
-
 //Name of the computer/site where compile is being run
 SITE:STRING=quadro
 

@@ -18,13 +18,13 @@ public:
 
         publisher = this->create_publisher<space_interfaces::msg::Position>("move_ctrl_cmd", 1);
 
-        pid_ctrl_x = {0.2, 0.01, 0.05};
-        pid_ctrl_y = {0.2, 0.01, 0.05};
-        pid_ctrl_z = {0.0, 0.0, 0.0};
-        pid_ctrl_roll = {0.0, 0.0, 0.0};
-        pid_ctrl_pitch = {0.0, 0.0, 0.0};
-        pid_ctrl_yaw = {0.3, 0.02, 0.01};
-    }
+        // pid_ctrl_x = {0.2, 0.01, 0.05};
+        // pid_ctrl_y = {0.2, 0.01, 0.05};
+        // pid_ctrl_z = {0.0, 0.0, 0.0};
+        // pid_ctrl_roll = {0.0, 0.0, 0.0};
+        // pid_ctrl_pitch = {0.0, 0.0, 0.0};
+        // pid_ctrl_yaw = {0.3, 0.02, 0.01};
+        }
 
 private:
     rclcpp::Subscription<space_interfaces::msg::Position>::SharedPtr subscription;
@@ -51,12 +51,19 @@ private:
 
         auto move_ctrl_cmd = space_interfaces::msg::Position();
 
-        move_ctrl_cmd.x = pid_apply(current_position.x, msg->x, pid_ctrl_x);
-        move_ctrl_cmd.y = pid_apply(current_position.y, msg->y, pid_ctrl_y);
-        move_ctrl_cmd.z = pid_apply(current_position.z, msg->z, pid_ctrl_z);
-        move_ctrl_cmd.roll = pid_apply(current_position.roll, msg->roll, pid_ctrl_roll);
-        move_ctrl_cmd.pitch = pid_apply(current_position.pitch, msg->pitch, pid_ctrl_pitch);
-        move_ctrl_cmd.yaw = pid_apply(current_position.yaw, msg->yaw, pid_ctrl_yaw);
+        // move_ctrl_cmd.x = pid_apply(current_position.x, msg->x, pid_ctrl_x);
+        // move_ctrl_cmd.y = pid_apply(current_position.y, msg->y, pid_ctrl_y);
+        // move_ctrl_cmd.z = pid_apply(current_position.z, msg->z, pid_ctrl_z);
+        // move_ctrl_cmd.roll = pid_apply(current_position.roll, msg->roll, pid_ctrl_roll);
+        // move_ctrl_cmd.pitch = pid_apply(current_position.pitch, msg->pitch, pid_ctrl_pitch);
+        // move_ctrl_cmd.yaw = pid_apply(current_position.yaw, msg->yaw, pid_ctrl_yaw);
+
+        move_ctrl_cmd.x = msg->x;
+        move_ctrl_cmd.y = msg->y;
+        move_ctrl_cmd.z = msg->z;
+        move_ctrl_cmd.roll = msg->roll;
+        move_ctrl_cmd.pitch = msg->pitch;
+        move_ctrl_cmd.yaw = msg->yaw;
 
         current_position.x = move_ctrl_cmd.x;
         current_position.y = move_ctrl_cmd.y;

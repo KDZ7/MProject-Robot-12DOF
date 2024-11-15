@@ -310,14 +310,23 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "include" "DESTINATION" "include/dgz")
-ament_cmake_symlink_install_directory("/home/MKGL/quadro_ws/src/dgz" DIRECTORY "include" "DESTINATION" "include/dgz")
+# install(FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/dgz/environment")
+ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/opt/ros/jazzy/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/dgz/environment")
 
-# install("TARGETS" "move_ctrl_node" "dgz_ctrl_node" "DESTINATION" "lib/dgz")
+# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/dgz/environment")
+ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/dgz/environment")
+
+# install(DIRECTORY "include/dgz/" "DESTINATION" "include/dgz")
+ament_cmake_symlink_install_directory("/home/MKGL/quadro_ws/src/dgz" DIRECTORY "include/dgz/" "DESTINATION" "include/dgz")
+
+# install("TARGETS" "move_ctrl_node" "DESTINATION" "lib/dgz/")
 include("/home/MKGL/quadro_ws/build/dgz/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "config" "launch" "DESTINATION" "share/dgz")
-ament_cmake_symlink_install_directory("/home/MKGL/quadro_ws/src/dgz" DIRECTORY "config" "launch" "DESTINATION" "share/dgz")
+# install("TARGETS" "dgz_ctrl_node" "DESTINATION" "lib/dgz/")
+include("/home/MKGL/quadro_ws/build/dgz/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "config" "launch" "DESTINATION" "share/dgz/")
+ament_cmake_symlink_install_directory("/home/MKGL/quadro_ws/src/dgz" DIRECTORY "config" "launch" "DESTINATION" "share/dgz/")
 
 # install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dgz" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/dgz" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
@@ -354,6 +363,9 @@ ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MK
 
 # install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/packages/dgz" "DESTINATION" "share/ament_index/resource_index/packages")
 ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_index/share/ament_index/resource_index/packages/dgz" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/dgz/cmake")
+ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/dgz/cmake")
 
 # install(FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_core/dgzConfig.cmake" "/home/MKGL/quadro_ws/build/dgz/ament_cmake_core/dgzConfig-version.cmake" "DESTINATION" "share/dgz/cmake")
 ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/dgz" FILES "/home/MKGL/quadro_ws/build/dgz/ament_cmake_core/dgzConfig.cmake" "/home/MKGL/quadro_ws/build/dgz/ament_cmake_core/dgzConfig-version.cmake" "DESTINATION" "share/dgz/cmake")

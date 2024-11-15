@@ -33,27 +33,20 @@ add_executable(testlib_node
 #   src/serial_com.cpp
 # )
 
-# Export the headers of the serial library
-target_include_directories(serial_lib PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>)
-
 # Export the library to make it available to other packages
 ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
-ament_export_include_directories(include)
-ament_export_libraries(serial_lib)
 
 # Link the serial_lib library to the testlib_node executable
 target_link_libraries(testlib_node serial_lib)
 ament_target_dependencies(testlib_node rclcpp)
 
 install(
-  DIRECTORY include
+  DIRECTORY include/${PROJECT_NAME}/
   DESTINATION include/${PROJECT_NAME}
   )
 
 install(
-  TARGETS serial_lib
+  TARGETS ${PROJECT_NAME}_lib
   EXPORT export_${PROJECT_NAME}
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib

@@ -59,7 +59,7 @@ endif()
 add_library(serial::serial_lib SHARED IMPORTED)
 
 set_target_properties(serial::serial_lib PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;${_IMPORT_PREFIX}/include"
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
 )
 
 # Load information for each installed configuration.
