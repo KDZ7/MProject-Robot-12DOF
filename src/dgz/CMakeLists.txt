@@ -5,6 +5,9 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+# Define macros for conditional compilation
+add_compile_definitions(__DEBUG=1)
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
 # uncomment the following section in order to fill in
@@ -19,9 +22,7 @@ find_package(serial REQUIRED)
 include_directories(include)
 
 # Create dynamic library (SHARED) for dgz_frame.cpp
-add_library(dgz_frame_lib SHARED
-  src/dgz_frame.cpp
-)
+add_library(dgz_frame_lib SHARED src/dgz_frame.cpp)
 
 add_executable(move_ctrl_node src/move_ctrl_node.cpp)
 ament_target_dependencies(move_ctrl_node rclcpp space_interfaces)

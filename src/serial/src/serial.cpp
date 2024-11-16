@@ -6,7 +6,7 @@
 #include <termios.h>
 #include "serial/serial.hpp"
 
-#if __DEBUG_SERIAL
+#if __DEBUG
 #define __debug_print(...) std::cout << __VA_ARGS__ << std::endl
 #define __debug_print_error(...) std::cerr << __VA_ARGS__ << std::endl
 #else

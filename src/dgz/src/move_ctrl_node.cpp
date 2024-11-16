@@ -1,11 +1,12 @@
 #include "rclcpp/rclcpp.hpp"
 #include "space_interfaces/msg/position.hpp"
 
-#define __DEBUG 1
 #if __DEBUG
 #define __debug_print(...) RCLCPP_INFO(__VA_ARGS__)
+#define __debug_print_error(...) RCLCPP_ERROR(__VA_ARGS__)
 #else
 #define __debug_print(...)
+#define __debug_print_error(...)
 #endif
 
 class move_ctrl_node : public rclcpp::Node
@@ -13,9 +14,7 @@ class move_ctrl_node : public rclcpp::Node
 public:
     move_ctrl_node() : Node("move_ctrl_node")
     {
-        subscription = this->create_subscription<space_interfaces::msg::Position>(
-            "position", 1, std::bind(&move_ctrl_node::position_callback, this, std::placeholders::_1));
-
+        subscription = this->create_subscription<space_interfaces::msg::Position>("position", 1, std::bind(&move_ctrl_node::position_callback, this, std::placeholders::_1));
         publisher = this->create_publisher<space_interfaces::msg::Position>("move_ctrl_cmd", 1);
 
         // pid_ctrl_x = {0.2, 0.01, 0.05};
@@ -24,7 +23,7 @@ public:
         // pid_ctrl_roll = {0.0, 0.0, 0.0};
         // pid_ctrl_pitch = {0.0, 0.0, 0.0};
         // pid_ctrl_yaw = {0.3, 0.02, 0.01};
-        }
+    }
 
 private:
     rclcpp::Subscription<space_interfaces::msg::Position>::SharedPtr subscription;
@@ -47,7 +46,7 @@ private:
     }
     void position_callback(const space_interfaces::msg::Position::SharedPtr msg)
     {
-        __debug_print(this->get_logger(), "Received position: x=%f, y=%f, z=%f, roll=%f, pitch=%f, yaw=%f", msg->x, msg->y, msg->z, msg->roll, msg->pitch, msg->yaw);
+        __debug_print(this->get_logger(), "Received from topic position: x=%f, y=%f, z=%f, roll=%f, pitch=%f, yaw=%f", msg->x, msg->y, msg->z, msg->roll, msg->pitch, msg->yaw);
 
         auto move_ctrl_cmd = space_interfaces::msg::Position();
 

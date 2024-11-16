@@ -6,7 +6,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # Define macros for conditional compilation
-add_compile_definitions(__DEBUG_SERIAL=1)
+add_compile_definitions(__DEBUG=1)
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
@@ -18,27 +18,17 @@ find_package(rclcpp REQUIRED)
 # Includes the headers of the serial package
 include_directories(include)
 
-# Create dynamic library (SHARED) for serial.cpp
-add_library(serial_lib SHARED
-  src/serial.cpp
-)
+# Create dynamic library (SHARED/STATIC) for serial.cpp
+add_library(serial_lib SHARED src/serial.cpp)
 
-# Create executable for testlib_node.cpp
-add_executable(testlib_node
-  src/testlib_node.cpp
-)
-
-# Create static library (STATIC) for serial.cpp
-# add_library(serial_lib STATIC
-#   src/serial_com.cpp
-# )
+add_executable(testlib_node src/testlib_node.cpp)
+ament_target_dependencies(testlib_node rclcpp)
 
 # Export the library to make it available to other packages
 ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
 
 # Link the serial_lib library to the testlib_node executable
 target_link_libraries(testlib_node serial_lib)
-ament_target_dependencies(testlib_node rclcpp)
 
 install(
   DIRECTORY include/${PROJECT_NAME}/
@@ -56,7 +46,7 @@ install(
 
 install(
   TARGETS testlib_node
-  DESTINATION lib/${PROJECT_NAME}
+  DESTINATION lib/${PROJECT_NAME}/
 )
 
 if(BUILD_TESTING)

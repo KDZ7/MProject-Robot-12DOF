@@ -1,0 +1,3 @@
+/home/MKGL/quadro_ws/install/dgz/lib/libdgz_frame_lib.so
+/home/MKGL/quadro_ws/install/dgz/share/dgz/cmake/export_dgz_frameExport.cmake
+/home/MKGL/quadro_ws/install/dgz/share/dgz/cmake/export_dgz_frameExport-noconfig.cmake

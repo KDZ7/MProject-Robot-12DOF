@@ -1,0 +1,85 @@
+[0.056s] Invoking command in '/home/MKGL/quadro_ws/build/dgz': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/home/MKGL/quadro_ws/install/dgz/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake /home/MKGL/quadro_ws/src/dgz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/dgz
+[0.444s] -- The C compiler identification is GNU 13.2.0
+[0.870s] -- The CXX compiler identification is GNU 13.2.0
+[0.972s] -- Detecting C compiler ABI info
+[1.558s] -- Detecting C compiler ABI info - done
+[1.611s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.612s] -- Detecting C compile features
+[1.614s] -- Detecting C compile features - done
+[1.666s] -- Detecting CXX compiler ABI info
+[2.354s] -- Detecting CXX compiler ABI info - done
+[2.409s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.410s] -- Detecting CXX compile features
+[2.413s] -- Detecting CXX compile features - done
+[2.437s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.511s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.994s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.282s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[4.570s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.662s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.772s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.889s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.351s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[5.372s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.809s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[5.880s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[5.973s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.321s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[6.378s] -- Found space_interfaces: 0.0.0 (/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake)
+[6.426s] -- Found serial: 0.0.0 (/home/MKGL/quadro_ws/install/serial/share/serial/cmake)
+[6.465s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.116s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.118s] -- Configured cppcheck include dirs: /home/MKGL/quadro_ws/src/dgz/include
+[7.119s] -- Configured cppcheck exclude dirs and/or files: 
+[7.123s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.125s] -- Configured 'flake8' exclude dirs and/or files: 
+[7.130s] -- Added test 'lint_cmake' to check CMake code style
+[7.136s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.148s] -- Added test 'uncrustify' to check C / C++ code style
+[7.150s] -- Configured uncrustify additional arguments: 
+[7.153s] -- Added test 'xmllint' to check XML markup files
+[7.178s] -- Configuring done (7.1s)
+[7.315s] -- Generating done (0.1s)
+[7.325s] -- Build files have been written to: /home/MKGL/quadro_ws/build/dgz
+[7.363s] Invoked command in '/home/MKGL/quadro_ws/build/dgz' returned '0': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/home/MKGL/quadro_ws/install/dgz/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake /home/MKGL/quadro_ws/src/dgz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/dgz
+[7.369s] Invoking command in '/home/MKGL/quadro_ws/build/dgz': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/home/MKGL/quadro_ws/install/dgz/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz -- -j4 -l4
+[7.762s] [ 16%] [32mBuilding CXX object CMakeFiles/move_ctrl_node.dir/src/move_ctrl_node.cpp.o[0m
+[7.787s] [ 33%] [32mBuilding CXX object CMakeFiles/dgz_frame_lib.dir/src/dgz_frame.cpp.o[0m
+[10.526s] [ 50%] [32m[1mLinking CXX shared library libdgz_frame_lib.so[0m
+[10.942s] [ 50%] Built target dgz_frame_lib
+[11.089s] [ 66%] [32mBuilding CXX object CMakeFiles/dgz_ctrl_node.dir/src/dgz_ctrl_node.cpp.o[0m
+[53.672s] [ 83%] [32m[1mLinking CXX executable move_ctrl_node[0m
+[55.735s] [ 83%] Built target move_ctrl_node
+[56.188s] [100%] [32m[1mLinking CXX executable dgz_ctrl_node[0m
+[57.856s] [100%] Built target dgz_ctrl_node
+[57.943s] Invoked command in '/home/MKGL/quadro_ws/build/dgz' returned '0': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/home/MKGL/quadro_ws/install/dgz/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/MKGL/quadro_ws/build/dgz -- -j4 -l4
+[58.159s] Invoking command in '/home/MKGL/quadro_ws/build/dgz': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/home/MKGL/quadro_ws/install/dgz/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz
+[58.195s] -- Install configuration: ""
+[58.197s] -- Execute custom install script
+[58.198s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/environment/library_path.sh
+[58.245s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/environment/library_path.dsv
+[58.297s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/include/dgz/dgz_frame.hpp
+[58.341s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/lib/dgz//move_ctrl_node
+[58.386s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/lib/dgz//dgz_ctrl_node
+[58.436s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz//config/dgz_params.yaml
+[58.481s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz//launch/dgz.launch.py
+[58.526s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/ament_index/resource_index/package_run_dependencies/dgz
+[58.573s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/ament_index/resource_index/parent_prefix_path/dgz
+[58.625s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/environment/ament_prefix_path.sh
+[58.677s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/environment/ament_prefix_path.dsv
+[58.736s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/environment/path.sh
+[58.839s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/environment/path.dsv
+[58.919s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/local_setup.bash
+[58.979s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/local_setup.sh
+[59.067s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/local_setup.zsh
+[59.166s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/local_setup.dsv
+[59.225s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/package.dsv
+[59.286s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/ament_index/resource_index/packages/dgz
+[59.345s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/cmake/ament_cmake_export_targets-extras.cmake
+[59.411s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/cmake/dgzConfig.cmake
+[59.473s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/cmake/dgzConfig-version.cmake
+[59.525s] -- Symlinking: /home/MKGL/quadro_ws/install/dgz/share/dgz/package.xml
+[59.584s] -- Installing: /home/MKGL/quadro_ws/install/dgz/lib/libdgz_frame_lib.so
+[59.588s] -- Installing: /home/MKGL/quadro_ws/install/dgz/share/dgz/cmake/export_dgz_frameExport.cmake
+[59.589s] -- Installing: /home/MKGL/quadro_ws/install/dgz/share/dgz/cmake/export_dgz_frameExport-noconfig.cmake
+[59.598s] Invoked command in '/home/MKGL/quadro_ws/build/dgz' returned '0': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/serial/lib:/home/MKGL/quadro_ws/install/dgz/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/MKGL/quadro_ws/build/dgz

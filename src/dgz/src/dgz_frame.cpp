@@ -2,9 +2,7 @@
 #include <cstring>
 #include "dgz/dgz_frame.hpp"
 
-#define __DEBUG_DGZ_FRAME 1
-
-#if __DEBUG_DGZ_FRAME
+#if __DEBUG
 #define __debug_print(...) std::cout << __VA_ARGS__ << std::endl
 #define __debug_print_error(...) std::cerr << __VA_ARGS__ << std::endl
 #else
@@ -20,14 +18,9 @@ dgz_frame::dgz_frame(uint8_t type,
       type(type),
       firstAddress(firstAddress)
 {
-    data = new uint8_t[size_data];
-    memcpy(this->data, data, size_data);
+    this->data = std::make_unique<uint8_t[]>(size_data);
+    memcpy(this->data.get(), data, size_data);
     this->checksum = this->CChecksum();
-}
-
-dgz_frame::~dgz_frame()
-{
-    delete[] data;
 }
 
 uint8_t dgz_frame::CChecksum()
@@ -48,7 +41,7 @@ void dgz_frame::toBufs(uint8_t *bufs)
     bufs[2] = length;
     bufs[3] = type;
     bufs[4] = firstAddress;
-    memcpy(bufs + 5, data, length - 8);
+    memcpy(bufs + 5, data.get(), length - 8);
     bufs[length - 3] = checksum;
     bufs[length - 2] = tail[0];
     bufs[length - 1] = tail[1];

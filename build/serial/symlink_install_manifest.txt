@@ -1,7 +1,7 @@
 /home/MKGL/quadro_ws/install/serial/share/serial/environment/library_path.sh
 /home/MKGL/quadro_ws/install/serial/share/serial/environment/library_path.dsv
 /home/MKGL/quadro_ws/install/serial/include/serial/serial.hpp
-/home/MKGL/quadro_ws/install/serial/lib/serial/testlib_node
+/home/MKGL/quadro_ws/install/serial/lib/serial//testlib_node
 /home/MKGL/quadro_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
 /home/MKGL/quadro_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
 /home/MKGL/quadro_ws/install/serial/share/serial/environment/ament_prefix_path.sh

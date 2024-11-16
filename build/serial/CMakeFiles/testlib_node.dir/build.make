@@ -92,8 +92,8 @@ testlib_node_EXTERNAL_OBJECTS =
 
 testlib_node: CMakeFiles/testlib_node.dir/src/testlib_node.cpp.o
 testlib_node: CMakeFiles/testlib_node.dir/build.make
-testlib_node: libserial_lib.so
 testlib_node: /opt/ros/jazzy/lib/librclcpp.so
+testlib_node: libserial_lib.so
 testlib_node: /opt/ros/jazzy/lib/liblibstatistics_collector.so
 testlib_node: /opt/ros/jazzy/lib/librcl.so
 testlib_node: /opt/ros/jazzy/lib/librmw_implementation.so

@@ -5,6 +5,7 @@ from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.actions import Node
 from ament_index_python.packages import get_package_share_directory
 
+
 def generate_launch_description():
 
     file_declare = DeclareLaunchArgument(
@@ -12,7 +13,7 @@ def generate_launch_description():
         default_value="manette_params.yaml",
         description="File name of the config yaml file",
     )
-    file_path_declare= DeclareLaunchArgument(
+    file_path_declare = DeclareLaunchArgument(
         "file_path",
         default_value="",
         description="File name with path of the config yaml file",
@@ -33,7 +34,7 @@ def generate_launch_description():
         name="joy_linux_node",
         output="screen",
         parameters=[file_path_arg],
-        condition=IfCondition(is_file_path_arg)
+        condition=IfCondition(is_file_path_arg),
     )
     _2_joy_linux_node = Node(
         package="joy_linux",
@@ -41,19 +42,22 @@ def generate_launch_description():
         name="joy_linux_node",
         output="screen",
         parameters=[PathJoinSubstitution([manette_pkg_path, "config", file_arg])],
-        condition=UnlessCondition(is_file_path_arg)
+        condition=UnlessCondition(is_file_path_arg),
     )
+
     manette_node = Node(
         package="manette",
         executable="manette_node",
         name="manette_node",
-        output="screen"
+        output="screen",
     )
-    return LaunchDescription([
-        file_declare,
-        file_path_declare,
-        is_file_path_declare,
-        _1_joy_linux_node,
-        _2_joy_linux_node,
-        manette_node
-    ])
+    return LaunchDescription(
+        [
+            file_declare,
+            file_path_declare,
+            is_file_path_declare,
+            _1_joy_linux_node,
+            _2_joy_linux_node,
+            manette_node,
+        ]
+    )

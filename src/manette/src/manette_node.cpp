@@ -3,11 +3,12 @@
 #include "sensor_msgs/msg/joy.hpp"
 #include "space_interfaces/msg/position.hpp"
 
-#define __DEBUG 1
 #if __DEBUG
 #define __debug_print(...) RCLCPP_INFO(__VA_ARGS__)
+#define __debug_print_error(...) RCLCPP_ERROR(__VA_ARGS__)
 #else
 #define __debug_print(...)
+#define __debug_print_error(...)
 #endif
 
 class manette_node : public rclcpp::Node
@@ -37,7 +38,7 @@ private:
     position_msg.z = 0.0;
     position_msg.roll = 0.0;
     position_msg.pitch = 0.0;
-    position_msg.yaw = atan2(position_msg.y, position_msg.x);
+    position_msg.yaw = position_msg.x != 0 ? position_msg.y / position_msg.x : 0;
 
     publisher->publish(position_msg);
   }

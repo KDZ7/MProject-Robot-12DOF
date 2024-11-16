@@ -1,0 +1,70 @@
+[0.053s] Invoking command in '/home/MKGL/quadro_ws/build/manette': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/dgz/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake /home/MKGL/quadro_ws/src/manette -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/manette
+[0.420s] -- The C compiler identification is GNU 13.2.0
+[0.842s] -- The CXX compiler identification is GNU 13.2.0
+[0.938s] -- Detecting C compiler ABI info
+[1.556s] -- Detecting C compiler ABI info - done
+[1.605s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.606s] -- Detecting C compile features
+[1.609s] -- Detecting C compile features - done
+[1.665s] -- Detecting CXX compiler ABI info
+[2.362s] -- Detecting CXX compiler ABI info - done
+[2.413s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.414s] -- Detecting CXX compile features
+[2.419s] -- Detecting CXX compile features - done
+[2.438s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.557s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.027s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.303s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[4.586s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.683s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.788s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.915s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.370s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[5.392s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.830s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[5.897s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[5.989s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.326s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[6.587s] -- Found space_interfaces: 0.0.0 (/home/MKGL/quadro_ws/install/space_interfaces/share/space_interfaces/cmake)
+[6.668s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.381s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.382s] -- Configured cppcheck include dirs: 
+[7.383s] -- Configured cppcheck exclude dirs and/or files: 
+[7.386s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.386s] -- Configured 'flake8' exclude dirs and/or files: 
+[7.390s] -- Added test 'lint_cmake' to check CMake code style
+[7.393s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.402s] -- Added test 'uncrustify' to check C / C++ code style
+[7.403s] -- Configured uncrustify additional arguments: 
+[7.405s] -- Added test 'xmllint' to check XML markup files
+[7.415s] -- Configuring done (7.3s)
+[7.508s] -- Generating done (0.1s)
+[7.518s] -- Build files have been written to: /home/MKGL/quadro_ws/build/manette
+[7.586s] Invoked command in '/home/MKGL/quadro_ws/build/manette' returned '0': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/dgz/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake /home/MKGL/quadro_ws/src/manette -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/MKGL/quadro_ws/install/manette
+[7.592s] Invoking command in '/home/MKGL/quadro_ws/build/manette': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/dgz/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/MKGL/quadro_ws/build/manette -- -j4 -l4
+[8.158s] [ 50%] [32mBuilding CXX object CMakeFiles/manette_node.dir/src/manette_node.cpp.o[0m
+[59.537s] [100%] [32m[1mLinking CXX executable manette_node[0m
+[61.522s] [100%] Built target manette_node
+[61.575s] Invoked command in '/home/MKGL/quadro_ws/build/manette' returned '0': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/dgz/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/MKGL/quadro_ws/build/manette -- -j4 -l4
+[61.727s] Invoking command in '/home/MKGL/quadro_ws/build/manette': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/dgz/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/MKGL/quadro_ws/build/manette
+[61.765s] -- Install configuration: ""
+[61.767s] -- Execute custom install script
+[61.768s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/lib/manette/manette_node
+[61.813s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette//config/manette_params.yaml
+[61.859s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette//launch/manette.launch.py
+[61.902s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/ament_index/resource_index/package_run_dependencies/manette
+[61.946s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/ament_index/resource_index/parent_prefix_path/manette
+[61.992s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/environment/ament_prefix_path.sh
+[62.042s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/environment/ament_prefix_path.dsv
+[62.089s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/environment/path.sh
+[62.134s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/environment/path.dsv
+[62.180s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/local_setup.bash
+[62.227s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/local_setup.sh
+[62.279s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/local_setup.zsh
+[62.327s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/local_setup.dsv
+[62.387s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/package.dsv
+[62.465s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/ament_index/resource_index/packages/manette
+[62.513s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/cmake/manetteConfig.cmake
+[62.559s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/cmake/manetteConfig-version.cmake
+[62.602s] -- Symlinking: /home/MKGL/quadro_ws/install/manette/share/manette/package.xml
+[62.658s] Invoked command in '/home/MKGL/quadro_ws/build/manette' returned '0': CMAKE_PREFIX_PATH=/home/MKGL/quadro_ws/install/space_interfaces:/home/MKGL/quadro_ws/install/manette:/home/MKGL/quadro_ws/install/dgz:/home/MKGL/quadro_ws/install/serial:/home/MKGL/quadro_ws/install/dgz_description:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/MKGL/quadro_ws/install/space_interfaces/lib:/home/MKGL/quadro_ws/install/dgz/lib:/home/MKGL/quadro_ws/install/serial/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/MKGL/quadro_ws/build/manette

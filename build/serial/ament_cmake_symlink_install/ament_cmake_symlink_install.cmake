@@ -319,7 +319,7 @@ ament_cmake_symlink_install_files("/home/MKGL/quadro_ws/src/serial" FILES "/home
 # install(DIRECTORY "include/serial/" "DESTINATION" "include/serial")
 ament_cmake_symlink_install_directory("/home/MKGL/quadro_ws/src/serial" DIRECTORY "include/serial/" "DESTINATION" "include/serial")
 
-# install("TARGETS" "testlib_node" "DESTINATION" "lib/serial")
+# install("TARGETS" "testlib_node" "DESTINATION" "lib/serial/")
 include("/home/MKGL/quadro_ws/build/serial/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/MKGL/quadro_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
