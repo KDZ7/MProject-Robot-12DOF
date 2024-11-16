@@ -19,7 +19,7 @@
 -- Added test 'lint_cmake' to check CMake code style
 -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
 -- Added test 'xmllint' to check XML markup files
--- Configuring done (14.5s)
+-- Configuring done (2.9s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/ubuntu/quadro_ws/build/quadrobot_viewer
 -- Install configuration: ""

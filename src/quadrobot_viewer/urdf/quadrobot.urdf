@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by
-Stephen Brawner (brawner@gmail.com) 
+Stephen FRAwner (FRAwner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
@@ -45,7 +45,7 @@ Stephen Brawner (brawner@gmail.com)
     </collision>
   </link>
   <link
-    name="FLA">
+    name="BLA">
     <inertial>
       <origin
         xyz="-0.026925 -1.7347E-18 0.01"
@@ -59,348 +59,6 @@ Stephen Brawner (brawner@gmail.com)
         iyy="2.8775E-06"
         iyz="2.9129E-23"
         izz="3.0936E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FLA.STL" />
-      </geometry>
-      <material
-        name="">
-        <color rgba="0.15 0.15 0.15 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FLA.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_FLA"
-    type="revolute">
-    <origin
-      xyz="0.03 -0.055 0.005"
-      rpy="-1.5708 0.0092604 -3.1416" />
-    <parent
-      link="base_link" />
-    <child
-      link="FLA" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="1.47"
-      velocity="5.81" />
-  </joint>
-  <link
-    name="FLB">
-    <inertial>
-      <origin
-        xyz="3.4694E-18 -0.05 0.0056809"
-        rpy="0 0 0" />
-      <mass
-        value="0.073578" />
-      <inertia
-        ixx="6.1746E-05"
-        ixy="-3.5999E-21"
-        ixz="-7.4115E-22"
-        iyy="6.7263E-06"
-        iyz="2.29E-20"
-        izz="6.7246E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FLB.STL" />
-      </geometry>
-      <material
-        name="">
-        <color rgba="0.15 0.15 0.15 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FLB.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_FLB"
-    type="revolute">
-    <origin
-      xyz="-0.039319 0 0.01"
-      rpy="-1.5708 0.35696 1.5708" />
-    <parent
-      link="FLA" />
-    <child
-      link="FLB" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="1.47"
-      velocity="5.81" />
-  </joint>
-  <link
-    name="FLC">
-    <inertial>
-      <origin
-        xyz="-5.5511E-17 -0.054909 0.0061924"
-        rpy="0 0 0" />
-      <mass
-        value="0.077166" />
-      <inertia
-        ixx="7.7817E-05"
-        ixy="-7.9383E-20"
-        ixz="4.566E-22"
-        iyy="5.639E-06"
-        iyz="-7.5273E-21"
-        izz="8.217E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FLC.STL" />
-      </geometry>
-      <material
-        name="">
-        <color rgba="0.15 0.15 0.15 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FLC.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_FLC"
-    type="revolute">
-    <origin
-      xyz="0 -0.1 0.0094885"
-      rpy="0 0 1.1668" />
-    <parent
-      link="FLB" />
-    <child
-      link="FLC" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="1.47"
-      velocity="5.81" />
-  </joint>
-  <link
-    name="FRA">
-    <inertial>
-      <origin
-        xyz="-0.0269253957823772 0 0.01"
-        rpy="0 0 0" />
-      <mass
-        value="0.0109452431127404" />
-      <inertia
-        ixx="5.03196139245203E-07"
-        ixy="-3.14328632770151E-23"
-        ixz="9.86921140643361E-23"
-        iyy="2.87751254725242E-06"
-        iyz="1.66376389752816E-23"
-        izz="3.09356821283229E-06" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FRA.STL" />
-      </geometry>
-      <material
-        name="">
-        <color rgba="0.15 0.15 0.15 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FRA.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_FRA"
-    type="revolute">
-    <origin
-      xyz="-0.03 -0.055 0.005"
-      rpy="1.5708 0.022451 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="FRA" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="1.47"
-      velocity="5.81" />
-  </joint>
-  <link
-    name="FRB">
-    <inertial>
-      <origin
-        xyz="2.7756E-17 -0.05 -0.004995"
-        rpy="0 0 0" />
-      <mass
-        value="0.073578" />
-      <inertia
-        ixx="6.1746E-05"
-        ixy="3.007E-20"
-        ixz="8.4703E-22"
-        iyy="6.7263E-06"
-        iyz="5.0756E-21"
-        izz="6.7246E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FRB.STL" />
-      </geometry>
-      <material
-        name="">
-        <color rgba="0.15 0.15 0.15 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FRB.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_FRB"
-    type="revolute">
-    <origin
-      xyz="-0.040005 0 0.01"
-      rpy="-1.5708 0.33034 -1.5708" />
-    <parent
-      link="FRA" />
-    <child
-      link="FRB" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="1.47"
-      velocity="5.81" />
-  </joint>
-  <link
-    name="FRC">
-    <inertial>
-      <origin
-        xyz="-8.3267E-17 -0.054909 -0.004995"
-        rpy="0 0 0" />
-      <mass
-        value="0.077166" />
-      <inertia
-        ixx="7.7817E-05"
-        ixy="2.3042E-20"
-        ixz="-1.9257E-21"
-        iyy="5.639E-06"
-        iyz="3.2703E-20"
-        izz="8.217E-05" />
-    </inertial>
-    <visual>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FRC.STL" />
-      </geometry>
-      <material
-        name="">
-        <color rgba="0.15 0.15 0.15 1.0" />
-      </material>
-    </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <mesh
-          filename="package://quadrobot_viewer/meshes/FRC.STL" />
-      </geometry>
-    </collision>
-  </link>
-  <joint
-    name="joint_FRC"
-    type="revolute">
-    <origin
-      xyz="0 -0.1 -0.01"
-      rpy="0 0 1.2033" />
-    <parent
-      link="FRB" />
-    <child
-      link="FRC" />
-    <axis
-      xyz="0 0 1" />
-    <limit
-      lower="-1.57"
-      upper="1.57"
-      effort="1.47"
-      velocity="5.81" />
-  </joint>
-  <link
-    name="BLA">
-    <inertial>
-      <origin
-        xyz="-0.0269253957823772 8.67361737988404E-19 0.01"
-        rpy="0 0 0" />
-      <mass
-        value="0.0109452431127404" />
-      <inertia
-        ixx="5.03196139245203E-07"
-        ixy="1.7908460261773E-22"
-        ixz="-1.25428718015424E-21"
-        iyy="2.87751254725242E-06"
-        iyz="-1.69665031772835E-23"
-        izz="3.09356821283229E-06" />
     </inertial>
     <visual>
       <origin
@@ -429,8 +87,8 @@ Stephen Brawner (brawner@gmail.com)
     name="joint_BLA"
     type="revolute">
     <origin
-      xyz="0.03 0.055 0.005"
-      rpy="1.5708 -0.0079223 3.1416" />
+      xyz="0.03 -0.055 0.005"
+      rpy="-1.5708 0.0092604 -3.1416" />
     <parent
       link="base_link" />
     <child
@@ -447,16 +105,16 @@ Stephen Brawner (brawner@gmail.com)
     name="BLB">
     <inertial>
       <origin
-        xyz="-2.7756E-17 -0.05 0.0049994"
+        xyz="3.4694E-18 -0.05 0.0056809"
         rpy="0 0 0" />
       <mass
         value="0.073578" />
       <inertia
         ixx="6.1746E-05"
-        ixy="-3.4517E-20"
-        ixz="3.1234E-21"
+        ixy="-3.5999E-21"
+        ixz="-7.4115E-22"
         iyy="6.7263E-06"
-        iyz="2.5262E-21"
+        iyz="2.29E-20"
         izz="6.7246E-05" />
     </inertial>
     <visual>
@@ -486,8 +144,8 @@ Stephen Brawner (brawner@gmail.com)
     name="joint_BLB"
     type="revolute">
     <origin
-      xyz="-0.040001 0 0.01"
-      rpy="-1.5708 -0.28877 1.5708" />
+      xyz="-0.039319 0 0.01"
+      rpy="-1.5708 0.35696 1.5708" />
     <parent
       link="BLA" />
     <child
@@ -504,16 +162,16 @@ Stephen Brawner (brawner@gmail.com)
     name="BLC">
     <inertial>
       <origin
-        xyz="5.5511E-17 -0.054909 0.0049994"
+        xyz="-5.5511E-17 -0.054909 0.0061924"
         rpy="0 0 0" />
       <mass
         value="0.077166" />
       <inertia
         ixx="7.7817E-05"
-        ixy="7.8185E-20"
-        ixz="-1.2079E-21"
+        ixy="-7.9383E-20"
+        ixz="4.566E-22"
         iyy="5.639E-06"
-        iyz="-2.4154E-22"
+        iyz="-7.5273E-21"
         izz="8.217E-05" />
     </inertial>
     <visual>
@@ -543,8 +201,8 @@ Stephen Brawner (brawner@gmail.com)
     name="joint_BLC"
     type="revolute">
     <origin
-      xyz="0 -0.1 0.01"
-      rpy="0 0 -1.2863" />
+      xyz="0 -0.1 0.0094885"
+      rpy="0 0 1.1668" />
     <parent
       link="BLB" />
     <child
@@ -561,17 +219,17 @@ Stephen Brawner (brawner@gmail.com)
     name="BRA">
     <inertial>
       <origin
-        xyz="-0.0269253957823772 3.90312782094782E-18 0.01"
+        xyz="-0.0269253957823772 0 0.01"
         rpy="0 0 0" />
       <mass
         value="0.0109452431127404" />
       <inertia
-        ixx="5.03196139245204E-07"
-        ixy="3.93737971575241E-22"
-        ixz="1.23424088551717E-21"
-        iyy="2.87751254725243E-06"
-        iyz="2.79143250895578E-23"
-        izz="3.0935682128323E-06" />
+        ixx="5.03196139245203E-07"
+        ixy="-3.14328632770151E-23"
+        ixz="9.86921140643361E-23"
+        iyy="2.87751254725242E-06"
+        iyz="1.66376389752816E-23"
+        izz="3.09356821283229E-06" />
     </inertial>
     <visual>
       <origin
@@ -600,8 +258,8 @@ Stephen Brawner (brawner@gmail.com)
     name="joint_BRA"
     type="revolute">
     <origin
-      xyz="-0.03 0.055 0.005"
-      rpy="-1.5708 0.040291 0" />
+      xyz="-0.03 -0.055 0.005"
+      rpy="1.5708 0.022451 0" />
     <parent
       link="base_link" />
     <child
@@ -618,16 +276,16 @@ Stephen Brawner (brawner@gmail.com)
     name="BRB">
     <inertial>
       <origin
-        xyz="2.0817E-17 -0.05 -0.0049838"
+        xyz="2.7756E-17 -0.05 -0.004995"
         rpy="0 0 0" />
       <mass
         value="0.073578" />
       <inertia
         ixx="6.1746E-05"
-        ixy="2.2235E-20"
-        ixz="3.3881E-21"
+        ixy="3.007E-20"
+        ixz="8.4703E-22"
         iyy="6.7263E-06"
-        iyz="-4.0572E-20"
+        iyz="5.0756E-21"
         izz="6.7246E-05" />
     </inertial>
     <visual>
@@ -657,8 +315,8 @@ Stephen Brawner (brawner@gmail.com)
     name="joint_BRB"
     type="revolute">
     <origin
-      xyz="-0.040016 0 0.01"
-      rpy="-1.5708 -0.33726 -1.5708" />
+      xyz="-0.040005 0 0.01"
+      rpy="-1.5708 0.33034 -1.5708" />
     <parent
       link="BRA" />
     <child
@@ -675,16 +333,16 @@ Stephen Brawner (brawner@gmail.com)
     name="BRC">
     <inertial>
       <origin
-        xyz="8.3267E-17 -0.054909 -0.0049838"
+        xyz="-8.3267E-17 -0.054909 -0.004995"
         rpy="0 0 0" />
       <mass
         value="0.077166" />
       <inertia
         ixx="7.7817E-05"
-        ixy="-7.2256E-20"
-        ixz="1.2805E-21"
+        ixy="2.3042E-20"
+        ixz="-1.9257E-21"
         iyy="5.639E-06"
-        iyz="-1.7338E-21"
+        iyz="3.2703E-20"
         izz="8.217E-05" />
     </inertial>
     <visual>
@@ -715,11 +373,353 @@ Stephen Brawner (brawner@gmail.com)
     type="revolute">
     <origin
       xyz="0 -0.1 -0.01"
-      rpy="0 0 -1.2397" />
+      rpy="0 0 1.2033" />
     <parent
       link="BRB" />
     <child
       link="BRC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FLA">
+    <inertial>
+      <origin
+        xyz="-0.0269253957823772 8.67361737988404E-19 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0109452431127404" />
+      <inertia
+        ixx="5.03196139245203E-07"
+        ixy="1.7908460261773E-22"
+        ixz="-1.25428718015424E-21"
+        iyy="2.87751254725242E-06"
+        iyz="-1.69665031772835E-23"
+        izz="3.09356821283229E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FLA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FLA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FLA"
+    type="revolute">
+    <origin
+      xyz="0.03 0.055 0.005"
+      rpy="1.5708 -0.0079223 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="FLA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FLB">
+    <inertial>
+      <origin
+        xyz="-2.7756E-17 -0.05 0.0049994"
+        rpy="0 0 0" />
+      <mass
+        value="0.073578" />
+      <inertia
+        ixx="6.1746E-05"
+        ixy="-3.4517E-20"
+        ixz="3.1234E-21"
+        iyy="6.7263E-06"
+        iyz="2.5262E-21"
+        izz="6.7246E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FLB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FLB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FLB"
+    type="revolute">
+    <origin
+      xyz="-0.040001 0 0.01"
+      rpy="-1.5708 -0.28877 1.5708" />
+    <parent
+      link="FLA" />
+    <child
+      link="FLB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FLC">
+    <inertial>
+      <origin
+        xyz="5.5511E-17 -0.054909 0.0049994"
+        rpy="0 0 0" />
+      <mass
+        value="0.077166" />
+      <inertia
+        ixx="7.7817E-05"
+        ixy="7.8185E-20"
+        ixz="-1.2079E-21"
+        iyy="5.639E-06"
+        iyz="-2.4154E-22"
+        izz="8.217E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FLC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FLC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FLC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 0.01"
+      rpy="0 0 -1.2863" />
+    <parent
+      link="FLB" />
+    <child
+      link="FLC" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FRA">
+    <inertial>
+      <origin
+        xyz="-0.0269253957823772 3.90312782094782E-18 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.0109452431127404" />
+      <inertia
+        ixx="5.03196139245204E-07"
+        ixy="3.93737971575241E-22"
+        ixz="1.23424088551717E-21"
+        iyy="2.87751254725243E-06"
+        iyz="2.79143250895578E-23"
+        izz="3.0935682128323E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FRA.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FRA.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FRA"
+    type="revolute">
+    <origin
+      xyz="-0.03 0.055 0.005"
+      rpy="-1.5708 0.040291 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="FRA" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FRB">
+    <inertial>
+      <origin
+        xyz="2.0817E-17 -0.05 -0.0049838"
+        rpy="0 0 0" />
+      <mass
+        value="0.073578" />
+      <inertia
+        ixx="6.1746E-05"
+        ixy="2.2235E-20"
+        ixz="3.3881E-21"
+        iyy="6.7263E-06"
+        iyz="-4.0572E-20"
+        izz="6.7246E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FRB.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FRB.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FRB"
+    type="revolute">
+    <origin
+      xyz="-0.040016 0 0.01"
+      rpy="-1.5708 -0.33726 -1.5708" />
+    <parent
+      link="FRA" />
+    <child
+      link="FRB" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="1.47"
+      velocity="5.81" />
+  </joint>
+  <link
+    name="FRC">
+    <inertial>
+      <origin
+        xyz="8.3267E-17 -0.054909 -0.0049838"
+        rpy="0 0 0" />
+      <mass
+        value="0.077166" />
+      <inertia
+        ixx="7.7817E-05"
+        ixy="-7.2256E-20"
+        ixz="1.2805E-21"
+        iyy="5.639E-06"
+        iyz="-1.7338E-21"
+        izz="8.217E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FRC.STL" />
+      </geometry>
+      <material
+        name="">
+        <color rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://quadrobot_viewer/meshes/FRC.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_FRC"
+    type="revolute">
+    <origin
+      xyz="0 -0.1 -0.01"
+      rpy="0 0 -1.2397" />
+    <parent
+      link="FRB" />
+    <child
+      link="FRC" />
     <axis
       xyz="0 0 1" />
     <limit
