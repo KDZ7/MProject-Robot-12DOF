@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<robot name="quadrobot_ros2_control" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="joint_FLA">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_FLB">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_FLC">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_FRA">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_FRB">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_FRC">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_BLA">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_BLB">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_BLC">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_BRA">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_BRB">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+        <joint name="joint_BRC">
+            <command_interface name="position">
+                <param name="min" value="-1.57" />
+                <param name="max" value="1.57" />
+            </command_interface>
+            <state_interface name="position" />
+        </joint>
+    </ros2_control>
+
+    <gazebo>
+        <plugin name="gz_ros2_control" filename="libgz_ros2_control-system.so">
+            <parameters>$(find quadrobot_viewer)/config/quadrobot_viewer_control.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+</robot>    
