@@ -90,10 +90,10 @@
             <state_interface name="position" />
         </joint>
     </ros2_control>
-
     <gazebo>
-        <plugin name="gz_ros2_control" filename="libgz_ros2_control-system.so">
-            <parameters>$(find quadrobot_viewer)/config/quadrobot_viewer_control.yaml</parameters>
+        <plugin name="gz_ros2_control::GazeboSimROS2ControlPlugin"
+            filename="libgz_ros2_control-system.so">
+            <parameters>$(find quadrobot_viewer)/config/quadrobot_viewer_params.yaml</parameters>
         </plugin>
     </gazebo>
 

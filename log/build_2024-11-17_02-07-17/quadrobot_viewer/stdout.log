@@ -19,7 +19,7 @@
 -- Added test 'lint_cmake' to check CMake code style
 -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
 -- Added test 'xmllint' to check XML markup files
--- Configuring done (15.8s)
+-- Configuring done (2.7s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/ubuntu/quadro_ws/build/quadrobot_viewer
 -- Install configuration: ""
@@ -45,7 +45,7 @@
 -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/base_link.STL
 -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//models/worlds/empty.world.sdf
 -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.csv
--- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.urdf
+-- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.urdf.xacro
 -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot_ros2_control.urdf.xacro
 -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/ament_index/resource_index/package_run_dependencies/quadrobot_viewer
 -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/ament_index/resource_index/parent_prefix_path/quadrobot_viewer

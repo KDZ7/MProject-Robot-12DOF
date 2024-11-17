@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 50.0 # Frequency for updating controllers
+    update_rate: 50 # Frequency for updating controllers
     state_publish_rate: 50.0 # Frequency for publishing joint states
     use_sim_time: true # Use simulation time
 
@@ -13,6 +13,7 @@ controller_manager:
     position_controller:
       ros__parameters:
         type: position_controllers/JointGroupPositionController
+        publish_rate: 50.0
         joints:
           - joint_FLA
           - joint_FLB

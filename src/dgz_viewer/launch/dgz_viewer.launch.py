@@ -12,7 +12,7 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
     file_declare = DeclareLaunchArgument(
         "file",
-        default_value="dgz_description_params.yaml",
+        default_value="dgz_viewer_params.yaml",
         description="YAML file for parameter",
     )
 
