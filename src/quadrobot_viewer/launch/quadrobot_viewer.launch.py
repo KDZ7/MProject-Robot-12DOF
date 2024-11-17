@@ -102,12 +102,13 @@ def generate_launch_description():
     )
 
     os.environ["LIBGL_ALWAYS_SOFTWARE"] = "1"
-    os.environ["GZ_SIM_RESSOURCE_PATH"] = f"{quadrobot_viewer_pkg_path}/models/worlds:{quadrobot_viewer_pkg_path}/../quadrobot_viewer/meshes"
+    os.environ["GZ_SIM_RESOURCE_PATH"] = f"{quadrobot_viewer_pkg_path}/models/worlds:{quadrobot_viewer_pkg_path}/.."
     
-    echo_printenv = ExecuteProcess(
-        cmd=["bash", "-c", "printenv | grep -E 'LIBGL_ALWAYS_SOFTWARE|GZ_SIM_RESSOURCE_PATH'"],
+    exec_printenv = ExecuteProcess(
+        cmd=["bash", "-c", "printenv | grep -E 'LIBGL_ALWAYS_SOFTWARE|GZ_SIM_RESOURCE_PATH'"],
         output="screen"
     )
+
     gz_server_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([PathJoinSubstitution([ros_gz_sim_pkg_path, "launch", "gz_sim.launch.py"])]),
         launch_arguments={
@@ -126,7 +127,7 @@ def generate_launch_description():
     gz_client_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([PathJoinSubstitution([ros_gz_sim_pkg_path, "launch", "gz_sim.launch.py"])]),
         launch_arguments={
-            "gz_args": [" -s -v4 "],
+            "gz_args": [" -g -v4 "],
             "on_exit_shutdown": "True"
         }.items(),
         condition=IfCondition(use_gz_arg)
@@ -143,8 +144,8 @@ def generate_launch_description():
         _2_robot_state_publisher_node,
         joint_state_publisher_node,
         joint_state_publisher_gui_node,
-        # rviz_node,
-        echo_printenv,
+        rviz_node,
+        exec_printenv,
         gz_server_launch,
         create_node,
         gz_client_launch,

@@ -30,7 +30,7 @@
 /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/lower_leg_simple.stl
 /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/upper_leg.stl
 /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/upper_leg_simple.stl
-/home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//models/empty.world.sdf
+/home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//models/worlds/empty.world.sdf
 /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/.xgo_rviz.xacro.kate-swp
 /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/accessories.urdf.xacro
 /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/asus_camera.urdf.xacro
