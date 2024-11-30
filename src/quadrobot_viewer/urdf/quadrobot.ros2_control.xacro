@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- Macro for joint -->
+    <xacro:macro name="MACRO_JOINT" params="name initial_position">
+        <joint name="${name}">
+            <command_interface name="position" />
+            <state_interface name="position">
+                <param name="initial_position" value="${initial_position}" />
+            </state_interface>
+        </joint>
+    </xacro:macro>
+    <!-- Macro for ros2_control -->
+    <xacro:macro name="MACRO_QUADROBOT_ROS2_CONTROL" params="hardware_plugin">
+        <ros2_control name="quadrobot.ros2_control" type="system">
+            <hardware>
+                <plugin>${hardware_plugin}</plugin>
+            </hardware>
+            <!-- Using the MACRO_JOINT -->
+            <xacro:MACRO_JOINT name="joint_FLA" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_FLB" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_FLC" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_FRA" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_FRB" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_FRC" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_BLA" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_BLB" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_BLC" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_BRA" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_BRB" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="joint_BRC" initial_position="0.0" />
+        </ros2_control>
+    </xacro:macro>
+</robot>

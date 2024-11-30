@@ -1,5 +1,6 @@
+/home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//config/config.yaml
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//config/joint_names_quadrobot.yaml
-/home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//config/quadrobot_viewer_params.yaml
+/home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//config/ros2_control.yaml
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//config/rviz.yaml
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//launch/quadrobot_viewer.launch.py
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/BLA.STL
@@ -19,8 +20,9 @@
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/base_link.STL
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//models/worlds/empty.world.sdf
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.csv
+/home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.ros2_control.xacro
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.urdf.xacro
-/home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot_ros2_control.urdf.xacro
+/home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.xacro
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/ament_index/resource_index/package_run_dependencies/quadrobot_viewer
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/ament_index/resource_index/parent_prefix_path/quadrobot_viewer
 /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/environment/ament_prefix_path.sh

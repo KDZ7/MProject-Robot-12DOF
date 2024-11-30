@@ -1,8 +1,8 @@
 import os
+import yaml
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, ExecuteProcess
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, ExecuteProcess, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
 from launch_ros.parameter_descriptions import ParameterValue
 from launch_ros.actions import Node
@@ -10,72 +10,34 @@ from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
-    file_declare = DeclareLaunchArgument(
-        "file",
-        default_value="quadrobot_viewer_params.yaml",
-        description="YAML file for parameter",
-    )
-
-    urdf_declare = DeclareLaunchArgument(
-        "urdf",
-        default_value="quadrobot.urdf.xacro",
-        description="URDF file for robot description",
-    )
-
-    disable_file_declare = DeclareLaunchArgument(
-        "disable_file", default_value="True", description="Disable YAML parameters"
-    )
-
-    rviz_declare = DeclareLaunchArgument(
-        "rviz", 
-        default_value="rviz.yaml",
-        description="RViz file for visualization"
-    )
-
-    use_gz_declare = DeclareLaunchArgument(
-        "use_gz", 
-        default_value="True",
-        description="Use Gazebo simulation"
-    )
-
-    use_sim_time_declare = DeclareLaunchArgument(
-        "use_sim_time",
-        default_value="True",
-        description="Use Gazebo simulation time"
-    )
-
-    file_arg = LaunchConfiguration("file")
-    urdf_arg = LaunchConfiguration("urdf")
-    disable_file_arg = LaunchConfiguration("disable_file")
-    rviz_arg = LaunchConfiguration("rviz")
-    use_gz_arg = LaunchConfiguration("use_gz")
-    use_sim_time_arg = LaunchConfiguration("use_sim_time")
     quadrobot_viewer_pkg_path = get_package_share_directory("quadrobot_viewer")
-    ros_gz_sim_pkg_path = get_package_share_directory("ros_gz_sim") 
+    ros_gz_sim_pkg_path = get_package_share_directory("ros_gz_sim")
+    config_path = os.path.join(quadrobot_viewer_pkg_path, "config", "config.yaml")
+    config_ros2_control_path = os.path.join(quadrobot_viewer_pkg_path, "config", "ros2_control.yaml")
+   
+    with open(config_path, "r") as yaml_file:
+        config_data = yaml.safe_load(yaml_file)
 
-    _1_robot_state_publisher_node = Node(
+    os.environ["GZ_SIM_RESOURCE_PATH"] = f"{quadrobot_viewer_pkg_path}/models/worlds:{quadrobot_viewer_pkg_path}/.."
+    for key, value in config_data["environment"].items():
+        os.environ[key] = value
+
+    exec_printenv = ExecuteProcess(
+        cmd=["bash", "-c", "printenv | grep -E 'ROS_DOMAIN_ID|LIBGL_ALWAYS_SOFTWARE|GZ_SIM_RESOURCE_PATH'"],
+        output="screen"
+    )
+
+    robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
         name="robot_state_publisher",
         output="screen",
         parameters=[
             {
-                "robot_description": ParameterValue(Command(["xacro ", PathJoinSubstitution([quadrobot_viewer_pkg_path, "urdf", urdf_arg])]),value_type=str),
-                "use_sim_time": use_sim_time_arg
+                "robot_description": ParameterValue(Command(["xacro ", PathJoinSubstitution([quadrobot_viewer_pkg_path, "urdf", config_data["robot_state_publisher"]["urdf"]])])),
+                "use_sim_time": config_data["robot_state_publisher"]["use_sim_time"],
             }
-        ],
-        condition=IfCondition(disable_file_arg),
-    )
-
-    _2_robot_state_publisher_node = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        name="robot_state_publisher",
-        output="screen",
-        parameters=[
-            PathJoinSubstitution([quadrobot_viewer_pkg_path, "config", file_arg])
-        ],
-        condition=UnlessCondition(disable_file_arg),
+        ]
     )
 
     joint_state_publisher_node = Node(
@@ -83,13 +45,14 @@ def generate_launch_description():
         executable="joint_state_publisher",
         name="joint_state_publisher",
         output="screen",
-        parameters=[{"use_sim_time": use_sim_time_arg}],
+        parameters=[config_data["joint_state_publisher"]]
     )
 
     joint_state_publisher_gui_node = Node(
         package="joint_state_publisher_gui",
         executable="joint_state_publisher_gui",
         name="joint_state_publisher_gui",
+        parameters=[config_data["joint_state_publisher_gui"]],
         output="screen",
     )
 
@@ -98,55 +61,53 @@ def generate_launch_description():
         executable="rviz2",
         name="rviz",
         output="screen",
-        arguments=["-d", PathJoinSubstitution([quadrobot_viewer_pkg_path, "config", rviz_arg])]
-    )
-
-    os.environ["LIBGL_ALWAYS_SOFTWARE"] = "1"
-    os.environ["GZ_SIM_RESOURCE_PATH"] = f"{quadrobot_viewer_pkg_path}/models/worlds:{quadrobot_viewer_pkg_path}/.."
-    
-    exec_printenv = ExecuteProcess(
-        cmd=["bash", "-c", "printenv | grep -E 'LIBGL_ALWAYS_SOFTWARE|GZ_SIM_RESOURCE_PATH'"],
-        output="screen"
+        arguments=["-d", PathJoinSubstitution([quadrobot_viewer_pkg_path, "config", config_data["rviz2"]["config"]])]
     )
 
     gz_server_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([PathJoinSubstitution([ros_gz_sim_pkg_path, "launch", "gz_sim.launch.py"])]),
         launch_arguments={
-            "gz_args": [" -s -v4 ", PathJoinSubstitution([quadrobot_viewer_pkg_path, "models", "worlds", "empty.world.sdf"])],
-            "on_exit_shutdown": "True"
-        }.items(),
-        condition=IfCondition(use_gz_arg)
+            "gz_args": [" -s -v4 ", PathJoinSubstitution(["empty.world.sdf"])],
+            "on_exit_shutdown": "true"
+        }.items()
     )
+
     create_node = Node(
         package="ros_gz_sim",
         executable="create",
-        arguments=[ "-name", "quadrobot", "-topic", "robot_description", "-z", "0.3"],
-        output="screen",
-        condition=IfCondition(use_gz_arg)
+        arguments=[
+            "-name", config_data["spawn_entity"]["name"],
+            "-topic", config_data["spawn_entity"]["topic"],
+            "-x", config_data["spawn_entity"]["x"],
+            "-y", config_data["spawn_entity"]["y"],
+            "-z", config_data["spawn_entity"]["z"],
+        ],
+        output="screen"
     )
+
     gz_client_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([PathJoinSubstitution([ros_gz_sim_pkg_path, "launch", "gz_sim.launch.py"])]),
         launch_arguments={
-            "gz_args": [" -g -v4 "],
-            "on_exit_shutdown": "True"
+            "gz_args": ["-g -v4"],
+            "on_exit_shutdown": "true"
         }.items(),
-        condition=IfCondition(use_gz_arg)
+    )
+
+    controller_manager_node = Node(
+        package="controller_manager",
+        executable="ros2_control_node",
+        parameters=[config_ros2_control_path],
+        output="screen"
     )
 
     return LaunchDescription([
-        file_declare,
-        urdf_declare,
-        disable_file_declare,
-        rviz_declare,
-        use_gz_declare,
-        use_sim_time_declare,
-        _1_robot_state_publisher_node,
-        _2_robot_state_publisher_node,
+        robot_state_publisher_node,
         joint_state_publisher_node,
         joint_state_publisher_gui_node,
-        # rviz_node,
+        rviz_node,
         exec_printenv,
         gz_server_launch,
         create_node,
         gz_client_launch,
+        controller_manager_node
     ])
