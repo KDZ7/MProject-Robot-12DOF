@@ -1,0 +1,1 @@
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/ament_cmake_environment_hooks/local_setup.bash

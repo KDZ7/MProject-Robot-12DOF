@@ -1,0 +1,10 @@
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/uninstall.dir
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/ros_gz_bridge_test_uninstall.dir
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/ros_gz_bridge_test_node.dir
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/test.dir
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/edit_cache.dir
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/list_install_components.dir
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/install.dir
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/install/local.dir
+/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/CMakeFiles/install/strip.dir

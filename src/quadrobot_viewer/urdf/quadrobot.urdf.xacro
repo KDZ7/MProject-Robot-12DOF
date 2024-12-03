@@ -16,7 +16,8 @@
     <gazebo>
         <plugin filename="libgz_ros2_control-system.so"
             name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-            <parameters>$(arg config_ros2_control_path)</parameters>
+            <robot>/robot>
+            <!-- <parameters>$(arg config_ros2_control_path)</parameters> -->
         </plugin>
     </gazebo>
 </robot>
