@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- Macro for joint -->
+    <xacro:macro name="MACRO_JOINT" params="name initial_position">
+        <joint name="${name}">
+            <command_interface name="position" />
+            <state_interface name="position">
+                <param name="initial_position" value="${initial_position}" />
+            </state_interface>
+        </joint>
+    </xacro:macro>
+    <!-- Macro for ros2_control -->
+    <xacro:macro name="MACRO_QUADROBOT_ROS2_CONTROL" params="hardware_name hardware_plugin">
+        <ros2_control name="${hardware_name}" type="system">
+            <hardware>
+                <plugin>${hardware_plugin}</plugin>
+            </hardware>
+            <!-- Using the MACRO_JOINT -->
+            <xacro:MACRO_JOINT name="lh_hip_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="lh_upper_leg_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="lh_lower_leg_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="lf_hip_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="lf_upper_leg_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="lf_lower_leg_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="rf_hip_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="rf_upper_leg_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="rf_lower_leg_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="rh_hip_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="rh_upper_leg_joint" initial_position="0.0" />
+            <xacro:MACRO_JOINT name="rh_lower_leg_joint" initial_position="0.0" />
+        </ros2_control>
+    </xacro:macro>
+</robot>

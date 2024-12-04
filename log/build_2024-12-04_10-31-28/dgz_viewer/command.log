@@ -1,6 +1,0 @@
-Invoking command in '/home/ubuntu/quadro_ws/build/dgz_viewer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/dgz_viewer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/dgz_viewer
-Invoked command in '/home/ubuntu/quadro_ws/build/dgz_viewer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/dgz_viewer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/dgz_viewer
-Invoking command in '/home/ubuntu/quadro_ws/build/dgz_viewer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/dgz_viewer -- -j16 -l16
-Invoked command in '/home/ubuntu/quadro_ws/build/dgz_viewer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/dgz_viewer -- -j16 -l16
-Invoking command in '/home/ubuntu/quadro_ws/build/dgz_viewer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/dgz_viewer
-Invoked command in '/home/ubuntu/quadro_ws/build/dgz_viewer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/dgz_viewer

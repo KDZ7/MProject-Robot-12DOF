@@ -1,1 +1,0 @@
-/home/ubuntu/quadro_ws/src/ros_gz_bridge_test/launch/ros_gz_bridge_test.launch.py

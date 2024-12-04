@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ubuntu/quadro_ws/build/ros_gz_bridge_test/ros_gz_bridge_test_node" "TARGETS" "ros_gz_bridge_test_node" "DESTINATION" "lib/ros_gz_bridge_test")

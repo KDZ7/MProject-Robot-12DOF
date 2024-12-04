@@ -1,0 +1,40 @@
+# ---------------------------------------------------
+# config.yaml
+# ---------------------------------------------------
+# This file is used to load parameters in launch file
+
+robot_state_publisher:
+#__args
+    urdf: "champ.urdf.xacro"
+    use_sim_time: true
+    
+joint_state_publisher:
+#__args
+    use_sim_time: true
+
+joint_state_publisher_gui:
+#__args
+    use_sim_time: true
+
+rviz2:
+#__args
+    config: "rviz.yaml"
+
+gazebo:
+#__args
+    server:
+        world: "empty.world.sdf"
+    client:
+
+spawn_entity:
+#__args
+    name: "champ"
+    topic: "robot_description"
+    x: "0.0"
+    y: "0.0"
+    z: "0.3"
+
+environment:
+#__args
+    ROS_DOMAIN_ID: "0"
+    LIBGL_ALWAYS_SOFTWARE: "1"

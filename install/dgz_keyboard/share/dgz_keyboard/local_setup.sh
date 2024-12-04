@@ -1,1 +1,0 @@
-/home/ubuntu/quadro_ws/build/dgz_keyboard/ament_cmake_environment_hooks/local_setup.sh

@@ -86,7 +86,6 @@
         </plugin>
     </gazebo>
 
-
     <!-- <gazebo>
         <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
 
@@ -100,4 +99,29 @@
             <parameters>$(find champ_gazebo)/config/ros_control.yaml</parameters>
           </plugin>
     </gazebo> -->
+
+    <!-- ....................................................................... -->
+
+    <!-- Define arguments with default values -->
+    <xacro:arg name="hardware_name" default="GazeboSimSystem" />
+    <xacro:arg name="hardware_plugin" default="gz_ros2_control/GazeboSimSystem" />
+    <xacro:arg name="config_ros2_control_path"
+        default="$(find dgz_viewer)/config/ros2_control.yaml" />
+
+    <!-- Include the xacro files -->
+    <!-- <xacro:include filename="$(find dgz_viewer)/urdf/champ.xacro" /> -->
+    <xacro:include filename="$(find dgz_viewer)/urdf/champ.ros2_control.xacro" />
+
+    <!-- Using the MACRO_QUADROBOT_ROS2_CONTROL -->
+    <xacro:MACRO_QUADROBOT_ROS2_CONTROL hardware_name="$(arg hardware_name)"
+        hardware_plugin="$(arg hardware_plugin)" />
+
+    <!-- Using Plugin for Gazebo -->
+    <gazebo>
+        <plugin filename="libgz_ros2_control-system.so"
+            name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>$(arg config_ros2_control_path)</parameters>
+        </plugin>
+    </gazebo>
+
 </robot>

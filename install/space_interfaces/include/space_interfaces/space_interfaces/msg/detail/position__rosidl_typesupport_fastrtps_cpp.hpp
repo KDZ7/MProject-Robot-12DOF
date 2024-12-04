@@ -1,1 +1,0 @@
-/home/ubuntu/quadro_ws/build/space_interfaces/rosidl_typesupport_fastrtps_cpp/space_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
