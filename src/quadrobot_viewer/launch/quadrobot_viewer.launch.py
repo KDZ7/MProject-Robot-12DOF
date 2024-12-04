@@ -14,7 +14,7 @@ def generate_launch_description():
     ros_gz_sim_pkg_path = get_package_share_directory("ros_gz_sim")
     config_path = os.path.join(quadrobot_viewer_pkg_path, "config", "config.yaml")
     config_ros2_control_path = os.path.join(quadrobot_viewer_pkg_path, "config", "ros2_control.yaml")
-   
+
     with open(config_path, "r") as yaml_file:
         config_data = yaml.safe_load(yaml_file)
 
@@ -26,7 +26,6 @@ def generate_launch_description():
         cmd=["bash", "-c", "printenv | grep -E 'ROS_DOMAIN_ID|LIBGL_ALWAYS_SOFTWARE|GZ_SIM_RESOURCE_PATH'"],
         output="screen"
     )
-
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
@@ -67,7 +66,7 @@ def generate_launch_description():
     gz_server_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([PathJoinSubstitution([ros_gz_sim_pkg_path, "launch", "gz_sim.launch.py"])]),
         launch_arguments={
-            "gz_args": [" -s -v4 ", PathJoinSubstitution(["empty.world.sdf"])],
+            "gz_args": [" -s -r -v4 ", PathJoinSubstitution(["empty.world.sdf"])],
             "on_exit_shutdown": "true"
         }.items()
     )
@@ -93,21 +92,36 @@ def generate_launch_description():
         }.items(),
     )
 
-    controller_manager_node = Node(
+    ros2_control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
         parameters=[config_ros2_control_path],
         output="screen"
     )
 
+    ros2_control_spawn_node_1 = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster"],
+        output="screen"
+    )
+    ros2_control_spawn_node_2 = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_group_position_controller"],
+        output="screen"
+    )
+
     return LaunchDescription([
         robot_state_publisher_node,
-        joint_state_publisher_node,
-        joint_state_publisher_gui_node,
+        # joint_state_publisher_node,
+        # joint_state_publisher_gui_node,
         rviz_node,
         exec_printenv,
         gz_server_launch,
         create_node,
         gz_client_launch,
-        controller_manager_node
+        ros2_control_node,
+        ros2_control_spawn_node_1,
+        ros2_control_spawn_node_2
     ])

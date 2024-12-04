@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot name="quadrobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <!-- Define arguments with default values -->
+    <xacro:arg name="hardware_name" default="GazeboSimSystem" />
     <xacro:arg name="hardware_plugin" default="gz_ros2_control/GazeboSimSystem" />
     <xacro:arg name="config_ros2_control_path"
         default="$(find quadrobot_viewer)/config/ros2_control.yaml" />
@@ -10,14 +11,14 @@
     <xacro:include filename="$(find quadrobot_viewer)/urdf/quadrobot.ros2_control.xacro" />
 
     <!-- Using the MACRO_QUADROBOT_ROS2_CONTROL -->
-    <xacro:MACRO_QUADROBOT_ROS2_CONTROL hardware_plugin="$(arg hardware_plugin)" />
+    <xacro:MACRO_QUADROBOT_ROS2_CONTROL hardware_name="$(arg hardware_name)"
+        hardware_plugin="$(arg hardware_plugin)" />
 
     <!-- Using Plugin for Gazebo -->
     <gazebo>
         <plugin filename="libgz_ros2_control-system.so"
             name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-            <robot>/robot>
-            <!-- <parameters>$(arg config_ros2_control_path)</parameters> -->
+            <parameters>$(arg config_ros2_control_path)</parameters>
         </plugin>
     </gazebo>
 </robot>

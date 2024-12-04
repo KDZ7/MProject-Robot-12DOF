@@ -1,0 +1,16 @@
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/lib/quadro_move_ctrl/quadro_move_ctrl_node
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/ament_index/resource_index/package_run_dependencies/quadro_move_ctrl
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/ament_index/resource_index/parent_prefix_path/quadro_move_ctrl
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/environment/ament_prefix_path.sh
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/environment/ament_prefix_path.dsv
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/environment/path.sh
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/environment/path.dsv
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/local_setup.bash
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/local_setup.sh
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/local_setup.zsh
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/local_setup.dsv
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/package.dsv
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/ament_index/resource_index/packages/quadro_move_ctrl
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/cmake/quadro_move_ctrlConfig.cmake
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/cmake/quadro_move_ctrlConfig-version.cmake
+/home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/package.xml

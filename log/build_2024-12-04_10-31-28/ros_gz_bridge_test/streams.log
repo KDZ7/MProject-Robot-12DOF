@@ -1,0 +1,69 @@
+[0.040s] Invoking command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/ros_gz_bridge_test -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/ros_gz_bridge_test
+[0.441s] -- The C compiler identification is GNU 13.2.0
+[2.456s] -- The CXX compiler identification is GNU 13.2.0
+[4.031s] -- Detecting C compiler ABI info
+[4.538s] -- Detecting C compiler ABI info - done
+[4.553s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.553s] -- Detecting C compile features
+[4.554s] -- Detecting C compile features - done
+[4.770s] -- Detecting CXX compiler ABI info
+[5.284s] -- Detecting CXX compiler ABI info - done
+[5.319s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.319s] -- Detecting CXX compile features
+[5.321s] -- Detecting CXX compile features - done
+[5.325s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[5.555s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.659s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.710s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[6.042s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[6.076s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[6.104s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.134s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.254s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[6.259s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[6.363s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[6.695s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[6.871s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.201s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[7.221s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.349s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.349s] -- Configured cppcheck include dirs: 
+[7.350s] -- Configured cppcheck exclude dirs and/or files: 
+[7.351s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.351s] -- Configured 'flake8' exclude dirs and/or files: 
+[7.352s] -- Added test 'lint_cmake' to check CMake code style
+[7.353s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.354s] -- Added test 'uncrustify' to check C / C++ code style
+[7.354s] -- Configured uncrustify additional arguments: 
+[7.355s] -- Added test 'xmllint' to check XML markup files
+[7.358s] -- Configuring done (7.3s)
+[7.368s] -- Generating done (0.0s)
+[7.370s] -- Build files have been written to: /home/ubuntu/quadro_ws/build/ros_gz_bridge_test
+[7.380s] Invoked command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/ros_gz_bridge_test -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/ros_gz_bridge_test
+[7.382s] Invoking command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/ros_gz_bridge_test -- -j16 -l16
+[7.424s] [ 50%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge_test_node.dir/src/ros_gz_bridge_test_node.cpp.o[0m
+[21.120s] [100%] [32m[1mLinking CXX executable ros_gz_bridge_test_node[0m
+[21.511s] [100%] Built target ros_gz_bridge_test_node
+[21.519s] Invoked command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/ros_gz_bridge_test -- -j16 -l16
+[21.539s] Invoking command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/ros_gz_bridge_test
+[21.544s] -- Install configuration: ""
+[21.545s] -- Execute custom install script
+[21.546s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/config/ros_gz_bridge.yaml
+[21.552s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/launch/ros_gz_bridge_test.launch.py
+[21.560s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/lib/ros_gz_bridge_test/ros_gz_bridge_test_node
+[21.567s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ament_index/resource_index/package_run_dependencies/ros_gz_bridge_test
+[21.574s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ament_index/resource_index/parent_prefix_path/ros_gz_bridge_test
+[21.582s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/environment/ament_prefix_path.sh
+[21.589s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/environment/ament_prefix_path.dsv
+[21.596s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/environment/path.sh
+[21.603s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/environment/path.dsv
+[21.610s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/local_setup.bash
+[21.618s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/local_setup.sh
+[21.625s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/local_setup.zsh
+[21.632s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/local_setup.dsv
+[21.640s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/package.dsv
+[21.647s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ament_index/resource_index/packages/ros_gz_bridge_test
+[21.655s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/cmake/ros_gz_bridge_testConfig.cmake
+[21.663s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/cmake/ros_gz_bridge_testConfig-version.cmake
+[21.670s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/package.xml
+[21.680s] Invoked command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/ros_gz_bridge_test

@@ -10,8 +10,8 @@
         </joint>
     </xacro:macro>
     <!-- Macro for ros2_control -->
-    <xacro:macro name="MACRO_QUADROBOT_ROS2_CONTROL" params="hardware_plugin">
-        <ros2_control name="quadrobot.ros2_control" type="system">
+    <xacro:macro name="MACRO_QUADROBOT_ROS2_CONTROL" params="hardware_name hardware_plugin">
+        <ros2_control name="${hardware_name}" type="system">
             <hardware>
                 <plugin>${hardware_plugin}</plugin>
             </hardware>

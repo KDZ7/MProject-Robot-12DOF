@@ -7,10 +7,10 @@ robot_state_publisher:
 #__args
     urdf: "quadrobot.urdf.xacro"
     use_sim_time: true
-
+    
 joint_state_publisher:
 #__args
-    use_sim_time: true
+    use_sim_time: false
 
 joint_state_publisher_gui:
 #__args
