@@ -1,0 +1,4 @@
+source;share/dgz_keyboard/local_setup.bash
+source;share/dgz_keyboard/local_setup.dsv
+source;share/dgz_keyboard/local_setup.sh
+source;share/dgz_keyboard/local_setup.zsh

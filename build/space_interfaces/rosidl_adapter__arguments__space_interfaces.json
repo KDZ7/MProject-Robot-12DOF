@@ -1,0 +1,6 @@
+{
+  "package_name": "space_interfaces",
+  "non_idl_tuples": [
+    "/home/ubuntu/quadro_ws/src/space_interfaces:msg/Position.msg"
+  ]
+}

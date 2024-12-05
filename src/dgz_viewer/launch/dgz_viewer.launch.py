@@ -1,7 +1,8 @@
 import os
 import yaml
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, ExecuteProcess, TimerAction
+from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, ExecuteProcess, TimerAction, RegisterEventHandler
+from launch.event_handlers import OnProcessStart
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
 from launch_ros.parameter_descriptions import ParameterValue
@@ -26,6 +27,7 @@ def generate_launch_description():
         cmd=["bash", "-c", "printenv | grep -E 'ROS_DOMAIN_ID|LIBGL_ALWAYS_SOFTWARE|GZ_SIM_RESOURCE_PATH'"],
         output="screen"
     )
+
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
@@ -95,7 +97,7 @@ def generate_launch_description():
     ros2_control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        parameters=[config_ros2_control_path],
+        parameters=[{'robot_description': ParameterValue(Command(["ros2 param get --hide-type /robot_state_publisher robot_description"]))}, config_ros2_control_path],
         output="screen"
     )
 
@@ -105,13 +107,29 @@ def generate_launch_description():
         arguments=["joint_state_broadcaster"],
         output="screen"
     )
+
     ros2_control_spawn_node_2 = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["joint_group_position_controller"],
         output="screen"
     )
-
+    delayed_ros2_control_node = TimerAction(
+        period=3.0,
+        actions=[ros2_control_node]
+    )
+    delayed_ros2_control_spawn_node_1 = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=ros2_control_node,
+            on_start=[ros2_control_spawn_node_1],
+        )
+    )
+    delayed_ros2_control_spawn_node_2 = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=ros2_control_spawn_node_1,
+            on_start=[ros2_control_spawn_node_2],
+        )
+    )
     return LaunchDescription([
         robot_state_publisher_node,
         joint_state_publisher_node,
@@ -121,7 +139,7 @@ def generate_launch_description():
         gz_server_launch,
         create_node,
         gz_client_launch,
-        ros2_control_node,
-        ros2_control_spawn_node_1,
-        ros2_control_spawn_node_2
+        delayed_ros2_control_node,
+        delayed_ros2_control_spawn_node_1,
+        delayed_ros2_control_spawn_node_2,
     ])

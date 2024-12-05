@@ -9,6 +9,14 @@
             </state_interface>
         </joint>
     </xacro:macro>
+    <!-- Macro for sensor -->
+    <xacro:macro name="MACRO_SENSOR" params="name">
+        <sensor name="${name}">
+            <state_interface name="position" />
+            <state_interface name="angular_velocity" />
+            <state_interface name="linear_acceleration" />
+        </sensor>
+    </xacro:macro>
     <!-- Macro for ros2_control -->
     <xacro:macro name="MACRO_QUADROBOT_ROS2_CONTROL" params="hardware_name hardware_plugin">
         <ros2_control name="${hardware_name}" type="system">
@@ -28,6 +36,8 @@
             <xacro:MACRO_JOINT name="rh_hip_joint" initial_position="0.0" />
             <xacro:MACRO_JOINT name="rh_upper_leg_joint" initial_position="0.0" />
             <xacro:MACRO_JOINT name="rh_lower_leg_joint" initial_position="0.0" />
+            <!-- Using the MACRO_SENSOR -->
+            <!-- <xacro:MACRO_SENSOR name="imu_sensor" /> -->
         </ros2_control>
     </xacro:macro>
 </robot>

@@ -52,7 +52,7 @@
     </gazebo>
 
     <xacro:include filename="$(find dgz_viewer)/urdf/leg.urdf.xacro" />
-    <xacro:include filename="$(find dgz_viewer)/urdf/sensors.xacro" />
+    <!-- <xacro:include filename="$(find dgz_viewer)/urdf/sensors.xacro" /> -->
 
     <!-- <xacro:include filename="$(find dgz_viewer)/urdf/accessories.urdf.xacro" />  
 
@@ -69,7 +69,6 @@
 
     <gazebo>
         <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
-
 
             <ros>
                 <namespace>/demo</namespace>
@@ -102,14 +101,55 @@
 
     <!-- ....................................................................... -->
 
+    <!-- IMU Sensor -->
+    <!-- <link name="imu_sensor_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.02 0.02 0.005" />
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 1.0" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="imu_sensor_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="imu_sensor_link" />
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+    </joint>
+
+    <gazebo reference="imu_sensor_link">
+        <sensor name="imu_sensor" type="imu">
+            <always_on>true</always_on>
+            <update_rate>100</update_rate>
+            <visualize>true</visualize>
+            <topic>/imu_sensor/imu</topic>
+        </sensor>
+    </gazebo> -->
+
+    <!-- <plugin filename="gz-sim-imu-system"
+        name="gz::sim::systems::Imu">
+    </plugin> -->
+
+    <!-- <gazebo>
+        <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_sensor">
+            <robotNamespace>dgz</robotNamespace>
+            <topicName>imu/data</topicName>
+            <frameName>imu_link</frameName>
+            <gaussianNoise>0.01</gaussianNoise>
+        </plugin>
+    </gazebo> -->
+    <!-- -->
+
     <!-- Define arguments with default values -->
     <xacro:arg name="hardware_name" default="GazeboSimSystem" />
     <xacro:arg name="hardware_plugin" default="gz_ros2_control/GazeboSimSystem" />
     <xacro:arg name="config_ros2_control_path"
-        default="$(find dgz_viewer)/config/ros2_control.yaml" />
+        default=" $(find dgz_viewer)/config/ros2_control.yaml" />
 
     <!-- Include the xacro files -->
-    <!-- <xacro:include filename="$(find dgz_viewer)/urdf/champ.xacro" /> -->
     <xacro:include filename="$(find dgz_viewer)/urdf/champ.ros2_control.xacro" />
 
     <!-- Using the MACRO_QUADROBOT_ROS2_CONTROL -->
@@ -123,5 +163,4 @@
             <parameters>$(arg config_ros2_control_path)</parameters>
         </plugin>
     </gazebo>
-
 </robot>

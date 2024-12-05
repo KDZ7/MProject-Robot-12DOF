@@ -1,0 +1,8 @@
+source;share/dgz_keyboard/hook/cmake_prefix_path.ps1
+source;share/dgz_keyboard/hook/cmake_prefix_path.dsv
+source;share/dgz_keyboard/hook/cmake_prefix_path.sh
+source;share/dgz_keyboard/local_setup.bash
+source;share/dgz_keyboard/local_setup.dsv
+source;share/dgz_keyboard/local_setup.ps1
+source;share/dgz_keyboard/local_setup.sh
+source;share/dgz_keyboard/local_setup.zsh

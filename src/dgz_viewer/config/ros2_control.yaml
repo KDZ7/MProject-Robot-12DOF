@@ -1,16 +1,17 @@
 controller_manager:
   ros__parameters:
-    update_rate: 500 # Hz
+    update_rate: 60 # Hz
     use_sim_time: true
     
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
     joint_group_position_controller:
       type: position_controllers/JointGroupPositionController
+    imu_sensor_broadcaster:
+      type: imu_sensor_broadcaster/IMUSensorBroadcaster
 
 joint_group_position_controller:
   ros__parameters:
-    # publish_rate: 50.0
     joints:
       - lh_hip_joint
       - lh_upper_leg_joint
@@ -28,3 +29,11 @@ joint_group_position_controller:
       - position
     state_interfaces:
       - position
+imu_sensor_broadcaster:
+  ros__parameters:
+    sensors:
+      - imu_sensor
+    state_interfaces:
+      - orientation
+      - angular_velocity
+      - linear_acceleration

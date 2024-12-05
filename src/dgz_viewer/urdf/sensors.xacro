@@ -180,8 +180,6 @@
       effort="0"
       velocity="0" />
   </joint>
-
-
   <gazebo reference="laser_link">
     <sensor name="laser_sensor" type="ray">
       <always_on>true</always_on>
@@ -223,7 +221,6 @@
     <mu2>0.01</mu2>
     <material>Gazebo/Black</material>
   </gazebo>
-
   <!-- *********************** IMU SETUP *********************************  -->
   <!-- Each sensor must be attached to a link.                              -->
   <link name="imu_link">
@@ -238,16 +235,13 @@
         <box size="0.01 0.01 0.01" />
       </geometry>
     </collision>
-
     <xacro:box_inertia mass="0.01" x="0.01" y="0.01" z="0.01" />
   </link>
-
   <joint name="imu_joint" type="fixed">
     <parent link="base_link" />
     <child link="imu_link" />
     <origin xyz="0 0 0.01" />
   </joint>
-
   <gazebo reference="imu_link">
     <gravity>true</gravity>
     <sensor name="yahboom_imu" type="imu">
@@ -326,7 +320,6 @@
       </plugin>
     </sensor>
   </gazebo>
-
 
   <gazebo reference="imu_link">
     <gravity>true</gravity>

@@ -1,0 +1,1 @@
+/home/ubuntu/quadro_ws/build/quadro_move_ctrl/ament_cmake_core/quadro_move_ctrlConfig-version.cmake
