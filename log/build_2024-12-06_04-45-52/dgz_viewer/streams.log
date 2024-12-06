@@ -1,0 +1,97 @@
+[0.057s] Invoking command in '/home/ubuntu/quadro_ws/build/dgz_viewer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/dgz_viewer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/dgz_viewer
+[0.900s] -- The C compiler identification is GNU 13.2.0
+[3.090s] -- The CXX compiler identification is GNU 13.2.0
+[5.551s] -- Detecting C compiler ABI info
+[6.179s] -- Detecting C compiler ABI info - done
+[6.197s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.197s] -- Detecting C compile features
+[6.198s] -- Detecting C compile features - done
+[6.465s] -- Detecting CXX compiler ABI info
+[7.185s] -- Detecting CXX compiler ABI info - done
+[7.199s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.199s] -- Detecting CXX compile features
+[7.200s] -- Detecting CXX compile features - done
+[7.204s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.468s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.612s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.684s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.923s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.924s] -- Configured 'flake8' exclude dirs and/or files: 
+[7.926s] -- Added test 'lint_cmake' to check CMake code style
+[7.929s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.933s] -- Added test 'xmllint' to check XML markup files
+[7.938s] -- Configuring done (7.8s)
+[7.942s] -- Generating done (0.0s)
+[7.943s] -- Build files have been written to: /home/ubuntu/quadro_ws/build/dgz_viewer
+[7.951s] Invoked command in '/home/ubuntu/quadro_ws/build/dgz_viewer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/dgz_viewer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/dgz_viewer
+[7.952s] Invoking command in '/home/ubuntu/quadro_ws/build/dgz_viewer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/dgz_viewer -- -j16 -l16
+[7.997s] Invoked command in '/home/ubuntu/quadro_ws/build/dgz_viewer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/dgz_viewer -- -j16 -l16
+[8.041s] Invoking command in '/home/ubuntu/quadro_ws/build/dgz_viewer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/dgz_viewer
+[8.050s] -- Install configuration: ""
+[8.051s] -- Execute custom install script
+[8.052s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//config/config.yaml
+[8.065s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//config/ros2_control.yaml
+[8.077s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//config/rviz.yaml
+[8.091s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//launch/dgz_viewer.launch.py
+[8.106s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/base_link.STL
+[8.116s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/camera_link.STL
+[8.127s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/laser_link.STL
+[8.138s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/lf_hip_link.STL
+[8.149s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/lf_lower_leg_link.STL
+[8.160s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/lf_upper_leg_link.STL
+[8.170s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/lh_hip_link.STL
+[8.180s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/lh_lower_leg_link.STL
+[8.191s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/lh_upper_leg_link.STL
+[8.203s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/rf_hip_link.STL
+[8.216s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/rf_lower_leg_link.STL
+[8.226s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/rf_upper_leg_link.STL
+[8.238s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/rh_hip_link.STL
+[8.249s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/rh_lower_leg_link.STL
+[8.258s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/XGO/rh_upper_leg_link.STL
+[8.266s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/arm/base.stl
+[8.275s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/arm/lower_arm.stl
+[8.284s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/arm/upper_arm.stl
+[8.293s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/arm/wrist1.stl
+[8.303s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/arm/wrist2.stl
+[8.312s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/asus_camera_simple.dae
+[8.321s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/base.stl
+[8.330s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/base_simple.stl
+[8.339s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/hip.stl
+[8.348s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/hokuyo_utm_30lx.dae
+[8.357s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/lower_leg.stl
+[8.368s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/lower_leg_simple.stl
+[8.377s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/upper_leg.stl
+[8.386s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//meshes/upper_leg_simple.stl
+[8.396s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//models/worlds/empty.world.sdf
+[8.406s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/accessories.urdf.xacro
+[8.415s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/asus_camera.urdf.xacro
+[8.424s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/champ.ros2_control.xacro
+[8.434s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/champ.urdf
+[8.443s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/champ.urdf.xacro
+[8.456s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/champ_arm.urdf
+[8.468s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/champ_velodyne.urdf
+[8.480s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/gen_urdf
+[8.489s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/hokuyo_utm30lx.urdf.xacro
+[8.502s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/leg.urdf.xacro
+[8.512s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/macros.xacro
+[8.523s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/properties.urdf.xacro
+[8.533s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/sensors.xacro
+[8.546s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/sensors1.xacro
+[8.556s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/xgo_rviz.xacro
+[8.567s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer//urdf/yahboomcar_XGO.color.xacro
+[8.580s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/ament_index/resource_index/package_run_dependencies/dgz_viewer
+[8.590s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/ament_index/resource_index/parent_prefix_path/dgz_viewer
+[8.601s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/environment/ament_prefix_path.sh
+[8.611s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/environment/ament_prefix_path.dsv
+[8.621s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/environment/path.sh
+[8.632s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/environment/path.dsv
+[8.642s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/local_setup.bash
+[8.652s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/local_setup.sh
+[8.663s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/local_setup.zsh
+[8.674s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/local_setup.dsv
+[8.684s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/package.dsv
+[8.697s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/ament_index/resource_index/packages/dgz_viewer
+[8.709s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/cmake/dgz_viewerConfig.cmake
+[8.718s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/cmake/dgz_viewerConfig-version.cmake
+[8.731s] -- Symlinking: /home/ubuntu/quadro_ws/install/dgz_viewer/share/dgz_viewer/package.xml
+[8.745s] Invoked command in '/home/ubuntu/quadro_ws/build/dgz_viewer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/dgz_viewer

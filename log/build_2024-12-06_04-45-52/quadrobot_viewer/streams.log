@@ -1,0 +1,72 @@
+[0.055s] Invoking command in '/home/ubuntu/quadro_ws/build/quadrobot_viewer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/quadrobot_viewer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/quadrobot_viewer
+[0.966s] -- The C compiler identification is GNU 13.2.0
+[3.300s] -- The CXX compiler identification is GNU 13.2.0
+[5.673s] -- Detecting C compiler ABI info
+[6.312s] -- Detecting C compiler ABI info - done
+[6.327s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.327s] -- Detecting C compile features
+[6.328s] -- Detecting C compile features - done
+[6.618s] -- Detecting CXX compiler ABI info
+[7.373s] -- Detecting CXX compiler ABI info - done
+[7.393s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.393s] -- Detecting CXX compile features
+[7.395s] -- Detecting CXX compile features - done
+[7.402s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.682s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.827s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.888s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[8.087s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.087s] -- Configured 'flake8' exclude dirs and/or files: 
+[8.088s] -- Added test 'lint_cmake' to check CMake code style
+[8.090s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.092s] -- Added test 'xmllint' to check XML markup files
+[8.096s] -- Configuring done (8.0s)
+[8.101s] -- Generating done (0.0s)
+[8.102s] -- Build files have been written to: /home/ubuntu/quadro_ws/build/quadrobot_viewer
+[8.108s] Invoked command in '/home/ubuntu/quadro_ws/build/quadrobot_viewer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/quadrobot_viewer -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/quadrobot_viewer
+[8.109s] Invoking command in '/home/ubuntu/quadro_ws/build/quadrobot_viewer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/quadrobot_viewer -- -j16 -l16
+[8.157s] Invoked command in '/home/ubuntu/quadro_ws/build/quadrobot_viewer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/quadrobot_viewer -- -j16 -l16
+[8.187s] Invoking command in '/home/ubuntu/quadro_ws/build/quadrobot_viewer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/quadrobot_viewer
+[8.199s] -- Install configuration: ""
+[8.199s] -- Execute custom install script
+[8.200s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//config/config.yaml
+[8.214s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//config/joint_names_quadrobot.yaml
+[8.225s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//config/ros2_control.yaml
+[8.235s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//config/rviz.yaml
+[8.244s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//launch/quadrobot_viewer.launch.py
+[8.253s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/BLA.STL
+[8.263s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/BLB.STL
+[8.272s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/BLC.STL
+[8.281s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/BRA.STL
+[8.293s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/BRB.STL
+[8.302s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/BRC.STL
+[8.312s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/CAMERA.STL
+[8.323s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/FLA.STL
+[8.336s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/FLB.STL
+[8.348s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/FLC.STL
+[8.360s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/FRA.STL
+[8.369s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/FRB.STL
+[8.382s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/FRC.STL
+[8.391s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/LIDAR.STL
+[8.400s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//meshes/base_link.STL
+[8.410s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//models/worlds/empty.world.sdf
+[8.422s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.csv
+[8.432s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.ros2_control.xacro
+[8.441s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.urdf.xacro
+[8.452s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer//urdf/quadrobot.xacro
+[8.462s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/ament_index/resource_index/package_run_dependencies/quadrobot_viewer
+[8.475s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/ament_index/resource_index/parent_prefix_path/quadrobot_viewer
+[8.485s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/environment/ament_prefix_path.sh
+[8.495s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/environment/ament_prefix_path.dsv
+[8.505s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/environment/path.sh
+[8.515s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/environment/path.dsv
+[8.529s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/local_setup.bash
+[8.539s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/local_setup.sh
+[8.550s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/local_setup.zsh
+[8.561s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/local_setup.dsv
+[8.572s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/package.dsv
+[8.584s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/ament_index/resource_index/packages/quadrobot_viewer
+[8.593s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/cmake/quadrobot_viewerConfig.cmake
+[8.604s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/cmake/quadrobot_viewerConfig-version.cmake
+[8.616s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadrobot_viewer/share/quadrobot_viewer/package.xml
+[8.627s] Invoked command in '/home/ubuntu/quadro_ws/build/quadrobot_viewer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/quadrobot_viewer

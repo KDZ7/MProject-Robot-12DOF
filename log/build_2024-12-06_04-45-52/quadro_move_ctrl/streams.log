@@ -1,0 +1,64 @@
+[0.052s] Invoking command in '/home/ubuntu/quadro_ws/build/quadro_move_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/quadro_move_ctrl -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/quadro_move_ctrl
+[0.918s] -- The C compiler identification is GNU 13.2.0
+[3.210s] -- The CXX compiler identification is GNU 13.2.0
+[5.669s] -- Detecting C compiler ABI info
+[6.319s] -- Detecting C compiler ABI info - done
+[6.334s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.334s] -- Detecting C compile features
+[6.335s] -- Detecting C compile features - done
+[6.578s] -- Detecting CXX compiler ABI info
+[7.341s] -- Detecting CXX compiler ABI info - done
+[7.359s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.359s] -- Detecting CXX compile features
+[7.361s] -- Detecting CXX compile features - done
+[7.368s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[7.666s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.804s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[7.872s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[8.371s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[8.398s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[8.423s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.452s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.599s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[8.604s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[8.725s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[9.424s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[9.744s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[10.401s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[10.428s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[10.617s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.617s] -- Configured cppcheck include dirs: 
+[10.617s] -- Configured cppcheck exclude dirs and/or files: 
+[10.620s] -- Added test 'lint_cmake' to check CMake code style
+[10.623s] -- Added test 'uncrustify' to check C / C++ code style
+[10.623s] -- Configured uncrustify additional arguments: 
+[10.625s] -- Added test 'xmllint' to check XML markup files
+[10.630s] -- Configuring done (10.5s)
+[10.647s] -- Generating done (0.0s)
+[10.649s] -- Build files have been written to: /home/ubuntu/quadro_ws/build/quadro_move_ctrl
+[10.663s] Invoked command in '/home/ubuntu/quadro_ws/build/quadro_move_ctrl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/quadro_move_ctrl -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/quadro_move_ctrl
+[10.664s] Invoking command in '/home/ubuntu/quadro_ws/build/quadro_move_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/quadro_move_ctrl -- -j16 -l16
+[10.729s] [ 50%] [32mBuilding CXX object CMakeFiles/quadro_move_ctrl_node.dir/src/quadro_move_ctrl_node.cpp.o[0m
+[26.635s] [100%] [32m[1mLinking CXX executable quadro_move_ctrl_node[0m
+[27.340s] [100%] Built target quadro_move_ctrl_node
+[27.355s] Invoked command in '/home/ubuntu/quadro_ws/build/quadro_move_ctrl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/quadro_move_ctrl -- -j16 -l16
+[27.386s] Invoking command in '/home/ubuntu/quadro_ws/build/quadro_move_ctrl': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/quadro_move_ctrl
+[27.394s] -- Install configuration: ""
+[27.395s] -- Execute custom install script
+[27.395s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/lib/quadro_move_ctrl/quadro_move_ctrl_node
+[27.406s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/ament_index/resource_index/package_run_dependencies/quadro_move_ctrl
+[27.417s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/ament_index/resource_index/parent_prefix_path/quadro_move_ctrl
+[27.430s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/environment/ament_prefix_path.sh
+[27.441s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/environment/ament_prefix_path.dsv
+[27.452s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/environment/path.sh
+[27.464s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/environment/path.dsv
+[27.476s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/local_setup.bash
+[27.488s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/local_setup.sh
+[27.500s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/local_setup.zsh
+[27.511s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/local_setup.dsv
+[27.521s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/package.dsv
+[27.532s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/ament_index/resource_index/packages/quadro_move_ctrl
+[27.543s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/cmake/quadro_move_ctrlConfig.cmake
+[27.557s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/cmake/quadro_move_ctrlConfig-version.cmake
+[27.568s] -- Symlinking: /home/ubuntu/quadro_ws/install/quadro_move_ctrl/share/quadro_move_ctrl/package.xml
+[27.582s] Invoked command in '/home/ubuntu/quadro_ws/build/quadro_move_ctrl' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/quadro_move_ctrl
