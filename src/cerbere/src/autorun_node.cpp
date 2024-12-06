@@ -10,7 +10,7 @@ class autorun_node : public rclcpp::Node
 public:
     autorun_node() : Node("autorun_node")
     {
-        publisher = this->create_publisher<std_msgs::msg::Float64MultiArray>("/joint_group_position_controller/commands", 1);
+        publisher = this->create_publisher<std_msgs::msg::Float64MultiArray>("/joint_group_position_controller/commands", 10);
         subscriber = this->create_subscription<std_msgs::msg::String>("/autorun_node/cmd", 1, std::bind(&autorun_node::cmd_callback, this, std::placeholders::_1));
         timer = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&autorun_node::timer_callback, this));
     }

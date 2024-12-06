@@ -170,7 +170,7 @@ def generate_launch_description():
         gz_server_launch,
         create_node,
         gz_client_launch,
-        ros_gz_bridge_launch,
+        # ros_gz_bridge_launch,
         delayed_ros2_control_node,
         delayed_ros2_control_spawn_node_1,
         delayed_ros2_control_spawn_node_2,

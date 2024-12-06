@@ -41,4 +41,4 @@ spawn_entity:
 environment:
 #__args
     ROS_DOMAIN_ID: "0"
-    LIBGL_ALWAYS_SOFTWARE: "0"
+    LIBGL_ALWAYS_SOFTWARE: "1"
