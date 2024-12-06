@@ -12,9 +12,19 @@
     <!-- Macro for sensor -->
     <xacro:macro name="MACRO_SENSOR" params="name">
         <sensor name="${name}">
-            <state_interface name="position" />
-            <state_interface name="angular_velocity" />
-            <state_interface name="linear_acceleration" />
+            <!-- State interface orientation -->
+            <state_interface name="orientation.x" />
+            <state_interface name="orientation.y" />
+            <state_interface name="orientation.z" />
+            <state_interface name="orientation.w" />
+            <!-- State interface angular_velocity -->
+            <state_interface name="angular_velocity.x" />
+            <state_interface name="angular_velocity.y" />
+            <state_interface name="angular_velocity.z" />
+            <!-- State interface linear_acceleration -->
+            <state_interface name="linear_acceleration.x" />
+            <state_interface name="linear_acceleration.y" />
+            <state_interface name="linear_acceleration.z" />
         </sensor>
     </xacro:macro>
     <!-- Macro for ros2_control -->
@@ -37,7 +47,7 @@
             <xacro:MACRO_JOINT name="rh_upper_leg_joint" initial_position="0.0" />
             <xacro:MACRO_JOINT name="rh_lower_leg_joint" initial_position="0.0" />
             <!-- Using the MACRO_SENSOR -->
-            <!-- <xacro:MACRO_SENSOR name="imu_sensor" /> -->
+            <xacro:MACRO_SENSOR name="imu_sensor" />
         </ros2_control>
     </xacro:macro>
 </robot>

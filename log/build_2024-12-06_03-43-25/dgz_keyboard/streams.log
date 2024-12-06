@@ -1,0 +1,42 @@
+[0.455s] Invoking command in '/home/ubuntu/quadro_ws/build/dgz_keyboard': CMAKE_PREFIX_PATH=/home/ubuntu/quadro_ws/install/space_interfaces:/home/ubuntu/quadro_ws/install/dgz_keyboard:/home/ubuntu/quadro_ws/install/ros_gz_bridge_test:/home/ubuntu/quadro_ws/install/quadrobot_viewer:/home/ubuntu/quadro_ws/install/quadro_move_ctrl:/home/ubuntu/quadro_ws/install/dgz_viewer:/home/ubuntu/quadro_ws/install/cerbere:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/quadro_ws/src/dgz_keyboard -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/quadro_ws/install/dgz_keyboard
+[0.879s] -- The C compiler identification is GNU 13.2.0
+[3.270s] -- The CXX compiler identification is GNU 13.2.0
+[5.796s] -- Detecting C compiler ABI info
+[6.645s] -- Detecting C compiler ABI info - done
+[6.661s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.661s] -- Detecting C compile features
+[6.662s] -- Detecting C compile features - done
+[7.032s] -- Detecting CXX compiler ABI info
+[7.884s] -- Detecting CXX compiler ABI info - done
+[7.901s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[7.902s] -- Detecting CXX compile features
+[7.903s] -- Detecting CXX compile features - done
+[7.908s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[8.194s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[8.315s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[8.399s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[8.972s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[9.002s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[9.034s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.071s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.222s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[9.229s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[9.355s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[10.043s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[10.479s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[11.204s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[11.286s] -- Found space_interfaces: 0.0.0 (/home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake)
+[11.309s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[11.495s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[11.495s] -- Configured cppcheck include dirs: 
+[11.496s] -- Configured cppcheck exclude dirs and/or files: 
+[11.497s] -- Added test 'flake8' to check Python code syntax and style conventions
+[11.497s] -- Configured 'flake8' exclude dirs and/or files: 
+[11.498s] -- Added test 'lint_cmake' to check CMake code style
+[11.500s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[11.502s] -- Added test 'uncrustify' to check C / C++ code style
+[11.502s] -- Configured uncrustify additional arguments: 
+[11.503s] -- Added test 'xmllint' to check XML markup files
+[11.507s] -- Configuring done (11.0s)
+[11.525s] -- Generating done (0.0s)
+[11.527s] -- Build files have been written to: /home/ubuntu/quadro_ws/build/dgz_keyboard

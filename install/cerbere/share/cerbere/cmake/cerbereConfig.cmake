@@ -1,0 +1,1 @@
+/home/ubuntu/quadro_ws/build/cerbere/ament_cmake_core/cerbereConfig.cmake

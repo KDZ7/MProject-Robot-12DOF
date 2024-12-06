@@ -1,0 +1,121 @@
+[0.047s] Invoking command in '/home/ubuntu/quadro_ws/build/space_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/space_interfaces -- -j16 -l16
+[0.132s] [  2%] Built target space_interfaces__rosidl_generator_type_description
+[0.144s] [  2%] Built target ament_cmake_python_symlink_space_interfaces
+[0.166s] [  5%] Built target space_interfaces__cpp
+[0.170s] [ 20%] Built target space_interfaces__rosidl_generator_c
+[0.232s] [ 29%] Built target space_interfaces__rosidl_typesupport_introspection_c
+[0.233s] [ 38%] Built target space_interfaces__rosidl_typesupport_c
+[0.233s] [ 50%] Built target space_interfaces__rosidl_typesupport_cpp
+[0.234s] [ 55%] Built target space_interfaces__rosidl_typesupport_fastrtps_c
+[0.235s] [ 70%] Built target space_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.235s] [ 73%] Built target space_interfaces__rosidl_typesupport_introspection_cpp
+[0.257s] [ 73%] Built target space_interfaces
+[0.278s] [ 76%] Built target space_interfaces__py
+[0.310s] [ 82%] Built target space_interfaces__rosidl_generator_py
+[0.347s] [ 88%] Built target space_interfaces_s__rosidl_typesupport_introspection_c
+[0.347s] [100%] Built target space_interfaces_s__rosidl_typesupport_fastrtps_c
+[0.348s] [100%] Built target space_interfaces_s__rosidl_typesupport_c
+[0.603s] running egg_info
+[0.642s] writing space_interfaces.egg-info/PKG-INFO
+[0.642s] writing dependency_links to space_interfaces.egg-info/dependency_links.txt
+[0.643s] writing top-level names to space_interfaces.egg-info/top_level.txt
+[0.749s] reading manifest file 'space_interfaces.egg-info/SOURCES.txt'
+[0.749s] writing manifest file 'space_interfaces.egg-info/SOURCES.txt'
+[0.782s] [100%] Built target ament_cmake_python_build_space_interfaces_egg
+[0.795s] Invoked command in '/home/ubuntu/quadro_ws/build/space_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/space_interfaces -- -j16 -l16
+[0.872s] Invoking command in '/home/ubuntu/quadro_ws/build/space_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/space_interfaces
+[0.881s] -- Install configuration: ""
+[0.881s] -- Execute custom install script
+[0.882s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/ament_index/resource_index/rosidl_interfaces/space_interfaces
+[0.882s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/msg/Position.json
+[0.882s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__functions.h
+[0.883s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__struct.h
+[0.883s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__type_support.h
+[0.883s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/position.h
+[0.883s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.884s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/environment/library_path.sh
+[0.884s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/environment/library_path.dsv
+[0.884s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_c.h
+[0.885s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.885s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__rosidl_typesupport_introspection_c.h
+[0.885s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.886s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__builder.hpp
+[0.886s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__struct.hpp
+[0.886s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__traits.hpp
+[0.886s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__type_support.hpp
+[0.887s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/position.hpp
+[0.887s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.887s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
+[0.888s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.888s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/include/space_interfaces/space_interfaces/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp
+[0.888s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/environment/pythonpath.sh
+[0.888s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/environment/pythonpath.dsv
+[0.888s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[0.889s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[0.889s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[0.889s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[0.890s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/__init__.py
+[0.890s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/_space_interfaces_s.ep.rosidl_typesupport_c.c
+[0.890s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/_space_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.891s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/_space_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.891s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/msg/__init__.py
+[0.891s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/msg/_position.py
+[0.891s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/msg/_position_s.c
+[0.892s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_c.so
+[0.892s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[0.892s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_introspection_c.so
+[0.893s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[0.893s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_introspection_c.so
+[0.894s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/space_interfaces_s__rosidl_typesupport_c.so
+[0.894s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/msg/Position.idl
+[0.894s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/msg/Position.msg
+[0.895s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/ament_index/resource_index/package_run_dependencies/space_interfaces
+[0.895s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/ament_index/resource_index/parent_prefix_path/space_interfaces
+[0.895s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/environment/ament_prefix_path.sh
+[0.895s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/environment/ament_prefix_path.dsv
+[0.895s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/environment/path.sh
+[0.896s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/environment/path.dsv
+[0.896s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/local_setup.bash
+[0.896s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/local_setup.sh
+[0.896s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/local_setup.zsh
+[0.896s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/local_setup.dsv
+[0.896s] -- Symlinking: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/package.dsv
+[0.905s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/ament_index/resource_index/packages/space_interfaces
+[0.906s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.906s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.906s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.907s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.907s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.907s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.908s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.908s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfacesConfig.cmake
+[0.908s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfacesConfig-version.cmake
+[0.908s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/package.xml
+[0.908s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_generator_c.so
+[0.909s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.909s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_introspection_c.so
+[0.909s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_c.so
+[0.910s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.910s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.910s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_typesupport_cpp.so
+[0.956s] Listing '/home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces'...
+[0.956s] Listing '/home/ubuntu/quadro_ws/install/space_interfaces/lib/python3.12/site-packages/space_interfaces/msg'...
+[0.963s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/lib/libspace_interfaces__rosidl_generator_py.so
+[0.963s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_cExport.cmake
+[0.963s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.963s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.964s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.964s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.964s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.965s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_cExport.cmake
+[0.965s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.965s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_cppExport.cmake
+[0.965s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.965s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.965s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.965s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.966s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_cppExport.cmake
+[0.966s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/space_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.966s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_pyExport.cmake
+[0.966s] -- Up-to-date: /home/ubuntu/quadro_ws/install/space_interfaces/share/space_interfaces/cmake/export_space_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.968s] Invoked command in '/home/ubuntu/quadro_ws/build/space_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/space_interfaces

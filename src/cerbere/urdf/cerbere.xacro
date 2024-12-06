@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by
+Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="cerbere" xmlns:xacro="http://ros.org/wiki/xacro">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000371652512996233 -7.6212050768252E-05 0.00706850750667908"
+        rpy="0 0 0" />
+      <mass
+        value="0.31171709658584" />
+      <inertia
+        ixx="0.000378155460405935"
+        ixy="1.79329505625064E-08"
+        ixz="1.05917115821183E-07"
+        iyy="0.00337223260578799"
+        iyz="-3.83480428707601E-08"
+        izz="0.00374103438963752" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="LinkHARG">
+    <inertial>
+      <origin
+        xyz="-0.012906648173912 -0.00078119447185733 0.0623046560363092"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309558566774551" />
+      <inertia
+        ixx="5.932719856043E-06"
+        ixy="-4.13817952529259E-10"
+        ixz="-2.73209087956018E-08"
+        iyy="5.73599012006718E-06"
+        iyz="8.46304568574459E-09"
+        izz="2.8830072681229E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkHARG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkHARG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointHARG"
+    type="revolute">
+    <origin
+      xyz="0.17172 -0.07755 0.02505"
+      rpy="-1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="LinkHARG" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkCARG">
+    <inertial>
+      <origin
+        xyz="0.034285357442195 -6.81634927731933E-05 0.0569528430999679"
+        rpy="0 0 0" />
+      <mass
+        value="0.0853307422974554" />
+      <inertia
+        ixx="1.00333734976567E-05"
+        ixy="2.24604730233501E-07"
+        ixz="3.64749412861335E-08"
+        iyy="0.000177291740670532"
+        iyz="-6.58872208014042E-09"
+        izz="0.000182759546669258" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkCARG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkCARG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointCARG"
+    type="revolute">
+    <origin
+      xyz="0.00803293802185018 -0.000395178595675033 0.0890500000000001"
+      rpy="-1.5707963267949 0.000532277886633281 1.58678798803852" />
+    <parent
+      link="LinkHARG" />
+    <child
+      link="LinkCARG" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkMARG">
+    <inertial>
+      <origin
+        xyz="0.00707659336104521 -0.06165159931668 0.00948708252537361"
+        rpy="0 0 0" />
+      <mass
+        value="0.0218299396435167" />
+      <inertia
+        ixx="7.73940797794777E-05"
+        ixy="6.30484270055536E-06"
+        ixz="-1.0083350429203E-07"
+        iyy="1.67880273610035E-06"
+        iyz="1.23599673936585E-06"
+        izz="7.89425244152643E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkMARG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkMARG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointMARG"
+    type="revolute">
+    <origin
+      xyz="0.138643980359709 -8.31097087421739E-05 0.044"
+      rpy="0.0159916612417833 0 1.57026404890826" />
+    <parent
+      link="LinkCARG" />
+    <child
+      link="LinkMARG" />
+    <axis
+      xyz="0 0.0159909796506353 0.999872136110319" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkHARD">
+    <inertial>
+      <origin
+        xyz="-0.0129066481472908 -0.000781194441520854 0.0623046560382911"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309558566960984" />
+      <inertia
+        ixx="5.93271985311116E-06"
+        ixy="-4.13817780336039E-10"
+        ixz="-2.73209232754365E-08"
+        iyy="5.73599011527687E-06"
+        iyz="8.46303706766441E-09"
+        izz="2.88300726918365E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkHARD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkHARD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointHARD"
+    type="revolute">
+    <origin
+      xyz="0.171617631396529 0.077 0.02505"
+      rpy="1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="LinkHARD" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkCARD">
+    <inertial>
+      <origin
+        xyz="0.034285325080835 -0.000124226889184301 0.0569528450184878"
+        rpy="0 0 0" />
+      <mass
+        value="0.0853307474352217" />
+      <inertia
+        ixx="1.00330640280698E-05"
+        ixy="-6.62620667156827E-08"
+        ixz="3.64749630159922E-08"
+        iyy="0.000177292051017909"
+        iyz="-6.58874638121254E-09"
+        izz="0.000182759547460954" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkCARD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkCARD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointCARD"
+    type="revolute">
+    <origin
+      xyz="0.00803293802184887 -0.000395178595675061 0.0890499999999999"
+      rpy="1.5707963267949 -0.000532277886633678 -1.55480466555127" />
+    <parent
+      link="LinkHARD" />
+    <child
+      link="LinkCARD" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkMARD">
+    <inertial>
+      <origin
+        xyz="-0.00707659336067615 -0.0619234459707683 0.00751074378850068"
+        rpy="0 0 0" />
+      <mass
+        value="0.0218299396435167" />
+      <inertia
+        ixx="7.73940797794724E-05"
+        ixy="-6.30484270059207E-06"
+        ixz="-1.00833504292651E-07"
+        iyy="1.67880273610603E-06"
+        iyz="-1.23599673936618E-06"
+        izz="7.89425244152646E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkMARD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkMARD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointMARD"
+    type="revolute">
+    <origin
+      xyz="0.138643980359709 -8.31097087420213E-05 0.044"
+      rpy="-0.015991661241784 0 1.57026404890826" />
+    <parent
+      link="LinkCARD" />
+    <child
+      link="LinkMARD" />
+    <axis
+      xyz="0 0.0159909796506353 -0.999872136110319" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkHAVG">
+    <inertial>
+      <origin
+        xyz="0.0129066485638822 0.0007811949279505 0.0623046544934139"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309558552856347" />
+      <inertia
+        ixx="5.93271938092282E-06"
+        ixy="-4.13801013590467E-10"
+        ixz="2.73209128752493E-08"
+        iyy="5.73598985019417E-06"
+        iyz="-8.46310151057438E-09"
+        izz="2.88300701450027E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkHAVG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkHAVG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointHAVG"
+    type="revolute">
+    <origin
+      xyz="-0.128101968987838 -0.0774116524467705 0.02505"
+      rpy="1.5707963267949 0 -1.56445635443686" />
+    <parent
+      link="base_link" />
+    <child
+      link="LinkHAVG" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkCAVG">
+    <inertial>
+      <origin
+        xyz="-0.0342853574572784 6.81634971255729E-05 0.0569528430953187"
+        rpy="0 0 0" />
+      <mass
+        value="0.0853307422518494" />
+      <inertia
+        ixx="1.00333734944544E-05"
+        ixy="2.2460473200546E-07"
+        ixz="-3.64749414442696E-08"
+        iyy="0.000177291740669512"
+        iyz="6.58872179490005E-09"
+        izz="0.000182759546665101" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkCAVG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkCAVG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointCAVG"
+    type="revolute">
+    <origin
+      xyz="-0.00848204988900204 0.000388001087966081 0.0891515714650277"
+      rpy="1.56445716451276 -0.00043088550192966 1.58679104087123" />
+    <parent
+      link="LinkHAVG" />
+    <child
+      link="LinkCAVG" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkMAVG">
+    <inertial>
+      <origin
+        xyz="-0.000141152099477099 0.062048729727184 0.00990191871360467"
+        rpy="0 0 0" />
+      <mass
+        value="0.0218299396435168" />
+      <inertia
+        ixx="7.78498331361691E-05"
+        ixy="-2.24403855667074E-06"
+        ixz="-3.58889637945259E-08"
+        iyy="1.22316592075207E-06"
+        iyz="-1.24328375015402E-06"
+        izz="7.89424078739221E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkMAVG.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkMAVG.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointMAVG"
+    type="revolute">
+    <origin
+      xyz="-0.138643980359709 8.31097087420907E-05 0.044"
+      rpy="-0.0159916612417817 0 1.57026404890826" />
+    <parent
+      link="LinkCAVG" />
+    <child
+      link="LinkMAVG" />
+    <axis
+      xyz="0 -0.0159909796506353 0.999872136110319" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkHAVD">
+    <inertial>
+      <origin
+        xyz="-0.012906648160644 -0.000781194455074151 0.0623046560442261"
+        rpy="0 0 0" />
+      <mass
+        value="0.0309558566416962" />
+      <inertia
+        ixx="5.93271984404165E-06"
+        ixy="-4.13813403912612E-10"
+        ixz="-2.73209173156086E-08"
+        iyy="5.73599010291231E-06"
+        iyz="8.4630406501184E-09"
+        izz="2.88300725932004E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkHAVD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkHAVD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointHAVD"
+    type="revolute">
+    <origin
+      xyz="-0.128191252908845 0.077 0.02505"
+      rpy="1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="base_link" />
+    <child
+      link="LinkHAVD" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkCAVD">
+    <inertial>
+      <origin
+        xyz="0.0342853250819914 -0.000124226889528928 0.0569528450180564"
+        rpy="0 0 0" />
+      <mass
+        value="0.0853307474316455" />
+      <inertia
+        ixx="1.00330640278118E-05"
+        ixy="-6.62620665573109E-08"
+        ixz="3.64749630564605E-08"
+        iyy="0.000177292051017803"
+        iyz="-6.5887463096018E-09"
+        izz="0.000182759547460609" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkCAVD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkCAVD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointCAVD"
+    type="revolute">
+    <origin
+      xyz="0.00803293802182059 -0.000395178595755465 0.0890500000000001"
+      rpy="1.5707963267949 -0.00053227788663429 -1.55480466555312" />
+    <parent
+      link="LinkHAVD" />
+    <child
+      link="LinkCAVD" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+  <link
+    name="LinkMAVD">
+    <inertial>
+      <origin
+        xyz="-0.000174259303138996 -0.0623270236695902 0.00750428950134197"
+        rpy="0 0 0" />
+      <mass
+        value="0.0218299396435167" />
+      <inertia
+        ixx="7.78522006299309E-05"
+        ixy="2.203245245194E-06"
+        ixz="3.52365503697353E-08"
+        iyy="1.22079902675289E-06"
+        iyz="-1.24332142781921E-06"
+        izz="7.89424072741588E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkMAVD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.15 0.15 0.15 1.0" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cerbere/meshes/LinkMAVD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="JointMAVD"
+    type="revolute">
+    <origin
+      xyz="0.13864 -8.311E-05 0.044"
+      rpy="-0.015992 0 1.5708" />
+    <parent
+      link="LinkCAVD" />
+    <child
+      link="LinkMAVD" />
+    <axis
+      xyz="0 0.015991 -0.99987" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="1.47"
+      velocity="300" />
+  </joint>
+</robot>

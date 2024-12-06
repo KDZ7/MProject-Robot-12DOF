@@ -1,0 +1,25 @@
+[0.055s] Invoking command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/ros_gz_bridge_test -- -j16 -l16
+[0.152s] [100%] Built target ros_gz_bridge_test_node
+[0.184s] Invoked command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/ros_gz_bridge_test -- -j16 -l16
+[0.308s] Invoking command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/ros_gz_bridge_test
+[0.325s] -- Install configuration: ""
+[0.326s] -- Execute custom install script
+[0.326s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/config/ros_gz_bridge.yaml
+[0.327s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/launch/ros_gz_bridge_test.launch.py
+[0.330s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/lib/ros_gz_bridge_test/ros_gz_bridge_test_node
+[0.331s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ament_index/resource_index/package_run_dependencies/ros_gz_bridge_test
+[0.331s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ament_index/resource_index/parent_prefix_path/ros_gz_bridge_test
+[0.331s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/environment/ament_prefix_path.sh
+[0.332s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/environment/ament_prefix_path.dsv
+[0.332s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/environment/path.sh
+[0.333s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/environment/path.dsv
+[0.333s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/local_setup.bash
+[0.334s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/local_setup.sh
+[0.334s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/local_setup.zsh
+[0.335s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/local_setup.dsv
+[0.335s] -- Symlinking: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/package.dsv
+[0.344s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ament_index/resource_index/packages/ros_gz_bridge_test
+[0.345s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/cmake/ros_gz_bridge_testConfig.cmake
+[0.346s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/cmake/ros_gz_bridge_testConfig-version.cmake
+[0.347s] -- Up-to-date symlink: /home/ubuntu/quadro_ws/install/ros_gz_bridge_test/share/ros_gz_bridge_test/package.xml
+[0.405s] Invoked command in '/home/ubuntu/quadro_ws/build/ros_gz_bridge_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/ros_gz_bridge_test

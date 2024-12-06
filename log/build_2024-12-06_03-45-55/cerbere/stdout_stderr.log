@@ -1,0 +1,47 @@
+[ 50%] Built target autorun_node
+[ 75%] [32mBuilding CXX object CMakeFiles/imu_test_node.dir/src/imu_test_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable imu_test_node[0m
+[100%] Built target imu_test_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/config.yaml
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/joint_names_cerbere.yaml
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/ros2_control.yaml
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/ros_gz_bridge.yaml
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/rviz.yaml
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//launch/cerbere.launch.py
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkCARD.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkCARG.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkCAVD.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkCAVG.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkHARD.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkHARG.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkHAVD.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkHAVG.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkMARD.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkMARG.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkMAVD.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkMAVG.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/base_link.STL
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//models/worlds/empty.world.sdf
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//urdf/cerbere.csv
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//urdf/cerbere.ros2_control.xacro
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//urdf/cerbere.urdf.xacro
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//urdf/cerbere.xacro
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/lib/cerbere/autorun_node
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/lib/cerbere/imu_test_node
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/ament_index/resource_index/package_run_dependencies/cerbere
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/ament_index/resource_index/parent_prefix_path/cerbere
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/environment/path.sh
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/environment/path.dsv
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/local_setup.bash
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/local_setup.sh
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/local_setup.zsh
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/local_setup.dsv
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/package.dsv
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/ament_index/resource_index/packages/cerbere
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/cmake/cerbereConfig.cmake
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/cmake/cerbereConfig-version.cmake
+-- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/package.xml

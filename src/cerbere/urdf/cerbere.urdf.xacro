@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<robot name="cerbere" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <!-- Define arguments with default values -->
+    <xacro:arg name="hardware_name" default="GazeboSimSystem" />
+    <xacro:arg name="hardware_plugin" default="gz_ros2_control/GazeboSimSystem" />
+    <xacro:arg name="config_ros2_control_path"
+        default="$(find cerbere)/config/ros2_control.yaml" />
+
+    <!-- Include the xacro files -->
+    <xacro:include filename="$(find cerbere)/urdf/cerbere.xacro" />
+    <xacro:include filename="$(find cerbere)/urdf/cerbere.ros2_control.xacro" />
+
+    <!-- Using the MACRO_QUADROBOT_ROS2_CONTROL -->
+    <xacro:MACRO_QUADROBOT_ROS2_CONTROL hardware_name="$(arg hardware_name)"
+        hardware_plugin="$(arg hardware_plugin)" />
+
+    <!-- Begin IMU Sensor -->
+    <link name="imu_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.02 0.02 0.005" />
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint name="imu_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="imu_link" />
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+    </joint>
+    <gazebo reference="imu_link">
+        <sensor name="imu_sensor" type="imu">
+            <always_on>true</always_on>
+            <update_rate>100</update_rate>
+            <visualize>true</visualize>
+            <topic>/imu</topic>
+        </sensor>
+    </gazebo>
+    <gazebo>
+        <plugin filename="gz-sim-imu-system"
+            name="gz::sim::systems::Imu" />
+    </gazebo>
+    <!-- End IMU Sensor -->
+
+    <!-- Using Plugin for Gazebo -->
+    <gazebo>
+        <plugin filename="libgz_ros2_control-system.so"
+            name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>$(arg config_ros2_control_path)</parameters>
+        </plugin>
+    </gazebo>
+</robot>
+  

@@ -1,0 +1,51 @@
+[0.045s] Invoking command in '/home/ubuntu/quadro_ws/build/cerbere': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/cerbere -- -j16 -l16
+[0.149s] [ 50%] Built target autorun_node
+[0.152s] [ 75%] [32mBuilding CXX object CMakeFiles/imu_test_node.dir/src/imu_test_node.cpp.o[0m
+[14.061s] [100%] [32m[1mLinking CXX executable imu_test_node[0m
+[14.742s] [100%] Built target imu_test_node
+[14.758s] Invoked command in '/home/ubuntu/quadro_ws/build/cerbere' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/quadro_ws/build/cerbere -- -j16 -l16
+[14.793s] Invoking command in '/home/ubuntu/quadro_ws/build/cerbere': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/cerbere
+[14.802s] -- Install configuration: ""
+[14.803s] -- Execute custom install script
+[14.804s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/config.yaml
+[14.815s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/joint_names_cerbere.yaml
+[14.827s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/ros2_control.yaml
+[14.838s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/ros_gz_bridge.yaml
+[14.849s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//config/rviz.yaml
+[14.861s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//launch/cerbere.launch.py
+[14.878s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkCARD.STL
+[14.889s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkCARG.STL
+[14.901s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkCAVD.STL
+[14.912s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkCAVG.STL
+[14.922s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkHARD.STL
+[14.932s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkHARG.STL
+[14.942s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkHAVD.STL
+[14.951s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkHAVG.STL
+[14.960s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkMARD.STL
+[14.970s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkMARG.STL
+[14.979s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkMAVD.STL
+[14.988s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/LinkMAVG.STL
+[14.998s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//meshes/base_link.STL
+[15.008s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//models/worlds/empty.world.sdf
+[15.019s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//urdf/cerbere.csv
+[15.032s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//urdf/cerbere.ros2_control.xacro
+[15.047s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//urdf/cerbere.urdf.xacro
+[15.063s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere//urdf/cerbere.xacro
+[15.082s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/lib/cerbere/autorun_node
+[15.099s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/lib/cerbere/imu_test_node
+[15.116s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/ament_index/resource_index/package_run_dependencies/cerbere
+[15.129s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/ament_index/resource_index/parent_prefix_path/cerbere
+[15.140s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/environment/ament_prefix_path.sh
+[15.150s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/environment/ament_prefix_path.dsv
+[15.159s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/environment/path.sh
+[15.169s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/environment/path.dsv
+[15.179s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/local_setup.bash
+[15.188s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/local_setup.sh
+[15.198s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/local_setup.zsh
+[15.210s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/local_setup.dsv
+[15.223s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/package.dsv
+[15.235s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/ament_index/resource_index/packages/cerbere
+[15.249s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/cmake/cerbereConfig.cmake
+[15.261s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/cmake/cerbereConfig-version.cmake
+[15.273s] -- Symlinking: /home/ubuntu/quadro_ws/install/cerbere/share/cerbere/package.xml
+[15.288s] Invoked command in '/home/ubuntu/quadro_ws/build/cerbere' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/quadro_ws/build/cerbere

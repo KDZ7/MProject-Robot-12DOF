@@ -1,0 +1,11 @@
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/uninstall.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/cerbere_uninstall.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/autorun_node.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/imu_test_node.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/test.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/edit_cache.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/list_install_components.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/install.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/install/local.dir
+/home/ubuntu/quadro_ws/build/cerbere/CMakeFiles/install/strip.dir

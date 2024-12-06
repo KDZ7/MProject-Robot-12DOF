@@ -1,0 +1,4 @@
+source;share/cerbere/local_setup.bash
+source;share/cerbere/local_setup.dsv
+source;share/cerbere/local_setup.sh
+source;share/cerbere/local_setup.zsh

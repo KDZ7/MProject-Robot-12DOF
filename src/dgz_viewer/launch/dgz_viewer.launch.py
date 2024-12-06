@@ -114,10 +114,19 @@ def generate_launch_description():
         arguments=["joint_group_position_controller"],
         output="screen"
     )
+
+    ros2_control_spawn_node_3 = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["imu_sensor_broadcaster"],
+        output="screen"
+    )
+
     delayed_ros2_control_node = TimerAction(
         period=3.0,
         actions=[ros2_control_node]
     )
+
     delayed_ros2_control_spawn_node_1 = RegisterEventHandler(
         event_handler=OnProcessStart(
             target_action=ros2_control_node,
@@ -126,10 +135,17 @@ def generate_launch_description():
     )
     delayed_ros2_control_spawn_node_2 = RegisterEventHandler(
         event_handler=OnProcessStart(
-            target_action=ros2_control_spawn_node_1,
+            target_action=ros2_control_node,
             on_start=[ros2_control_spawn_node_2],
         )
     )
+    delayed_ros2_control_spawn_node_3 = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=ros2_control_node,
+            on_start=[ros2_control_spawn_node_3],
+        )
+    )
+
     return LaunchDescription([
         robot_state_publisher_node,
         joint_state_publisher_node,
@@ -142,4 +158,5 @@ def generate_launch_description():
         delayed_ros2_control_node,
         delayed_ros2_control_spawn_node_1,
         delayed_ros2_control_spawn_node_2,
+        delayed_ros2_control_spawn_node_3,
     ])

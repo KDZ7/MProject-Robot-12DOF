@@ -102,7 +102,7 @@
     <!-- ....................................................................... -->
 
     <!-- IMU Sensor -->
-    <!-- <link name="imu_sensor_link">
+    <link name="imu_sensor_link">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
@@ -127,20 +127,11 @@
             <visualize>true</visualize>
             <topic>/imu_sensor/imu</topic>
         </sensor>
-    </gazebo> -->
-
-    <!-- <plugin filename="gz-sim-imu-system"
-        name="gz::sim::systems::Imu">
-    </plugin> -->
-
-    <!-- <gazebo>
-        <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_sensor">
-            <robotNamespace>dgz</robotNamespace>
-            <topicName>imu/data</topicName>
-            <frameName>imu_link</frameName>
-            <gaussianNoise>0.01</gaussianNoise>
-        </plugin>
-    </gazebo> -->
+    </gazebo>
+    <gazebo>
+        <plugin filename="gz-sim-imu-system"
+            name="gz::sim::systems::Imu" />
+    </gazebo>
     <!-- -->
 
     <!-- Define arguments with default values -->

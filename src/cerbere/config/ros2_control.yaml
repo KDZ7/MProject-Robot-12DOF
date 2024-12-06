@@ -1,0 +1,41 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1000 # Hz
+    use_sim_time: true
+    
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    joint_group_position_controller:
+      type: position_controllers/JointGroupPositionController
+    # imu_sensor_broadcaster:
+    #   type: imu_sensor_broadcaster/IMUSensorBroadcaster
+
+joint_group_position_controller:
+  ros__parameters:
+    joints:
+      - JointHARG
+      - JointCARG
+      - JointMARG
+      - JointHARD
+      - JointCARD
+      - JointMARD
+      - JointHAVG
+      - JointCAVG
+      - JointMAVG
+      - JointHAVD
+      - JointCAVD
+      - JointMAVD
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+# imu_sensor_broadcaster:
+#   ros__parameters:
+#     sensors:
+#       - imu_sensor
+#     frame_id:
+#       - imu_sensor_link
+#     state_interfaces:
+#       - static_covariance_orientation: [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+#       - static_covariance_angular_velocity:  [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
+#       - static_covariance_linear_acceleration:  [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
